@@ -4,17 +4,17 @@ import (
 	"testing"
 	"time"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	capabilitykeeper "github.com/cosmos/cosmos-sdk/x/capability/keeper"
+	sdk "github.com/line/lbm-sdk/types"
+	capabilitykeeper "github.com/line/lbm-sdk/x/capability/keeper"
 	"github.com/stretchr/testify/suite"
 
-	stakingkeeper "github.com/cosmos/cosmos-sdk/x/staking/keeper"
-	stakingtypes "github.com/cosmos/cosmos-sdk/x/staking/types"
-	upgradekeeper "github.com/cosmos/cosmos-sdk/x/upgrade/keeper"
-	clienttypes "github.com/cosmos/ibc-go/v3/modules/core/02-client/types"
-	ibchost "github.com/cosmos/ibc-go/v3/modules/core/24-host"
-	ibckeeper "github.com/cosmos/ibc-go/v3/modules/core/keeper"
-	ibctesting "github.com/cosmos/ibc-go/v3/testing"
+	clienttypes "github.com/line/ibc-go/modules/core/02-client/types"
+	ibchost "github.com/line/ibc-go/modules/core/24-host"
+	ibckeeper "github.com/line/ibc-go/modules/core/keeper"
+	ibctesting "github.com/line/ibc-go/testing"
+	stakingkeeper "github.com/line/lbm-sdk/x/staking/keeper"
+	stakingtypes "github.com/line/lbm-sdk/x/staking/types"
+	upgradekeeper "github.com/line/lbm-sdk/x/upgrade/keeper"
 )
 
 type KeeperTestSuite struct {

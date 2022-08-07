@@ -2,6 +2,8 @@
 
 ## [Unreleased](https://github.com/line/ibc-go/tree/HEAD)
 
+* (apps/27-interchain-accounts) [\#1882](https://github.com/cosmos/ibc-go/pull/1882) Explicitly check length of interchain account packet data in favour of nil check.
+
 ### Improvements
 * [\#1](https://github.com/line/ibc-go/pull/1) apply all changes of `x/ibc` in lbm-sdk until [lbm-sdk@0fbc2fcae6dba90fa80b815cf3219d6fcf46fc64](https://github.com/line/lbm-sdk/tree/0fbc2fcae6dba90fa80b815cf3219d6fcf46fc64)
 

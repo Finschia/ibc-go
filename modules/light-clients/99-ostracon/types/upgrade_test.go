@@ -10,9 +10,7 @@ import (
 	ibctesting "github.com/line/ibc-go/v3/testing"
 )
 
-var (
-	newChainId = "newChainId-1"
-)
+var newChainId = "newChainId-1"
 
 func (suite *OstraconTestSuite) TestVerifyUpgrade() {
 	var (

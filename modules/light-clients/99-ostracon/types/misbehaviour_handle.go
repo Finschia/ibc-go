@@ -101,7 +101,6 @@ func (cs ClientState) CheckMisbehaviourAndUpdateState(
 func checkMisbehaviourHeader(
 	clientState *ClientState, consState *ConsensusState, header *Header, currentTimestamp time.Time,
 ) error {
-
 	tmTrustedVoterSet, err := octypes.VoterSetFromProto(header.TrustedVoters)
 	if err != nil {
 		return sdkerrors.Wrap(err, "trusted validator set is not ostracon validator set type")

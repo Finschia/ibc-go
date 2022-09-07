@@ -211,7 +211,6 @@ func (suite *TypesTestSuite) TestMarshalMsgUpdateClient() {
 			"ostracon client", func() {
 				msg, err = types.NewMsgUpdateClient("ostracon-0", suite.chainA.CurrentOCClientHeader(), suite.chainA.SenderAccount.GetAddress().String())
 				suite.Require().NoError(err)
-
 			},
 		},
 	}
@@ -496,7 +495,6 @@ func (suite *TypesTestSuite) TestMarshalMsgSubmitMisbehaviour() {
 				misbehaviour := ibcoctypes.NewMisbehaviour("ostracon-0", header1, header2)
 				msg, err = types.NewMsgSubmitMisbehaviour("ostracon-0", misbehaviour, suite.chainA.SenderAccount.GetAddress().String())
 				suite.Require().NoError(err)
-
 			},
 		},
 	}

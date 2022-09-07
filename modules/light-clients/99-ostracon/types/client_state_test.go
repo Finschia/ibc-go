@@ -27,9 +27,7 @@ const (
 	fiftyOneCharChainID = "123456789012345678901234567890123456789012345678901"
 )
 
-var (
-	invalidProof = []byte("invalid proof")
-)
+var invalidProof = []byte("invalid proof")
 
 func (suite *OstraconTestSuite) TestStatus() {
 	var (
@@ -166,7 +164,6 @@ func (suite *OstraconTestSuite) TestValidate() {
 }
 
 func (suite *OstraconTestSuite) TestInitialize() {
-
 	testCases := []struct {
 		name           string
 		consensusState exported.ConsensusState

@@ -47,7 +47,9 @@ var (
 
 	// Default params variables used to create a OC client
 	DefaultTrustLevel ibcoctypes.Fraction = ibcoctypes.DefaultTrustLevel
-	TestCoin                              = sdk.NewCoin(sdk.DefaultBondDenom, sdk.NewInt(100))
+
+	TestAccAddress = "link17dtl0mjt3t77kpuhg2edqzjpszulwhgzuj9ljs"
+	TestCoin       = sdk.NewCoin(sdk.DefaultBondDenom, sdk.NewInt(100))
 
 	UpgradePath = []string{"upgrade", "upgradedIBCState"}
 

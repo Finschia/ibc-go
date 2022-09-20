@@ -3,8 +3,6 @@ package keeper_test
 import (
 	"testing"
 
-	sdk "github.com/line/lbm-sdk/types"
-	"github.com/line/ostracon/crypto"
 	"github.com/stretchr/testify/suite"
 
 	icatypes "github.com/line/ibc-go/v3/modules/apps/27-interchain-accounts/types"
@@ -13,12 +11,6 @@ import (
 )
 
 var (
-	// TODO: Cosmos-SDK ADR-28: Update crypto.AddressHash() when sdk uses address.Module()
-	// https://github.com/cosmos/cosmos-sdk/issues/10225
-	//
-	// TestAccAddress defines a resuable bech32 address for testing purposes
-	TestAccAddress = icatypes.GenerateAddress(sdk.AccAddress(crypto.AddressHash([]byte(icatypes.ModuleName))), ibctesting.FirstConnectionID, TestPortID)
-
 	// TestOwnerAddress defines a reusable bech32 address for testing purposes
 	TestOwnerAddress = "link17dtl0mjt3t77kpuhg2edqzjpszulwhgzfu9afc"
 
@@ -137,11 +129,10 @@ func (suite *KeeperTestSuite) TestGetInterchainAccountAddress() {
 	suite.Require().NoError(err)
 
 	counterpartyPortID := path.EndpointA.ChannelConfig.PortID
-	expectedAddr := icatypes.GenerateAddress(suite.chainA.GetSimApp().AccountKeeper.GetModuleAddress(icatypes.ModuleName), ibctesting.FirstConnectionID, counterpartyPortID)
 
 	retrievedAddr, found := suite.chainB.GetSimApp().ICAHostKeeper.GetInterchainAccountAddress(suite.chainB.GetContext(), ibctesting.FirstConnectionID, counterpartyPortID)
 	suite.Require().True(found)
-	suite.Require().Equal(expectedAddr.String(), retrievedAddr)
+	suite.Require().NotEmpty(retrievedAddr)
 
 	retrievedAddr, found = suite.chainB.GetSimApp().ICAHostKeeper.GetInterchainAccountAddress(suite.chainB.GetContext(), ibctesting.FirstConnectionID, "invalid port")
 	suite.Require().False(found)
@@ -196,13 +187,16 @@ func (suite *KeeperTestSuite) TestGetAllInterchainAccounts() {
 	err := SetupICAPath(path, TestOwnerAddress)
 	suite.Require().NoError(err)
 
+	interchainAccAddr, exists := suite.chainB.GetSimApp().ICAHostKeeper.GetInterchainAccountAddress(suite.chainB.GetContext(), path.EndpointB.ConnectionID, path.EndpointA.ChannelConfig.PortID)
+	suite.Require().True(exists)
+
 	suite.chainB.GetSimApp().ICAHostKeeper.SetInterchainAccountAddress(suite.chainB.GetContext(), ibctesting.FirstConnectionID, expectedPortID, expectedAccAddr)
 
 	expectedAccounts := []icatypes.RegisteredInterchainAccount{
 		{
 			ConnectionId:   ibctesting.FirstConnectionID,
 			PortId:         TestPortID,
-			AccountAddress: TestAccAddress.String(),
+			AccountAddress: interchainAccAddr,
 		},
 		{
 			ConnectionId:   ibctesting.FirstConnectionID,

@@ -18,12 +18,6 @@ import (
 )
 
 var (
-	// TODO: Cosmos-SDK ADR-28: Update crypto.AddressHash() when sdk uses address.Module()
-	// https://github.com/cosmos/cosmos-sdk/issues/10225
-	//
-	// TestAccAddress defines a resuable bech32 address for testing purposes
-	TestAccAddress = icatypes.GenerateAddress(sdk.AccAddress(crypto.AddressHash([]byte(icatypes.ModuleName))), ibctesting.FirstConnectionID, TestPortID)
-
 	// TestOwnerAddress defines a reusable bech32 address for testing purposes
 	TestOwnerAddress = "link17dtl0mjt3t77kpuhg2edqzjpszulwhgzfu9afc"
 
@@ -478,7 +472,7 @@ func (suite *InterchainAccountsTestSuite) TestOnRecvPacket() {
 				0,
 			)
 
-			ack := cbs.OnRecvPacket(suite.chainA.GetContext(), packet, TestAccAddress)
+			ack := cbs.OnRecvPacket(suite.chainA.GetContext(), packet, nil)
 			suite.Require().Equal(tc.expPass, ack.Success())
 		})
 	}

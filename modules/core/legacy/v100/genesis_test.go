@@ -3,21 +3,21 @@ package v100_test
 import (
 	"testing"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	genutiltypes "github.com/cosmos/cosmos-sdk/x/genutil/types"
+	"github.com/line/lbm-sdk/client"
+	codectypes "github.com/line/lbm-sdk/codec/types"
+	genutiltypes "github.com/line/lbm-sdk/x/genutil/types"
+	octypes "github.com/line/ostracon/types"
 	"github.com/stretchr/testify/suite"
-	tmtypes "github.com/tendermint/tendermint/types"
 
-	ibcclient "github.com/cosmos/ibc-go/v3/modules/core/02-client"
-	clientv100 "github.com/cosmos/ibc-go/v3/modules/core/02-client/legacy/v100"
-	clienttypes "github.com/cosmos/ibc-go/v3/modules/core/02-client/types"
-	connectiontypes "github.com/cosmos/ibc-go/v3/modules/core/03-connection/types"
-	host "github.com/cosmos/ibc-go/v3/modules/core/24-host"
-	"github.com/cosmos/ibc-go/v3/modules/core/legacy/v100"
-	"github.com/cosmos/ibc-go/v3/modules/core/types"
-	ibctesting "github.com/cosmos/ibc-go/v3/testing"
-	"github.com/cosmos/ibc-go/v3/testing/simapp"
+	ibcclient "github.com/line/ibc-go/modules/core/02-client"
+	clientv100 "github.com/line/ibc-go/modules/core/02-client/legacy/v100"
+	clienttypes "github.com/line/ibc-go/modules/core/02-client/types"
+	connectiontypes "github.com/line/ibc-go/modules/core/03-connection/types"
+	host "github.com/line/ibc-go/modules/core/24-host"
+	v100 "github.com/line/ibc-go/modules/core/legacy/v100"
+	"github.com/line/ibc-go/modules/core/types"
+	ibctesting "github.com/line/ibc-go/testing"
+	"github.com/line/ibc-go/testing/simapp"
 )
 
 type LegacyTestSuite struct {
@@ -58,7 +58,7 @@ func (suite *LegacyTestSuite) TestMigrateGenesisSolomachine() {
 	solomachine := ibctesting.NewSolomachine(suite.T(), suite.chainA.Codec, "06-solomachine-0", "testing", 1)
 	solomachineMulti := ibctesting.NewSolomachine(suite.T(), suite.chainA.Codec, "06-solomachine-1", "testing", 4)
 
-	// create tendermint clients
+	// create ostracon clients
 	// NOTE: only 1 set of metadata is created, we aren't testing ordering
 	// The purpose of this test is to ensure the genesis states can be marshalled/unmarshalled
 	suite.coordinator.SetupClients(path)
@@ -140,7 +140,7 @@ func (suite *LegacyTestSuite) TestMigrateGenesisSolomachine() {
 		clientStore.Set(host.ConsensusStateKey(height2), bz)
 		clientStore.Set(host.ConsensusStateKey(height3), bz)
 	}
-	// solo machine clients must come before tendermint in expected
+	// solo machine clients must come before ostracon in expected
 	clientGenState.Clients = append(clients, clientGenState.Clients...)
 
 	// migrate store get expected genesis
@@ -156,13 +156,13 @@ func (suite *LegacyTestSuite) TestMigrateGenesisSolomachine() {
 	ibcGenState.ClientGenesis = clientGenState
 	clientv100.RegisterInterfaces(clientCtx.InterfaceRegistry)
 	appState[host.ModuleName] = clientCtx.JSONCodec.MustMarshalJSON(ibcGenState)
-	genDoc := tmtypes.GenesisDoc{
+	genDoc := octypes.GenesisDoc{
 		ChainID:       suite.chainA.ChainID,
 		GenesisTime:   suite.coordinator.CurrentTime,
 		InitialHeight: suite.chainA.GetContext().BlockHeight(),
 	}
 
-	// NOTE: genesis time isn't updated since we aren't testing for tendermint consensus state pruning
+	// NOTE: genesis time isn't updated since we aren't testing for ostracon consensus state pruning
 	migrated, err := v100.MigrateGenesis(appState, clientCtx, genDoc, uint64(connectiontypes.DefaultTimePerBlock))
 	suite.Require().NoError(err)
 

@@ -4,14 +4,14 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/client/flags"
-	"github.com/cosmos/cosmos-sdk/version"
+	"github.com/line/lbm-sdk/client"
+	"github.com/line/lbm-sdk/client/flags"
+	"github.com/line/lbm-sdk/version"
 	"github.com/spf13/cobra"
 
-	"github.com/cosmos/ibc-go/v3/modules/core/02-client/client/utils"
-	"github.com/cosmos/ibc-go/v3/modules/core/02-client/types"
-	host "github.com/cosmos/ibc-go/v3/modules/core/24-host"
+	"github.com/line/ibc-go/modules/core/02-client/client/utils"
+	"github.com/line/ibc-go/modules/core/02-client/types"
+	host "github.com/line/ibc-go/modules/core/24-host"
 )
 
 const (
@@ -217,7 +217,7 @@ func GetCmdQueryHeader() *cobra.Command {
 	cmd := &cobra.Command{
 		Use:     "header",
 		Short:   "Query the latest header of the running chain",
-		Long:    "Query the latest Tendermint header of the running chain",
+		Long:    "Query the latest Ostracon header of the running chain",
 		Example: fmt.Sprintf("%s query %s %s  header", version.AppName, host.ModuleName, types.SubModuleName),
 		Args:    cobra.NoArgs,
 		RunE: func(cmd *cobra.Command, _ []string) error {
@@ -225,7 +225,7 @@ func GetCmdQueryHeader() *cobra.Command {
 			if err != nil {
 				return err
 			}
-			header, _, err := utils.QueryTendermintHeader(clientCtx)
+			header, _, err := utils.QueryOstraconHeader(clientCtx)
 			if err != nil {
 				return err
 			}

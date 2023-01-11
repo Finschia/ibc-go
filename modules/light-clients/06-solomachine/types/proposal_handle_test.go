@@ -1,10 +1,10 @@
 package types_test
 
 import (
-	"github.com/cosmos/ibc-go/v3/modules/core/exported"
-	"github.com/cosmos/ibc-go/v3/modules/light-clients/06-solomachine/types"
-	ibctmtypes "github.com/cosmos/ibc-go/v3/modules/light-clients/07-tendermint/types"
-	ibctesting "github.com/cosmos/ibc-go/v3/testing"
+	"github.com/line/ibc-go/modules/core/exported"
+	"github.com/line/ibc-go/modules/light-clients/06-solomachine/types"
+	ibcoctypes "github.com/line/ibc-go/modules/light-clients/99-ostracon/types"
+	ibctesting "github.com/line/ibc-go/testing"
 )
 
 func (suite *SoloMachineTestSuite) TestCheckSubstituteAndUpdateState() {
@@ -33,7 +33,7 @@ func (suite *SoloMachineTestSuite) TestCheckSubstituteAndUpdateState() {
 			},
 			{
 				"substitute is not the solo machine", func() {
-					substituteClientState = &ibctmtypes.ClientState{}
+					substituteClientState = &ibcoctypes.ClientState{}
 				}, false,
 			},
 			{

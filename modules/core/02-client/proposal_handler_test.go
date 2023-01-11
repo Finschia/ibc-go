@@ -1,14 +1,14 @@
 package client_test
 
 import (
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	distributiontypes "github.com/cosmos/cosmos-sdk/x/distribution/types"
-	govtypes "github.com/cosmos/cosmos-sdk/x/gov/types"
+	sdk "github.com/line/lbm-sdk/types"
+	distributiontypes "github.com/line/lbm-sdk/x/distribution/types"
+	govtypes "github.com/line/lbm-sdk/x/gov/types"
 
-	client "github.com/cosmos/ibc-go/v3/modules/core/02-client"
-	clienttypes "github.com/cosmos/ibc-go/v3/modules/core/02-client/types"
-	ibctmtypes "github.com/cosmos/ibc-go/v3/modules/light-clients/07-tendermint/types"
-	ibctesting "github.com/cosmos/ibc-go/v3/testing"
+	client "github.com/line/ibc-go/modules/core/02-client"
+	clienttypes "github.com/line/ibc-go/modules/core/02-client/types"
+	ibcoctypes "github.com/line/ibc-go/modules/light-clients/99-ostracon/types"
+	ibctesting "github.com/line/ibc-go/testing"
 )
 
 func (suite *ClientTestSuite) TestNewClientUpdateProposalHandler() {
@@ -38,14 +38,14 @@ func (suite *ClientTestSuite) TestNewClientUpdateProposalHandler() {
 				suite.Require().NoError(err)
 				substituteClientState := suite.chainA.GetClientState(substitutePath.EndpointA.ClientID)
 
-				tmClientState, ok := subjectClientState.(*ibctmtypes.ClientState)
+				tmClientState, ok := subjectClientState.(*ibcoctypes.ClientState)
 				suite.Require().True(ok)
 				tmClientState.AllowUpdateAfterMisbehaviour = true
 				tmClientState.FrozenHeight = tmClientState.LatestHeight
 				suite.chainA.App.GetIBCKeeper().ClientKeeper.SetClientState(suite.chainA.GetContext(), subjectPath.EndpointA.ClientID, tmClientState)
 
 				// replicate changes to substitute (they must match)
-				tmClientState, ok = substituteClientState.(*ibctmtypes.ClientState)
+				tmClientState, ok = substituteClientState.(*ibcoctypes.ClientState)
 				suite.Require().True(ok)
 				tmClientState.AllowUpdateAfterMisbehaviour = true
 				suite.chainA.App.GetIBCKeeper().ClientKeeper.SetClientState(suite.chainA.GetContext(), substitutePath.EndpointA.ClientID, tmClientState)

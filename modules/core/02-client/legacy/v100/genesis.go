@@ -4,26 +4,26 @@ import (
 	"bytes"
 	"time"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
+	"github.com/line/lbm-sdk/codec"
+	sdkerrors "github.com/line/lbm-sdk/types/errors"
 
-	"github.com/cosmos/ibc-go/v3/modules/core/02-client/types"
-	host "github.com/cosmos/ibc-go/v3/modules/core/24-host"
-	"github.com/cosmos/ibc-go/v3/modules/core/exported"
-	ibctmtypes "github.com/cosmos/ibc-go/v3/modules/light-clients/07-tendermint/types"
+	"github.com/line/ibc-go/modules/core/02-client/types"
+	host "github.com/line/ibc-go/modules/core/24-host"
+	"github.com/line/ibc-go/modules/core/exported"
+	ibcoctypes "github.com/line/ibc-go/modules/light-clients/99-ostracon/types"
 )
 
 // MigrateGenesis accepts exported v1.0.0 IBC client genesis file and migrates it to:
 //
 // - Update solo machine client state protobuf definition (v1 to v2)
 // - Remove all solo machine consensus states
-// - Remove all expired tendermint consensus states
-// - Adds ProcessedHeight and Iteration keys for unexpired tendermint consensus states
+// - Remove all expired ostracon consensus states
+// - Adds ProcessedHeight and Iteration keys for unexpired ostracon consensus states
 func MigrateGenesis(cdc codec.BinaryCodec, clientGenState *types.GenesisState, genesisBlockTime time.Time, selfHeight exported.Height) (*types.GenesisState, error) {
 	// To prune the consensus states, we will create new clientsConsensus
 	// and clientsMetadata. These slices will be filled up with consensus states
 	// which should not be pruned. No solo machine consensus states should be added
-	// and only unexpired consensus states for tendermint clients will be added.
+	// and only unexpired consensus states for ostracon clients will be added.
 	// The metadata keys for unexpired consensus states will be added to clientsMetadata
 	var (
 		clientsConsensus []types.ClientConsensusStates
@@ -65,9 +65,9 @@ func MigrateGenesis(cdc codec.BinaryCodec, clientGenState *types.GenesisState, g
 					// remove all consensus states for the solo machine
 					// do not add to new clientsConsensus
 
-				case exported.Tendermint:
+				case exported.Ostracon:
 					// only add non expired consensus states to new clientsConsensus
-					tmClientState, ok := client.ClientState.GetCachedValue().(*ibctmtypes.ClientState)
+					tmClientState, ok := client.ClientState.GetCachedValue().(*ibcoctypes.ClientState)
 					if !ok {
 						return nil, types.ErrInvalidClient
 					}
@@ -75,7 +75,7 @@ func MigrateGenesis(cdc codec.BinaryCodec, clientGenState *types.GenesisState, g
 					// collect unexpired consensus states
 					var unexpiredConsensusStates []types.ConsensusStateWithHeight
 					for _, consState := range clientConsensusStates.ConsensusStates {
-						tmConsState := consState.ConsensusState.GetCachedValue().(*ibctmtypes.ConsensusState)
+						tmConsState := consState.ConsensusState.GetCachedValue().(*ibcoctypes.ConsensusState)
 						if !tmClientState.IsExpired(tmConsState.Timestamp, genesisBlockTime) {
 							unexpiredConsensusStates = append(unexpiredConsensusStates, consState)
 						}
@@ -93,7 +93,7 @@ func MigrateGenesis(cdc codec.BinaryCodec, clientGenState *types.GenesisState, g
 					// collect metadata for unexpired consensus states
 					var clientMetadata []types.GenesisMetadata
 
-					// remove all expired tendermint consensus state metadata by adding only
+					// remove all expired ostracon consensus state metadata by adding only
 					// unexpired consensus state metadata
 					for _, consState := range unexpiredConsensusStates {
 						for _, identifiedGenMetadata := range clientGenState.ClientsMetadata {
@@ -109,18 +109,18 @@ func MigrateGenesis(cdc codec.BinaryCodec, clientGenState *types.GenesisState, g
 									// the previous version of IBC only contained the processed time metadata
 									// if we find the processed time metadata for an unexpired height, add the
 									// iteration key and processed height keys.
-									if bytes.Equal(metadata.Key, ibctmtypes.ProcessedTimeKey(height)) {
+									if bytes.Equal(metadata.Key, ibcoctypes.ProcessedTimeKey(height)) {
 										clientMetadata = append(clientMetadata,
 											// set the processed height using the current self height
 											// this is safe, it may cause delays in packet processing if there
 											// is a non zero connection delay time
 											types.GenesisMetadata{
-												Key:   ibctmtypes.ProcessedHeightKey(height),
+												Key:   ibcoctypes.ProcessedHeightKey(height),
 												Value: []byte(selfHeight.String()),
 											},
 											metadata, // processed time
 											types.GenesisMetadata{
-												Key:   ibctmtypes.IterationKey(height),
+												Key:   ibcoctypes.IterationKey(height),
 												Value: host.ConsensusStateKey(height),
 											})
 

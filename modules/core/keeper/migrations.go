@@ -1,9 +1,9 @@
 package keeper
 
 import (
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/line/lbm-sdk/types"
 
-	clientkeeper "github.com/cosmos/ibc-go/v3/modules/core/02-client/keeper"
+	clientkeeper "github.com/line/ibc-go/modules/core/02-client/keeper"
 )
 
 // Migrator is a struct for handling in-place store migrations.
@@ -20,8 +20,8 @@ func NewMigrator(keeper Keeper) Migrator {
 // This migration prunes:
 // - migrates solo machine client state from protobuf definition v1 to v2
 // - prunes solo machine consensus states
-// - prunes expired tendermint consensus states
-// - adds ProcessedHeight and Iteration keys for unexpired tendermint consensus states
+// - prunes expired ostracon consensus states
+// - adds ProcessedHeight and Iteration keys for unexpired ostracon consensus states
 func (m Migrator) Migrate1to2(ctx sdk.Context) error {
 	clientMigrator := clientkeeper.NewMigrator(m.keeper.ClientKeeper)
 	if err := clientMigrator.Migrate1to2(ctx); err != nil {

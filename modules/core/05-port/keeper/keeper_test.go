@@ -3,13 +3,13 @@ package keeper_test
 import (
 	"testing"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/line/lbm-sdk/types"
+	ocproto "github.com/line/ostracon/proto/ostracon/types"
 	"github.com/stretchr/testify/require"
 	"github.com/stretchr/testify/suite"
-	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
 
-	"github.com/cosmos/ibc-go/v3/modules/core/05-port/keeper"
-	"github.com/cosmos/ibc-go/v3/testing/simapp"
+	"github.com/line/ibc-go/modules/core/05-port/keeper"
+	"github.com/line/ibc-go/testing/simapp"
 )
 
 var (
@@ -28,7 +28,7 @@ func (suite *KeeperTestSuite) SetupTest() {
 	isCheckTx := false
 	app := simapp.Setup(isCheckTx)
 
-	suite.ctx = app.BaseApp.NewContext(isCheckTx, tmproto.Header{})
+	suite.ctx = app.BaseApp.NewContext(isCheckTx, ocproto.Header{})
 	suite.keeper = &app.IBCKeeper.PortKeeper
 }
 

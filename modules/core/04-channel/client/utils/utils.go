@@ -4,16 +4,16 @@ import (
 	"context"
 	"encoding/binary"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/codec"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
+	"github.com/line/lbm-sdk/client"
+	"github.com/line/lbm-sdk/codec"
+	sdkerrors "github.com/line/lbm-sdk/types/errors"
 
-	clientutils "github.com/cosmos/ibc-go/v3/modules/core/02-client/client/utils"
-	clienttypes "github.com/cosmos/ibc-go/v3/modules/core/02-client/types"
-	"github.com/cosmos/ibc-go/v3/modules/core/04-channel/types"
-	host "github.com/cosmos/ibc-go/v3/modules/core/24-host"
-	ibcclient "github.com/cosmos/ibc-go/v3/modules/core/client"
-	"github.com/cosmos/ibc-go/v3/modules/core/exported"
+	clientutils "github.com/line/ibc-go/modules/core/02-client/client/utils"
+	clienttypes "github.com/line/ibc-go/modules/core/02-client/types"
+	"github.com/line/ibc-go/modules/core/04-channel/types"
+	host "github.com/line/ibc-go/modules/core/24-host"
+	ibcclient "github.com/line/ibc-go/modules/core/client"
+	"github.com/line/ibc-go/modules/core/exported"
 )
 
 // QueryChannel returns a channel end.
@@ -38,7 +38,7 @@ func QueryChannel(
 func queryChannelABCI(clientCtx client.Context, portID, channelID string) (*types.QueryChannelResponse, error) {
 	key := host.ChannelKey(portID, channelID)
 
-	value, proofBz, proofHeight, err := ibcclient.QueryTendermintProof(clientCtx, key)
+	value, proofBz, proofHeight, err := ibcclient.QueryOstraconProof(clientCtx, key)
 	if err != nil {
 		return nil, err
 	}
@@ -180,7 +180,7 @@ func QueryNextSequenceReceive(
 func queryNextSequenceRecvABCI(clientCtx client.Context, portID, channelID string) (*types.QueryNextSequenceReceiveResponse, error) {
 	key := host.NextSequenceRecvKey(portID, channelID)
 
-	value, proofBz, proofHeight, err := ibcclient.QueryTendermintProof(clientCtx, key)
+	value, proofBz, proofHeight, err := ibcclient.QueryOstraconProof(clientCtx, key)
 	if err != nil {
 		return nil, err
 	}
@@ -221,7 +221,7 @@ func queryPacketCommitmentABCI(
 ) (*types.QueryPacketCommitmentResponse, error) {
 	key := host.PacketCommitmentKey(portID, channelID, sequence)
 
-	value, proofBz, proofHeight, err := ibcclient.QueryTendermintProof(clientCtx, key)
+	value, proofBz, proofHeight, err := ibcclient.QueryOstraconProof(clientCtx, key)
 	if err != nil {
 		return nil, err
 	}
@@ -260,7 +260,7 @@ func queryPacketReceiptABCI(
 ) (*types.QueryPacketReceiptResponse, error) {
 	key := host.PacketReceiptKey(portID, channelID, sequence)
 
-	value, proofBz, proofHeight, err := ibcclient.QueryTendermintProof(clientCtx, key)
+	value, proofBz, proofHeight, err := ibcclient.QueryOstraconProof(clientCtx, key)
 	if err != nil {
 		return nil, err
 	}
@@ -289,7 +289,7 @@ func QueryPacketAcknowledgement(clientCtx client.Context, portID, channelID stri
 func queryPacketAcknowledgementABCI(clientCtx client.Context, portID, channelID string, sequence uint64) (*types.QueryPacketAcknowledgementResponse, error) {
 	key := host.PacketAcknowledgementKey(portID, channelID, sequence)
 
-	value, proofBz, proofHeight, err := ibcclient.QueryTendermintProof(clientCtx, key)
+	value, proofBz, proofHeight, err := ibcclient.QueryOstraconProof(clientCtx, key)
 	if err != nil {
 		return nil, err
 	}

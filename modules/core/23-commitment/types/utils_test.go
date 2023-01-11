@@ -3,11 +3,11 @@ package types_test
 import (
 	"fmt"
 
+	abci "github.com/line/ostracon/abci/types"
+	crypto "github.com/line/ostracon/proto/ostracon/crypto"
 	"github.com/stretchr/testify/require"
-	abci "github.com/tendermint/tendermint/abci/types"
-	crypto "github.com/tendermint/tendermint/proto/tendermint/crypto"
 
-	"github.com/cosmos/ibc-go/v3/modules/core/23-commitment/types"
+	"github.com/line/ibc-go/modules/core/23-commitment/types"
 )
 
 func (suite *MerkleTestSuite) TestConvertProofs() {

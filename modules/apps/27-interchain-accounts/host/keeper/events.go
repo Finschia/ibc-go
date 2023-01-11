@@ -1,10 +1,10 @@
 package keeper
 
 import (
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	
-	"github.com/cosmos/ibc-go/v3/modules/core/exported"
-	icatypes "github.com/cosmos/ibc-go/v3/modules/apps/27-interchain-accounts/types"
+	sdk "github.com/line/lbm-sdk/types"
+
+	icatypes "github.com/line/ibc-go/modules/apps/27-interchain-accounts/types"
+	"github.com/line/ibc-go/modules/core/exported"
 )
 
 // EmitWriteErrorAcknowledgementEvent emits an event signalling an error acknowledgement and including the error details

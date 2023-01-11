@@ -6,8 +6,8 @@ import (
 	"testing"
 	"time"
 
+	abci "github.com/line/ostracon/abci/types"
 	"github.com/stretchr/testify/require"
-	abci "github.com/tendermint/tendermint/abci/types"
 )
 
 var (
@@ -70,7 +70,7 @@ func (coord *Coordinator) UpdateTimeForChain(chain *TestChain) {
 	chain.App.BeginBlock(abci.RequestBeginBlock{Header: chain.CurrentHeader})
 }
 
-// Setup constructs a TM client, connection, and channel on both chains provided. It will
+// Setup constructs a OC client, connection, and channel on both chains provided. It will
 // fail if any error occurs. The clientID's, TestConnections, and TestChannels are returned
 // for both chains. The channels created are connected to the ibc-transfer application.
 func (coord *Coordinator) Setup(path *Path) {
@@ -181,7 +181,7 @@ func GetChainID(index int) string {
 // CONTRACT: the passed in list of indexes must not contain duplicates
 func (coord *Coordinator) CommitBlock(chains ...*TestChain) {
 	for _, chain := range chains {
-		chain.App.Commit()
+		chain.CommitBlock()
 		chain.NextBlock()
 	}
 	coord.IncrementTime()
@@ -191,7 +191,7 @@ func (coord *Coordinator) CommitBlock(chains ...*TestChain) {
 func (coord *Coordinator) CommitNBlocks(chain *TestChain, n uint64) {
 	for i := uint64(0); i < n; i++ {
 		chain.App.BeginBlock(abci.RequestBeginBlock{Header: chain.CurrentHeader})
-		chain.App.Commit()
+		chain.CommitBlock()
 		chain.NextBlock()
 		coord.IncrementTime()
 	}

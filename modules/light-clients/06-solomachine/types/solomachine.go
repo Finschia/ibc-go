@@ -1,10 +1,10 @@
 package types
 
 import (
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
+	codectypes "github.com/line/lbm-sdk/codec/types"
+	cryptotypes "github.com/line/lbm-sdk/crypto/types"
 
-	"github.com/cosmos/ibc-go/v3/modules/core/exported"
+	"github.com/line/ibc-go/modules/core/exported"
 )
 
 // Interface implementation checks.

@@ -3,19 +3,19 @@ package ibctesting
 import (
 	"time"
 
-	connectiontypes "github.com/cosmos/ibc-go/v3/modules/core/03-connection/types"
-	channeltypes "github.com/cosmos/ibc-go/v3/modules/core/04-channel/types"
-	"github.com/cosmos/ibc-go/v3/modules/core/exported"
-	ibctmtypes "github.com/cosmos/ibc-go/v3/modules/light-clients/07-tendermint/types"
-	"github.com/cosmos/ibc-go/v3/testing/mock"
+	connectiontypes "github.com/line/ibc-go/modules/core/03-connection/types"
+	channeltypes "github.com/line/ibc-go/modules/core/04-channel/types"
+	"github.com/line/ibc-go/modules/core/exported"
+	ibcoctypes "github.com/line/ibc-go/modules/light-clients/99-ostracon/types"
+	"github.com/line/ibc-go/testing/mock"
 )
 
 type ClientConfig interface {
 	GetClientType() string
 }
 
-type TendermintConfig struct {
-	TrustLevel                   ibctmtypes.Fraction
+type OstraconConfig struct {
+	TrustLevel                   ibcoctypes.Fraction
 	TrustingPeriod               time.Duration
 	UnbondingPeriod              time.Duration
 	MaxClockDrift                time.Duration
@@ -23,8 +23,8 @@ type TendermintConfig struct {
 	AllowUpdateAfterMisbehaviour bool
 }
 
-func NewTendermintConfig() *TendermintConfig {
-	return &TendermintConfig{
+func NewOstraconConfig() *OstraconConfig {
+	return &OstraconConfig{
 		TrustLevel:                   DefaultTrustLevel,
 		TrustingPeriod:               TrustingPeriod,
 		UnbondingPeriod:              UnbondingPeriod,
@@ -34,8 +34,8 @@ func NewTendermintConfig() *TendermintConfig {
 	}
 }
 
-func (tmcfg *TendermintConfig) GetClientType() string {
-	return exported.Tendermint
+func (tmcfg *OstraconConfig) GetClientType() string {
+	return exported.Ostracon
 }
 
 type ConnectionConfig struct {

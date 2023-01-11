@@ -6,11 +6,11 @@ import (
 	"net/url"
 
 	ics23 "github.com/confio/ics23/go"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
 	"github.com/gogo/protobuf/proto"
-	tmcrypto "github.com/tendermint/tendermint/proto/tendermint/crypto"
+	sdkerrors "github.com/line/lbm-sdk/types/errors"
+	occrypto "github.com/line/ostracon/proto/ostracon/crypto"
 
-	"github.com/cosmos/ibc-go/v3/modules/core/exported"
+	"github.com/line/ibc-go/modules/core/exported"
 )
 
 // var representing the proofspecs for a SDK chain
@@ -76,7 +76,7 @@ func NewMerklePath(keyPath ...string) MerklePath {
 }
 
 // String implements fmt.Stringer.
-// This represents the path in the same way the tendermint KeyPath will
+// This represents the path in the same way the ostracon KeyPath will
 // represent a key path. The backslashes partition the key path into
 // the respective stores they belong to.
 func (mp MerklePath) String() string {
@@ -272,7 +272,7 @@ func verifyChainedMembershipProof(root []byte, specs []*ics23.ProofSpec, proofs 
 // blankMerkleProof and blankProofOps will be used to compare against their zero values,
 // and are declared as globals to avoid having to unnecessarily re-allocate on every comparison.
 var blankMerkleProof = &MerkleProof{}
-var blankProofOps = &tmcrypto.ProofOps{}
+var blankProofOps = &occrypto.ProofOps{}
 
 // Empty returns true if the root is empty
 func (proof *MerkleProof) Empty() bool {

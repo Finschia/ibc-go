@@ -4,12 +4,12 @@ import (
 	"encoding/hex"
 
 	"github.com/armon/go-metrics"
-	"github.com/cosmos/cosmos-sdk/telemetry"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
+	"github.com/line/lbm-sdk/telemetry"
+	sdk "github.com/line/lbm-sdk/types"
+	sdkerrors "github.com/line/lbm-sdk/types/errors"
 
-	"github.com/cosmos/ibc-go/v3/modules/core/02-client/types"
-	"github.com/cosmos/ibc-go/v3/modules/core/exported"
+	"github.com/line/ibc-go/modules/core/02-client/types"
+	"github.com/line/ibc-go/modules/core/exported"
 )
 
 // CreateClient creates a new client state and populates it with a given consensus
@@ -31,7 +31,7 @@ func (k Keeper) CreateClient(
 	k.Logger(ctx).Info("client created at height", "client-id", clientID, "height", clientState.GetLatestHeight().String())
 
 	// verifies initial consensus state against client state and initializes client store with any client-specific metadata
-	// e.g. set ProcessedTime in Tendermint clients
+	// e.g. set ProcessedTime in Ostracon clients
 	if err := clientState.Initialize(ctx, k.cdc, k.ClientStore(ctx, clientID), consensusState); err != nil {
 		return "", err
 	}

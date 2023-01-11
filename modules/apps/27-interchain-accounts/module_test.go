@@ -3,17 +3,17 @@ package ica_test
 import (
 	"testing"
 
+	"github.com/line/ostracon/libs/log"
+	ocproto "github.com/line/ostracon/proto/ostracon/types"
 	"github.com/stretchr/testify/suite"
-	"github.com/tendermint/tendermint/libs/log"
-	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
 	dbm "github.com/tendermint/tm-db"
 
-	ica "github.com/cosmos/ibc-go/v3/modules/apps/27-interchain-accounts"
-	controllertypes "github.com/cosmos/ibc-go/v3/modules/apps/27-interchain-accounts/controller/types"
-	hosttypes "github.com/cosmos/ibc-go/v3/modules/apps/27-interchain-accounts/host/types"
-	"github.com/cosmos/ibc-go/v3/modules/apps/27-interchain-accounts/types"
-	ibctesting "github.com/cosmos/ibc-go/v3/testing"
-	"github.com/cosmos/ibc-go/v3/testing/simapp"
+	ica "github.com/line/ibc-go/modules/apps/27-interchain-accounts"
+	controllertypes "github.com/line/ibc-go/modules/apps/27-interchain-accounts/controller/types"
+	hosttypes "github.com/line/ibc-go/modules/apps/27-interchain-accounts/host/types"
+	"github.com/line/ibc-go/modules/apps/27-interchain-accounts/types"
+	ibctesting "github.com/line/ibc-go/testing"
+	"github.com/line/ibc-go/testing/simapp"
 )
 
 type InterchainAccountsTestSuite struct {
@@ -36,7 +36,7 @@ func (suite *InterchainAccountsTestSuite) TestInitModule() {
 	appModule, ok := app.GetModuleManager().Modules[types.ModuleName].(ica.AppModule)
 	suite.Require().True(ok)
 
-	header := tmproto.Header{
+	header := ocproto.Header{
 		ChainID: "testchain",
 		Height:  1,
 		Time:    suite.coordinator.CurrentTime.UTC(),
@@ -99,7 +99,7 @@ func (suite *InterchainAccountsTestSuite) TestInitModule() {
 
 			// reset app state
 			app = simapp.NewSimApp(log.NewNopLogger(), dbm.NewMemDB(), nil, true, map[int64]bool{}, simapp.DefaultNodeHome, 5, simapp.MakeTestEncodingConfig(), simapp.EmptyAppOptions{})
-			header := tmproto.Header{
+			header := ocproto.Header{
 				ChainID: "testchain",
 				Height:  1,
 				Time:    suite.coordinator.CurrentTime.UTC(),

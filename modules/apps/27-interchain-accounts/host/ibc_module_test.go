@@ -4,23 +4,23 @@ import (
 	"fmt"
 	"testing"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	banktypes "github.com/cosmos/cosmos-sdk/x/bank/types"
-	capabilitytypes "github.com/cosmos/cosmos-sdk/x/capability/types"
 	"github.com/gogo/protobuf/proto"
+	sdk "github.com/line/lbm-sdk/types"
+	banktypes "github.com/line/lbm-sdk/x/bank/types"
+	capabilitytypes "github.com/line/lbm-sdk/x/capability/types"
+	abcitypes "github.com/line/ostracon/abci/types"
+	"github.com/line/ostracon/crypto"
+	ocprotostate "github.com/line/ostracon/proto/ostracon/state"
+	ocstate "github.com/line/ostracon/state"
 	"github.com/stretchr/testify/suite"
-	abcitypes "github.com/tendermint/tendermint/abci/types"
-	"github.com/tendermint/tendermint/crypto"
-	tmprotostate "github.com/tendermint/tendermint/proto/tendermint/state"
-	tmstate "github.com/tendermint/tendermint/state"
 
-	"github.com/cosmos/ibc-go/v3/modules/apps/27-interchain-accounts/host/types"
-	icatypes "github.com/cosmos/ibc-go/v3/modules/apps/27-interchain-accounts/types"
-	clienttypes "github.com/cosmos/ibc-go/v3/modules/core/02-client/types"
-	channeltypes "github.com/cosmos/ibc-go/v3/modules/core/04-channel/types"
-	host "github.com/cosmos/ibc-go/v3/modules/core/24-host"
-	"github.com/cosmos/ibc-go/v3/modules/core/exported"
-	ibctesting "github.com/cosmos/ibc-go/v3/testing"
+	"github.com/line/ibc-go/modules/apps/27-interchain-accounts/host/types"
+	icatypes "github.com/line/ibc-go/modules/apps/27-interchain-accounts/types"
+	clienttypes "github.com/line/ibc-go/modules/core/02-client/types"
+	channeltypes "github.com/line/ibc-go/modules/core/04-channel/types"
+	host "github.com/line/ibc-go/modules/core/24-host"
+	"github.com/line/ibc-go/modules/core/exported"
+	ibctesting "github.com/line/ibc-go/testing"
 )
 
 var (
@@ -31,7 +31,7 @@ var (
 	TestAccAddress = icatypes.GenerateAddress(sdk.AccAddress(crypto.AddressHash([]byte(icatypes.ModuleName))), ibctesting.FirstConnectionID, TestPortID)
 
 	// TestOwnerAddress defines a reusable bech32 address for testing purposes
-	TestOwnerAddress = "cosmos17dtl0mjt3t77kpuhg2edqzjpszulwhgzuj9ljs"
+	TestOwnerAddress = "link17dtl0mjt3t77kpuhg2edqzjpszulwhgzfu9afc"
 
 	// TestPortID defines a resuable port identifier for testing purposes
 	TestPortID, _ = icatypes.NewControllerPortID(TestOwnerAddress)
@@ -738,7 +738,7 @@ func (suite *InterchainAccountsTestSuite) TestABCICodeDeterminism() {
 	deliverTx := abcitypes.ResponseDeliverTx{
 		Data: txResponse,
 	}
-	responses := tmprotostate.ABCIResponses{
+	responses := ocprotostate.ABCIResponses{
 		DeliverTxs: []*abcitypes.ResponseDeliverTx{
 			&deliverTx,
 		},
@@ -761,14 +761,14 @@ func (suite *InterchainAccountsTestSuite) TestABCICodeDeterminism() {
 		Data: differentTxResponse,
 	}
 
-	differentResponses := tmprotostate.ABCIResponses{
+	differentResponses := ocprotostate.ABCIResponses{
 		DeliverTxs: []*abcitypes.ResponseDeliverTx{
 			&differentDeliverTx,
 		},
 	}
 
-	hash := tmstate.ABCIResponsesResultsHash(&responses)
-	differentHash := tmstate.ABCIResponsesResultsHash(&differentResponses)
+	hash := ocstate.ABCIResponsesResultsHash(&responses)
+	differentHash := ocstate.ABCIResponsesResultsHash(&differentResponses)
 
 	suite.Require().NotEqual(hash, differentHash)
 }

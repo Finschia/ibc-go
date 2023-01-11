@@ -1,10 +1,10 @@
 package types_test
 
 import (
-	"github.com/cosmos/ibc-go/v3/modules/core/exported"
-	"github.com/cosmos/ibc-go/v3/modules/light-clients/06-solomachine/types"
-	ibctmtypes "github.com/cosmos/ibc-go/v3/modules/light-clients/07-tendermint/types"
-	ibctesting "github.com/cosmos/ibc-go/v3/testing"
+	"github.com/line/ibc-go/modules/core/exported"
+	"github.com/line/ibc-go/modules/light-clients/06-solomachine/types"
+	ibcoctypes "github.com/line/ibc-go/modules/light-clients/99-ostracon/types"
+	ibctesting "github.com/line/ibc-go/testing"
 )
 
 func (suite *SoloMachineTestSuite) TestCheckMisbehaviourAndUpdateState() {
@@ -40,7 +40,7 @@ func (suite *SoloMachineTestSuite) TestCheckMisbehaviourAndUpdateState() {
 			{
 				"wrong client state type",
 				func() {
-					clientState = &ibctmtypes.ClientState{}
+					clientState = &ibcoctypes.ClientState{}
 					misbehaviour = solomachine.CreateMisbehaviour()
 				},
 				false,
@@ -49,7 +49,7 @@ func (suite *SoloMachineTestSuite) TestCheckMisbehaviourAndUpdateState() {
 				"invalid misbehaviour type",
 				func() {
 					clientState = solomachine.ClientState()
-					misbehaviour = &ibctmtypes.Misbehaviour{}
+					misbehaviour = &ibcoctypes.Misbehaviour{}
 				},
 				false,
 			},

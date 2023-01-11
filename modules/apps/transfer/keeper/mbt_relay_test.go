@@ -7,18 +7,18 @@ package keeper_test
 import (
 	"encoding/json"
 	"fmt"
-	"io/ioutil"
+	"os"
 	"strconv"
 	"strings"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
-	"github.com/tendermint/tendermint/crypto"
+	sdk "github.com/line/lbm-sdk/types"
+	sdkerrors "github.com/line/lbm-sdk/types/errors"
+	"github.com/line/ostracon/crypto"
 
-	"github.com/cosmos/ibc-go/v3/modules/apps/transfer/types"
-	clienttypes "github.com/cosmos/ibc-go/v3/modules/core/02-client/types"
-	channeltypes "github.com/cosmos/ibc-go/v3/modules/core/04-channel/types"
-	ibctesting "github.com/cosmos/ibc-go/v3/testing"
+	"github.com/line/ibc-go/modules/apps/transfer/types"
+	clienttypes "github.com/line/ibc-go/modules/core/02-client/types"
+	channeltypes "github.com/line/ibc-go/modules/core/04-channel/types"
+	ibctesting "github.com/line/ibc-go/testing"
 )
 
 type TlaBalance struct {
@@ -275,7 +275,7 @@ func (suite *KeeperTestSuite) CheckBankBalances(chain *ibctesting.TestChain, ban
 
 func (suite *KeeperTestSuite) TestModelBasedRelay() {
 	dirname := "model_based_tests/"
-	files, err := ioutil.ReadDir(dirname)
+	files, err := os.ReadDir(dirname)
 	if err != nil {
 		panic(fmt.Errorf("Failed to read model-based test files: %w", err))
 	}
@@ -284,7 +284,7 @@ func (suite *KeeperTestSuite) TestModelBasedRelay() {
 		if !strings.HasSuffix(file_info.Name(), ".json") {
 			continue
 		}
-		jsonBlob, err := ioutil.ReadFile(dirname + file_info.Name())
+		jsonBlob, err := os.ReadFile(dirname + file_info.Name())
 		if err != nil {
 			panic(fmt.Errorf("Failed to read JSON test fixture: %w", err))
 		}

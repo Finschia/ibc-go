@@ -1,14 +1,14 @@
 package types_test
 
 import (
-	clienttypes "github.com/cosmos/ibc-go/v3/modules/core/02-client/types"
-	connectiontypes "github.com/cosmos/ibc-go/v3/modules/core/03-connection/types"
-	channeltypes "github.com/cosmos/ibc-go/v3/modules/core/04-channel/types"
-	commitmenttypes "github.com/cosmos/ibc-go/v3/modules/core/23-commitment/types"
-	"github.com/cosmos/ibc-go/v3/modules/core/exported"
-	"github.com/cosmos/ibc-go/v3/modules/light-clients/06-solomachine/types"
-	ibctmtypes "github.com/cosmos/ibc-go/v3/modules/light-clients/07-tendermint/types"
-	ibctesting "github.com/cosmos/ibc-go/v3/testing"
+	clienttypes "github.com/line/ibc-go/modules/core/02-client/types"
+	connectiontypes "github.com/line/ibc-go/modules/core/03-connection/types"
+	channeltypes "github.com/line/ibc-go/modules/core/04-channel/types"
+	commitmenttypes "github.com/line/ibc-go/modules/core/23-commitment/types"
+	"github.com/line/ibc-go/modules/core/exported"
+	"github.com/line/ibc-go/modules/light-clients/06-solomachine/types"
+	ibcoctypes "github.com/line/ibc-go/modules/light-clients/99-ostracon/types"
+	ibctesting "github.com/line/ibc-go/testing"
 )
 
 const (
@@ -117,8 +117,8 @@ func (suite *SoloMachineTestSuite) TestInitialize() {
 				false,
 			},
 			{
-				"invalid consensus state: Tendermint consensus state",
-				&ibctmtypes.ConsensusState{},
+				"invalid consensus state: Ostracon consensus state",
+				&ibcoctypes.ConsensusState{},
 				false,
 			},
 			{
@@ -145,7 +145,7 @@ func (suite *SoloMachineTestSuite) TestInitialize() {
 }
 
 func (suite *SoloMachineTestSuite) TestVerifyClientState() {
-	// create client for tendermint so we can use client state for verification
+	// create client for ostracon so we can use client state for verification
 	tmPath := ibctesting.NewPath(suite.chainA, suite.chainB)
 	suite.coordinator.SetupClients(tmPath)
 	clientState := suite.chainA.GetClientState(tmPath.EndpointA.ClientID)
@@ -264,7 +264,7 @@ func (suite *SoloMachineTestSuite) TestVerifyClientState() {
 }
 
 func (suite *SoloMachineTestSuite) TestVerifyClientConsensusState() {
-	// create client for tendermint so we can use consensus state for verification
+	// create client for ostracon so we can use consensus state for verification
 	tmPath := ibctesting.NewPath(suite.chainA, suite.chainB)
 	suite.coordinator.SetupClients(tmPath)
 	clientState := suite.chainA.GetClientState(tmPath.EndpointA.ClientID)

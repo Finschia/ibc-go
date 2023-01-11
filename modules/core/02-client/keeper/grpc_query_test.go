@@ -4,17 +4,17 @@ import (
 	"fmt"
 	"time"
 
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	grpctypes "github.com/cosmos/cosmos-sdk/types/grpc"
-	"github.com/cosmos/cosmos-sdk/types/query"
+	codectypes "github.com/line/lbm-sdk/codec/types"
+	sdk "github.com/line/lbm-sdk/types"
+	grpctypes "github.com/line/lbm-sdk/types/grpc"
+	"github.com/line/lbm-sdk/types/query"
 	"google.golang.org/grpc/metadata"
 
-	"github.com/cosmos/ibc-go/v3/modules/core/02-client/types"
-	commitmenttypes "github.com/cosmos/ibc-go/v3/modules/core/23-commitment/types"
-	"github.com/cosmos/ibc-go/v3/modules/core/exported"
-	ibctmtypes "github.com/cosmos/ibc-go/v3/modules/light-clients/07-tendermint/types"
-	ibctesting "github.com/cosmos/ibc-go/v3/testing"
+	"github.com/line/ibc-go/modules/core/02-client/types"
+	commitmenttypes "github.com/line/ibc-go/modules/core/23-commitment/types"
+	"github.com/line/ibc-go/modules/core/exported"
+	ibcoctypes "github.com/line/ibc-go/modules/light-clients/99-ostracon/types"
+	ibctesting "github.com/line/ibc-go/testing"
 )
 
 func (suite *KeeperTestSuite) TestQueryClientState() {
@@ -334,15 +334,15 @@ func (suite *KeeperTestSuite) TestQueryConsensusStates() {
 		{
 			"success",
 			func() {
-				cs := ibctmtypes.NewConsensusState(
+				cs := ibcoctypes.NewConsensusState(
 					suite.consensusState.Timestamp, commitmenttypes.NewMerkleRoot([]byte("hash1")), nil,
 				)
-				cs2 := ibctmtypes.NewConsensusState(
+				cs2 := ibcoctypes.NewConsensusState(
 					suite.consensusState.Timestamp.Add(time.Second), commitmenttypes.NewMerkleRoot([]byte("hash2")), nil,
 				)
 
-				clientState := ibctmtypes.NewClientState(
-					testChainID, ibctmtypes.DefaultTrustLevel, trustingPeriod, ubdPeriod, maxClockDrift, testClientHeight, commitmenttypes.GetSDKSpecs(), ibctesting.UpgradePath, false, false,
+				clientState := ibcoctypes.NewClientState(
+					testChainID, ibcoctypes.DefaultTrustLevel, trustingPeriod, ubdPeriod, maxClockDrift, testClientHeight, commitmenttypes.GetSDKSpecs(), ibctesting.UpgradePath, false, false,
 				)
 
 				// Use CreateClient to ensure that processedTime metadata gets stored.
@@ -442,7 +442,7 @@ func (suite *KeeperTestSuite) TestQueryClientStatus() {
 			func() {
 				path := ibctesting.NewPath(suite.chainA, suite.chainB)
 				suite.coordinator.SetupClients(path)
-				clientState := path.EndpointA.GetClientState().(*ibctmtypes.ClientState)
+				clientState := path.EndpointA.GetClientState().(*ibcoctypes.ClientState)
 
 				// increment latest height so no consensus state is stored
 				clientState.LatestHeight = clientState.LatestHeight.Increment().(types.Height)
@@ -459,7 +459,7 @@ func (suite *KeeperTestSuite) TestQueryClientStatus() {
 			func() {
 				path := ibctesting.NewPath(suite.chainA, suite.chainB)
 				suite.coordinator.SetupClients(path)
-				clientState := path.EndpointA.GetClientState().(*ibctmtypes.ClientState)
+				clientState := path.EndpointA.GetClientState().(*ibcoctypes.ClientState)
 
 				clientState.FrozenHeight = types.NewHeight(0, 1)
 				path.EndpointA.SetClientState(clientState)

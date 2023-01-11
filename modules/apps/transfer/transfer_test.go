@@ -3,12 +3,12 @@ package transfer_test
 import (
 	"testing"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/line/lbm-sdk/types"
 	"github.com/stretchr/testify/suite"
 
-	"github.com/cosmos/ibc-go/v3/modules/apps/transfer/types"
-	clienttypes "github.com/cosmos/ibc-go/v3/modules/core/02-client/types"
-	ibctesting "github.com/cosmos/ibc-go/v3/testing"
+	"github.com/line/ibc-go/modules/apps/transfer/types"
+	clienttypes "github.com/line/ibc-go/modules/core/02-client/types"
+	ibctesting "github.com/line/ibc-go/testing"
 )
 
 type TransferTestSuite struct {

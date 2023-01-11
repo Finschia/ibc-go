@@ -6,16 +6,16 @@ import (
 	"strings"
 	"time"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/client/flags"
-	"github.com/cosmos/cosmos-sdk/client/tx"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/version"
+	"github.com/line/lbm-sdk/client"
+	"github.com/line/lbm-sdk/client/flags"
+	"github.com/line/lbm-sdk/client/tx"
+	sdk "github.com/line/lbm-sdk/types"
+	"github.com/line/lbm-sdk/version"
 	"github.com/spf13/cobra"
 
-	"github.com/cosmos/ibc-go/v3/modules/apps/transfer/types"
-	clienttypes "github.com/cosmos/ibc-go/v3/modules/core/02-client/types"
-	channelutils "github.com/cosmos/ibc-go/v3/modules/core/04-channel/client/utils"
+	"github.com/line/ibc-go/modules/apps/transfer/types"
+	clienttypes "github.com/line/ibc-go/modules/core/02-client/types"
+	channelutils "github.com/line/ibc-go/modules/core/04-channel/client/utils"
 )
 
 const (

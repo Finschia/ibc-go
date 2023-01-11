@@ -3,14 +3,14 @@ package types_test
 import (
 	"testing"
 
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
+	sdkerrors "github.com/line/lbm-sdk/types/errors"
+	abcitypes "github.com/line/ostracon/abci/types"
+	ocprotostate "github.com/line/ostracon/proto/ostracon/state"
+	ocstate "github.com/line/ostracon/state"
 	"github.com/stretchr/testify/suite"
-	abcitypes "github.com/tendermint/tendermint/abci/types"
-	tmprotostate "github.com/tendermint/tendermint/proto/tendermint/state"
-	tmstate "github.com/tendermint/tendermint/state"
 
-	"github.com/cosmos/ibc-go/v3/modules/apps/transfer/types"
-	ibctesting "github.com/cosmos/ibc-go/v3/testing"
+	"github.com/line/ibc-go/modules/apps/transfer/types"
+	ibctesting "github.com/line/ibc-go/testing"
 )
 
 const (
@@ -53,29 +53,29 @@ func (suite *TypesTestSuite) TestABCICodeDeterminism() {
 	errDifferentABCICode := sdkerrors.ErrNotFound
 
 	deliverTx := sdkerrors.ResponseDeliverTx(err, gasUsed, gasWanted, false)
-	responses := tmprotostate.ABCIResponses{
+	responses := ocprotostate.ABCIResponses{
 		DeliverTxs: []*abcitypes.ResponseDeliverTx{
 			&deliverTx,
 		},
 	}
 
 	deliverTxSameABCICode := sdkerrors.ResponseDeliverTx(errSameABCICode, gasUsed, gasWanted, false)
-	responsesSameABCICode := tmprotostate.ABCIResponses{
+	responsesSameABCICode := ocprotostate.ABCIResponses{
 		DeliverTxs: []*abcitypes.ResponseDeliverTx{
 			&deliverTxSameABCICode,
 		},
 	}
 
 	deliverTxDifferentABCICode := sdkerrors.ResponseDeliverTx(errDifferentABCICode, gasUsed, gasWanted, false)
-	responsesDifferentABCICode := tmprotostate.ABCIResponses{
+	responsesDifferentABCICode := ocprotostate.ABCIResponses{
 		DeliverTxs: []*abcitypes.ResponseDeliverTx{
 			&deliverTxDifferentABCICode,
 		},
 	}
 
-	hash := tmstate.ABCIResponsesResultsHash(&responses)
-	hashSameABCICode := tmstate.ABCIResponsesResultsHash(&responsesSameABCICode)
-	hashDifferentABCICode := tmstate.ABCIResponsesResultsHash(&responsesDifferentABCICode)
+	hash := ocstate.ABCIResponsesResultsHash(&responses)
+	hashSameABCICode := ocstate.ABCIResponsesResultsHash(&responsesSameABCICode)
+	hashDifferentABCICode := ocstate.ABCIResponsesResultsHash(&responsesDifferentABCICode)
 
 	suite.Require().Equal(hash, hashSameABCICode)
 	suite.Require().NotEqual(hash, hashDifferentABCICode)

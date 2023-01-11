@@ -1,14 +1,14 @@
 package types_test
 
 import (
-	"github.com/cosmos/ibc-go/v3/modules/core/02-client/types"
-	ibctmtypes "github.com/cosmos/ibc-go/v3/modules/light-clients/07-tendermint/types"
+	"github.com/line/ibc-go/modules/core/02-client/types"
+	ibcoctypes "github.com/line/ibc-go/modules/light-clients/99-ostracon/types"
 )
 
 func (suite *TypesTestSuite) TestMarshalHeader() {
 
 	cdc := suite.chainA.App.AppCodec()
-	h := &ibctmtypes.Header{
+	h := &ibcoctypes.Header{
 		TrustedHeight: types.NewHeight(4, 100),
 	}
 

@@ -3,9 +3,9 @@ package types
 import (
 	"fmt"
 
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
+	sdkerrors "github.com/line/lbm-sdk/types/errors"
 
-	channeltypes "github.com/cosmos/ibc-go/v3/modules/core/04-channel/types"
+	channeltypes "github.com/line/ibc-go/modules/core/04-channel/types"
 )
 
 const (
@@ -18,7 +18,7 @@ const (
 // the packet acknowledgement.
 func NewErrorAcknowledgement(err error) channeltypes.Acknowledgement {
 	// the ABCI code is included in the abcitypes.ResponseDeliverTx hash
-	// constructed in Tendermint and is therefore determinstic
+	// constructed in Ostracon and is therefore determinstic
 	_, code, _ := sdkerrors.ABCIInfo(err, false) // discard non-deterministic codespace and log values
 
 	errorString := fmt.Sprintf("ABCI code: %d: %s", code, ackErrorString)

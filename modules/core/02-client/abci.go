@@ -1,11 +1,11 @@
 package client
 
 import (
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/line/lbm-sdk/types"
 
-	"github.com/cosmos/ibc-go/v3/modules/core/02-client/keeper"
-	"github.com/cosmos/ibc-go/v3/modules/core/exported"
-	ibctmtypes "github.com/cosmos/ibc-go/v3/modules/light-clients/07-tendermint/types"
+	"github.com/line/ibc-go/modules/core/02-client/keeper"
+	"github.com/line/ibc-go/modules/core/exported"
+	ibcoctypes "github.com/line/ibc-go/modules/light-clients/99-ostracon/types"
 )
 
 // BeginBlocker updates an existing localhost client with the latest block height.
@@ -20,7 +20,7 @@ func BeginBlocker(ctx sdk.Context, k keeper.Keeper) {
 		// within the trusting period of the last block time on this chain.
 		_, exists := k.GetUpgradedClient(ctx, plan.Height)
 		if exists && ctx.BlockHeight() == plan.Height-1 {
-			upgradedConsState := &ibctmtypes.ConsensusState{
+			upgradedConsState := &ibcoctypes.ConsensusState{
 				Timestamp:          ctx.BlockTime(),
 				NextValidatorsHash: ctx.BlockHeader().NextValidatorsHash,
 			}

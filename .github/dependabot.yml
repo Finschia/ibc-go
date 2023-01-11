@@ -1,18 +1,20 @@
 version: 2
 updates:
-  - package-ecosystem: github-actions
-    directory: "/"
-    schedule:
-      interval: daily
-    open-pull-requests-limit: 10
-  - package-ecosystem: gomod
-    directory: "/"
-    schedule:
-      interval: daily
-    open-pull-requests-limit: 10
-    reviewers:
-      - colin-axner
-      - fedekunze
-      - AdityaSripal
-    labels:
-      - dependencies
+- package-ecosystem: github-actions
+  directory: "/"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 10
+- package-ecosystem: gomod
+  directory: "/"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 10
+  labels:
+  - automerge
+  - dependencies
+- package-ecosystem: npm
+  directory: "/docs"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 10

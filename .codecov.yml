@@ -3,6 +3,15 @@
 # all repositories on Codecov. You may adjust the settings
 # below in your own codecov.yml in your repository.
 #
+codecov:
+  require_ci_to_pass: yes
+  bot: Codecov bot for LINK
+
+comment:
+  layout: "reach, diff, files"
+  behavior: default  # update if exists else create new
+  require_changes: false
+  
 coverage:
   precision: 2
   round: down

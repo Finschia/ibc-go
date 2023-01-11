@@ -4,37 +4,33 @@ run:
 #   timeout: 5m
 
 linters:
-  disable-all: true
+  disable-all: false
   enable:
-    - bodyclose
-    - deadcode
-    - depguard
-    - dogsled
-    # - errcheck
-    - goconst
-    - gocritic
     - gofmt
+    - goconst
     - goimports
     - golint
     - gosec
     - gosimple
     - govet
     - ineffassign
-    - interfacer
-    - maligned
     - misspell
     - nakedret
     - prealloc
     - scopelint
     - staticcheck
-    - structcheck
     - stylecheck
     - typecheck
     - unconvert
     - unused
     - unparam
     - misspell
-    # - wsl
+  disable:
+    - gocritic
+    - maligned
+    - errcheck
+    - interfacer
+    - wsl
     - nolintlint
 
 issues:
@@ -67,6 +63,5 @@ linters-settings:
     suggest-new: true
   nolintlint:
     allow-unused: false
-    allow-leading-space: true
     require-explanation: false
     require-specific: false

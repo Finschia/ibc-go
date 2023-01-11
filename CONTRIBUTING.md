@@ -22,8 +22,8 @@ Contributing to this repo can mean many things such as participating in
 discussion or proposing code changes. To ensure a smooth workflow for all
 contributors, the general procedure for contributing has been established:
 
-1. Either [open](https://github.com/cosmos/ibc-go/issues/new/choose) or
-   [find](https://github.com/cosmos/ibc-go/issues) an issue you'd like to help with
+1. Either [open](https://github.com/line/ibc-go/issues/new/choose) or
+   [find](https://github.com/line/ibc-go/issues) an issue you'd like to help with
 2. Participate in thoughtful discussion on that issue
 3. If you would like to contribute:
    1. If the issue is a proposal, ensure that the proposal has been accepted
@@ -52,7 +52,7 @@ taken place in a github issue, that PR runs a high likelihood of being rejected.
 Other notes:
 
 - Looking for a good place to start contributing? How about checking out some
-  [good first issues](https://github.com/cosmos/ibc-go/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22)
+  [good first issues](https://github.com/line/ibc-go/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22)
 - Please make sure to run `make format` before every commit - the easiest way
   to do this is have your editor run it for you upon saving a file. Additionally
   please ensure that your code is lint compliant by running `golangci-lint run`.
@@ -92,20 +92,20 @@ If you open a PR on ibc-go, it is mandatory to update the relevant documentation
 ## Forking
 
 Please note that Go requires code to live under absolute paths, which complicates forking.
-While my fork lives at `https://github.com/colin-axner/ibc-go`,
-the code should never exist at `$GOPATH/src/github.com/colin-axner/ibc-go`.
+While my fork lives at `https://github.com/someone/ibc-go`,
+the code should never exist at `$GOPATH/src/github.com/someone/ibc-go`.
 Instead, we use `git remote` to add the fork as a new remote for the original repo,
-`$GOPATH/src/github.com/cosmos/ibc-go`, and do all the work there.
+`$GOPATH/src/github.com/line/ibc-go`, and do all the work there.
 
 For instance, to create a fork and work on a branch of it, I would:
 
 - Create the fork on github, using the fork button.
-- Go to the original repo checked out locally (i.e. `$GOPATH/src/github.com/cosmos/ibc-go`)
-- `git remote add fork git@github.com:colin-axner/ibc-go.git`
+- Go to the original repo checked out locally (i.e. `$GOPATH/src/github.com/line/ibc-go`)
+- `git remote add fork git@github.com:someone/ibc-go.git`
 
 Now `fork` refers to my fork and `origin` refers to the ibc-go version.
 So I can `git push -u fork main` to update my fork, and make pull requests to ibc-go from there.
-Of course, replace `colin-axner` with your git handle.
+Of course, replace `someone` with your git handle.
 
 To pull in updates from the origin repo, run
 
@@ -116,7 +116,7 @@ Please don't make Pull Requests from `main`.
 
 ## Dependencies
 
-We use [Go 1.14 Modules](https://github.com/golang/go/wiki/Modules) to manage
+We use [Go 1.18 Modules](https://github.com/golang/go/wiki/Modules) to manage
 dependency versions.
 
 The main branch of every Cosmos repository should just build with `go get`,
@@ -182,7 +182,7 @@ All development should be targeted against `main`. Bug fixes which are required 
 - the latest state of development is on `main`
 - `main` must never fail `make test`
 - no `--force` onto `main` (except when reverting a broken commit, which should seldom happen)
-- create a development branch either on github.com/cosmos/ibc-go, or your fork (using `git remote add fork`)
+- create a development branch either on github.com/line/ibc-go, or your fork (using `git remote add fork`)
 - before submitting a pull request, begin `git rebase` on top of `main`
 
 ### Pull Merge Procedure

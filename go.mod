@@ -4,8 +4,6 @@ module github.com/line/ibc-go
 
 replace github.com/gogo/protobuf => github.com/regen-network/protobuf v1.3.3-alpha.regen.1
 
-replace github.com/line/lbm-sdk => /Users/user/workspace/go/src/github.com/dudong2/lbm-sdk
-
 require (
 	github.com/armon/go-metrics v0.4.1
 	github.com/confio/ics23/go v0.9.0
@@ -13,7 +11,7 @@ require (
 	github.com/golang/protobuf v1.5.2
 	github.com/gorilla/mux v1.8.0
 	github.com/grpc-ecosystem/grpc-gateway v1.16.0
-	github.com/line/lbm-sdk v0.46.0
+	github.com/line/lbm-sdk v0.0.0-20230113004822-8fb974447422
 	github.com/line/ostracon v1.0.7
 	github.com/rakyll/statik v0.1.7
 	github.com/regen-network/cosmos-proto v0.3.1

@@ -753,6 +753,8 @@ github.com/libp2p/go-buffer-pool v0.1.0 h1:oK4mSFcQz7cTQIfqbe4MIj9gLW+mnanjyFtc6
 github.com/libp2p/go-buffer-pool v0.1.0/go.mod h1:N+vh8gMqimBzdKkSMVuydVDq+UV5QTWy5HSiZacSbPg=
 github.com/lightstep/lightstep-tracer-common/golang/gogo v0.0.0-20190605223551-bc2310a04743/go.mod h1:qklhhLq1aX+mtWk9cPHPzaBjWImj5ULL6C7HFJtXQMM=
 github.com/lightstep/lightstep-tracer-go v0.18.1/go.mod h1:jlF1pusYV4pidLvZ+XD0UBX0ZE6WURAspgAczcDHrL4=
+github.com/line/lbm-sdk v0.0.0-20230113004822-8fb974447422 h1:/LP6ZNrAs+Ba/08+YtEA7nzU/jEBaevVlOVzKKcbMUc=
+github.com/line/lbm-sdk v0.0.0-20230113004822-8fb974447422/go.mod h1:wpkaELNQd8x+DdXC/blxYoEExOaZBKFhby6AujzGTC0=
 github.com/line/ostracon v1.0.7 h1:8vh/gsM6Sf6z2s38og8YufIhrWN2TwXpm4I3DqKEVyI=
 github.com/line/ostracon v1.0.7/go.mod h1:gmEKYdaMaDAl5xJ8sJJo0s6OvzBSZwM01nWRCGA5oDY=
 github.com/lufeee/execinquery v1.2.1/go.mod h1:EC7DrEKView09ocscGHC+apXMIaorh4xqSxS/dy8SbM=

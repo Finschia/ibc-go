@@ -176,6 +176,17 @@ paths:
           required: false
           type: boolean
           format: boolean
+        - name: pagination.reverse
+          description: >-
+            reverse is set to true if results are to be returned in the
+            descending order.
+
+
+            Since: cosmos-sdk 0.43
+          in: query
+          required: false
+          type: boolean
+          format: boolean
       tags:
         - Query
   '/ibc/apps/transfer/v1/denom_traces/{hash}':
@@ -983,6 +994,17 @@ paths:
             when key
 
             is set.
+          in: query
+          required: false
+          type: boolean
+          format: boolean
+        - name: pagination.reverse
+          description: >-
+            reverse is set to true if results are to be returned in the
+            descending order.
+
+
+            Since: cosmos-sdk 0.43
           in: query
           required: false
           type: boolean
@@ -2122,6 +2144,17 @@ paths:
             when key
 
             is set.
+          in: query
+          required: false
+          type: boolean
+          format: boolean
+        - name: pagination.reverse
+          description: >-
+            reverse is set to true if results are to be returned in the
+            descending order.
+
+
+            Since: cosmos-sdk 0.43
           in: query
           required: false
           type: boolean
@@ -3971,6 +4004,17 @@ paths:
           required: false
           type: boolean
           format: boolean
+        - name: pagination.reverse
+          description: >-
+            reverse is set to true if results are to be returned in the
+            descending order.
+
+
+            Since: cosmos-sdk 0.43
+          in: query
+          required: false
+          type: boolean
+          format: boolean
       tags:
         - Query
   '/ibc/core/connection/v1/connections/{connection_id}':
@@ -5560,6 +5604,17 @@ paths:
             when key
 
             is set.
+          in: query
+          required: false
+          type: boolean
+          format: boolean
+        - name: pagination.reverse
+          description: >-
+            reverse is set to true if results are to be returned in the
+            descending order.
+
+
+            Since: cosmos-sdk 0.43
           in: query
           required: false
           type: boolean
@@ -7374,6 +7429,17 @@ paths:
           required: false
           type: boolean
           format: boolean
+        - name: pagination.reverse
+          description: >-
+            reverse is set to true if results are to be returned in the
+            descending order.
+
+
+            Since: cosmos-sdk 0.43
+          in: query
+          required: false
+          type: boolean
+          format: boolean
         - name: packet_commitment_sequences
           description: list of packet sequences.
           in: query
@@ -7991,6 +8057,17 @@ paths:
             when key
 
             is set.
+          in: query
+          required: false
+          type: boolean
+          format: boolean
+        - name: pagination.reverse
+          description: >-
+            reverse is set to true if results are to be returned in the
+            descending order.
+
+
+            Since: cosmos-sdk 0.43
           in: query
           required: false
           type: boolean
@@ -9449,6 +9526,17 @@ paths:
           required: false
           type: boolean
           format: boolean
+        - name: pagination.reverse
+          description: >-
+            reverse is set to true if results are to be returned in the
+            descending order.
+
+
+            Since: cosmos-sdk 0.43
+          in: query
+          required: false
+          type: boolean
+          format: boolean
       tags:
         - Query
 definitions:
@@ -9490,6 +9578,15 @@ definitions:
           key
 
           is set.
+      reverse:
+        type: boolean
+        format: boolean
+        description: >-
+          reverse is set to true if results are to be returned in the descending
+          order.
+
+
+          Since: cosmos-sdk 0.43
     description: |-
       message SomeRequest {
                Foo some_parameter = 1;

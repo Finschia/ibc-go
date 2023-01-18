@@ -3,8 +3,8 @@ package types
 import (
 	codectypes "github.com/line/lbm-sdk/codec/types"
 
-	clienttypes "github.com/line/ibc-go/modules/core/02-client/types"
-	"github.com/line/ibc-go/modules/core/exported"
+	clienttypes "github.com/line/ibc-go/v3/modules/core/02-client/types"
+	"github.com/line/ibc-go/v3/modules/core/exported"
 )
 
 var (

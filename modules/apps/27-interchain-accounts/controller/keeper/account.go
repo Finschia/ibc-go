@@ -4,9 +4,9 @@ import (
 	sdk "github.com/line/lbm-sdk/types"
 	sdkerrors "github.com/line/lbm-sdk/types/errors"
 
-	icatypes "github.com/line/ibc-go/modules/apps/27-interchain-accounts/types"
-	channeltypes "github.com/line/ibc-go/modules/core/04-channel/types"
-	host "github.com/line/ibc-go/modules/core/24-host"
+	icatypes "github.com/line/ibc-go/v3/modules/apps/27-interchain-accounts/types"
+	channeltypes "github.com/line/ibc-go/v3/modules/core/04-channel/types"
+	host "github.com/line/ibc-go/v3/modules/core/24-host"
 )
 
 // RegisterInterchainAccount is the entry point to registering an interchain account.

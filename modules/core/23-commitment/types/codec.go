@@ -3,7 +3,7 @@ package types
 import (
 	codectypes "github.com/line/lbm-sdk/codec/types"
 
-	"github.com/line/ibc-go/modules/core/exported"
+	"github.com/line/ibc-go/v3/modules/core/exported"
 )
 
 // RegisterInterfaces registers the commitment interfaces to protobuf Any.

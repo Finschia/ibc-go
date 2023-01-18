@@ -7,7 +7,7 @@ import (
 	cryptotypes "github.com/line/lbm-sdk/crypto/types"
 	sdk "github.com/line/lbm-sdk/types"
 
-	"github.com/line/ibc-go/modules/core/exported"
+	"github.com/line/ibc-go/v3/modules/core/exported"
 )
 
 // NOTE: this is a mock implmentation for exported.ClientState. This implementation

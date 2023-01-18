@@ -5,8 +5,8 @@ import (
 
 	sdk "github.com/line/lbm-sdk/types"
 
-	icatypes "github.com/line/ibc-go/modules/apps/27-interchain-accounts/types"
-	host "github.com/line/ibc-go/modules/core/24-host"
+	icatypes "github.com/line/ibc-go/v3/modules/apps/27-interchain-accounts/types"
+	host "github.com/line/ibc-go/v3/modules/core/24-host"
 )
 
 // InitGenesis initializes the interchain accounts controller application state from a provided genesis state

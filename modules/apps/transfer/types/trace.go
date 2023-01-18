@@ -12,7 +12,7 @@ import (
 	ocbytes "github.com/line/ostracon/libs/bytes"
 	octypes "github.com/line/ostracon/types"
 
-	host "github.com/line/ibc-go/modules/core/24-host"
+	host "github.com/line/ibc-go/v3/modules/core/24-host"
 )
 
 // ParseDenomTrace parses a string with the ibc prefix (denom trace) and the base denomination

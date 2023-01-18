@@ -4,10 +4,10 @@ import (
 	codectypes "github.com/line/lbm-sdk/codec/types"
 	sdk "github.com/line/lbm-sdk/types"
 
-	"github.com/line/ibc-go/modules/core/exported"
-	"github.com/line/ibc-go/modules/light-clients/06-solomachine/types"
-	ibcoctypes "github.com/line/ibc-go/modules/light-clients/99-ostracon/types"
-	ibctesting "github.com/line/ibc-go/testing"
+	"github.com/line/ibc-go/v3/modules/core/exported"
+	"github.com/line/ibc-go/v3/modules/light-clients/06-solomachine/types"
+	ibcoctypes "github.com/line/ibc-go/v3/modules/light-clients/99-ostracon/types"
+	ibctesting "github.com/line/ibc-go/v3/testing"
 )
 
 func (suite *SoloMachineTestSuite) TestCheckHeaderAndUpdateState() {

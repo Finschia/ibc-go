@@ -8,9 +8,9 @@ import (
 	sdkerrors "github.com/line/lbm-sdk/types/errors"
 	upgradetypes "github.com/line/lbm-sdk/x/upgrade/types"
 
-	clienttypes "github.com/line/ibc-go/modules/core/02-client/types"
-	commitmenttypes "github.com/line/ibc-go/modules/core/23-commitment/types"
-	"github.com/line/ibc-go/modules/core/exported"
+	clienttypes "github.com/line/ibc-go/v3/modules/core/02-client/types"
+	commitmenttypes "github.com/line/ibc-go/v3/modules/core/23-commitment/types"
+	"github.com/line/ibc-go/v3/modules/core/exported"
 )
 
 // VerifyUpgradeAndUpdateState checks if the upgraded client has been committed by the current client

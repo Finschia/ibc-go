@@ -5,9 +5,9 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/line/ibc-go/modules/core/03-connection/types"
-	commitmenttypes "github.com/line/ibc-go/modules/core/23-commitment/types"
-	ibctesting "github.com/line/ibc-go/testing"
+	"github.com/line/ibc-go/v3/modules/core/03-connection/types"
+	commitmenttypes "github.com/line/ibc-go/v3/modules/core/23-commitment/types"
+	ibctesting "github.com/line/ibc-go/v3/testing"
 )
 
 func TestValidateGenesis(t *testing.T) {

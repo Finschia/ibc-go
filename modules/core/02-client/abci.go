@@ -3,9 +3,9 @@ package client
 import (
 	sdk "github.com/line/lbm-sdk/types"
 
-	"github.com/line/ibc-go/modules/core/02-client/keeper"
-	"github.com/line/ibc-go/modules/core/exported"
-	ibcoctypes "github.com/line/ibc-go/modules/light-clients/99-ostracon/types"
+	"github.com/line/ibc-go/v3/modules/core/02-client/keeper"
+	"github.com/line/ibc-go/v3/modules/core/exported"
+	ibcoctypes "github.com/line/ibc-go/v3/modules/light-clients/99-ostracon/types"
 )
 
 // BeginBlocker updates an existing localhost client with the latest block height.

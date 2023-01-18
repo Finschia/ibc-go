@@ -11,11 +11,11 @@ import (
 	octypes "github.com/line/ostracon/types"
 	"github.com/stretchr/testify/suite"
 
-	clienttypes "github.com/line/ibc-go/modules/core/02-client/types"
-	ibcoctypes "github.com/line/ibc-go/modules/light-clients/99-ostracon/types"
-	ibctesting "github.com/line/ibc-go/testing"
-	ibctestingmock "github.com/line/ibc-go/testing/mock"
-	"github.com/line/ibc-go/testing/simapp"
+	clienttypes "github.com/line/ibc-go/v3/modules/core/02-client/types"
+	ibcoctypes "github.com/line/ibc-go/v3/modules/light-clients/99-ostracon/types"
+	ibctesting "github.com/line/ibc-go/v3/testing"
+	ibctestingmock "github.com/line/ibc-go/v3/testing/mock"
+	"github.com/line/ibc-go/v3/testing/simapp"
 )
 
 const (

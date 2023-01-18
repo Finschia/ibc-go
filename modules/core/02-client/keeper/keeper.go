@@ -14,11 +14,11 @@ import (
 	"github.com/line/ostracon/libs/log"
 	"github.com/line/ostracon/light"
 
-	"github.com/line/ibc-go/modules/core/02-client/types"
-	commitmenttypes "github.com/line/ibc-go/modules/core/23-commitment/types"
-	host "github.com/line/ibc-go/modules/core/24-host"
-	"github.com/line/ibc-go/modules/core/exported"
-	ibcoctypes "github.com/line/ibc-go/modules/light-clients/99-ostracon/types"
+	"github.com/line/ibc-go/v3/modules/core/02-client/types"
+	commitmenttypes "github.com/line/ibc-go/v3/modules/core/23-commitment/types"
+	host "github.com/line/ibc-go/v3/modules/core/24-host"
+	"github.com/line/ibc-go/v3/modules/core/exported"
+	ibcoctypes "github.com/line/ibc-go/v3/modules/light-clients/99-ostracon/types"
 )
 
 // Keeper represents a type that grants read and write permissions to any client

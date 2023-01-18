@@ -3,12 +3,12 @@ package types_test
 import (
 	codectypes "github.com/line/lbm-sdk/codec/types"
 
-	"github.com/line/ibc-go/modules/core/02-client/types"
-	commitmenttypes "github.com/line/ibc-go/modules/core/23-commitment/types"
-	"github.com/line/ibc-go/modules/core/exported"
-	localhosttypes "github.com/line/ibc-go/modules/light-clients/09-localhost/types"
-	ibcoctypes "github.com/line/ibc-go/modules/light-clients/99-ostracon/types"
-	ibctesting "github.com/line/ibc-go/testing"
+	"github.com/line/ibc-go/v3/modules/core/02-client/types"
+	commitmenttypes "github.com/line/ibc-go/v3/modules/core/23-commitment/types"
+	"github.com/line/ibc-go/v3/modules/core/exported"
+	localhosttypes "github.com/line/ibc-go/v3/modules/light-clients/09-localhost/types"
+	ibcoctypes "github.com/line/ibc-go/v3/modules/light-clients/99-ostracon/types"
+	ibctesting "github.com/line/ibc-go/v3/testing"
 )
 
 type caseAny struct {

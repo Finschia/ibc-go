@@ -9,7 +9,7 @@ import (
 	"github.com/line/lbm-sdk/types/module"
 	simtypes "github.com/line/lbm-sdk/types/simulation"
 
-	"github.com/line/ibc-go/modules/apps/transfer/types"
+	"github.com/line/ibc-go/v3/modules/apps/transfer/types"
 )
 
 // Simulation parameter constants

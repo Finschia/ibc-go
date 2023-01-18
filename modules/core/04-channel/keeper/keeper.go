@@ -12,12 +12,12 @@ import (
 	"github.com/line/ostracon/libs/log"
 	db "github.com/tendermint/tm-db"
 
-	clienttypes "github.com/line/ibc-go/modules/core/02-client/types"
-	connectiontypes "github.com/line/ibc-go/modules/core/03-connection/types"
-	"github.com/line/ibc-go/modules/core/04-channel/types"
-	porttypes "github.com/line/ibc-go/modules/core/05-port/types"
-	host "github.com/line/ibc-go/modules/core/24-host"
-	"github.com/line/ibc-go/modules/core/exported"
+	clienttypes "github.com/line/ibc-go/v3/modules/core/02-client/types"
+	connectiontypes "github.com/line/ibc-go/v3/modules/core/03-connection/types"
+	"github.com/line/ibc-go/v3/modules/core/04-channel/types"
+	porttypes "github.com/line/ibc-go/v3/modules/core/05-port/types"
+	host "github.com/line/ibc-go/v3/modules/core/24-host"
+	"github.com/line/ibc-go/v3/modules/core/exported"
 )
 
 var _ porttypes.ICS4Wrapper = Keeper{}

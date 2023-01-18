@@ -10,7 +10,7 @@ import (
 	sdkerrors "github.com/line/lbm-sdk/types/errors"
 	occrypto "github.com/line/ostracon/proto/ostracon/crypto"
 
-	"github.com/line/ibc-go/modules/core/exported"
+	"github.com/line/ibc-go/v3/modules/core/exported"
 )
 
 // var representing the proofspecs for a SDK chain

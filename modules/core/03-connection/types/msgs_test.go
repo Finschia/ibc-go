@@ -13,12 +13,12 @@ import (
 	"github.com/stretchr/testify/suite"
 	dbm "github.com/tendermint/tm-db"
 
-	clienttypes "github.com/line/ibc-go/modules/core/02-client/types"
-	"github.com/line/ibc-go/modules/core/03-connection/types"
-	commitmenttypes "github.com/line/ibc-go/modules/core/23-commitment/types"
-	ibcoctypes "github.com/line/ibc-go/modules/light-clients/99-ostracon/types"
-	ibctesting "github.com/line/ibc-go/testing"
-	"github.com/line/ibc-go/testing/simapp"
+	clienttypes "github.com/line/ibc-go/v3/modules/core/02-client/types"
+	"github.com/line/ibc-go/v3/modules/core/03-connection/types"
+	commitmenttypes "github.com/line/ibc-go/v3/modules/core/23-commitment/types"
+	ibcoctypes "github.com/line/ibc-go/v3/modules/light-clients/99-ostracon/types"
+	ibctesting "github.com/line/ibc-go/v3/testing"
+	"github.com/line/ibc-go/v3/testing/simapp"
 )
 
 var (

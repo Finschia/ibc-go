@@ -8,12 +8,12 @@ import (
 	"github.com/line/lbm-sdk/codec"
 	sdkerrors "github.com/line/lbm-sdk/types/errors"
 
-	clientutils "github.com/line/ibc-go/modules/core/02-client/client/utils"
-	clienttypes "github.com/line/ibc-go/modules/core/02-client/types"
-	"github.com/line/ibc-go/modules/core/04-channel/types"
-	host "github.com/line/ibc-go/modules/core/24-host"
-	ibcclient "github.com/line/ibc-go/modules/core/client"
-	"github.com/line/ibc-go/modules/core/exported"
+	clientutils "github.com/line/ibc-go/v3/modules/core/02-client/client/utils"
+	clienttypes "github.com/line/ibc-go/v3/modules/core/02-client/types"
+	"github.com/line/ibc-go/v3/modules/core/04-channel/types"
+	host "github.com/line/ibc-go/v3/modules/core/24-host"
+	ibcclient "github.com/line/ibc-go/v3/modules/core/client"
+	"github.com/line/ibc-go/v3/modules/core/exported"
 )
 
 // QueryChannel returns a channel end.

@@ -255,8 +255,8 @@ import (
 	"github.com/line/ostracon/libs/log"
 	dbm "github.com/tendermint/tm-db"
 
-	"github.com/line/ibc-go/modules/applications/transfer/simapp"
-	ibctesting "github.com/line/ibc-go/testing"
+	"github.com/line/ibc-go/v3/modules/applications/transfer/simapp"
+	ibctesting "github.com/line/ibc-go/v3/testing"
 )
 
 func SetupTransferTestingApp() (ibctesting.TestingApp, map[string]json.RawMessage) {

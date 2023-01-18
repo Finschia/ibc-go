@@ -5,9 +5,9 @@ import (
 	"github.com/line/lbm-sdk/x/auth/types"
 	capabilitytypes "github.com/line/lbm-sdk/x/capability/types"
 
-	connectiontypes "github.com/line/ibc-go/modules/core/03-connection/types"
-	channeltypes "github.com/line/ibc-go/modules/core/04-channel/types"
-	ibcexported "github.com/line/ibc-go/modules/core/exported"
+	connectiontypes "github.com/line/ibc-go/v3/modules/core/03-connection/types"
+	channeltypes "github.com/line/ibc-go/v3/modules/core/04-channel/types"
+	ibcexported "github.com/line/ibc-go/v3/modules/core/exported"
 )
 
 // AccountKeeper defines the contract required for account APIs.

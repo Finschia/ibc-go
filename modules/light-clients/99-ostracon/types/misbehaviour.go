@@ -7,9 +7,9 @@ import (
 	ocproto "github.com/line/ostracon/proto/ostracon/types"
 	octypes "github.com/line/ostracon/types"
 
-	clienttypes "github.com/line/ibc-go/modules/core/02-client/types"
-	host "github.com/line/ibc-go/modules/core/24-host"
-	"github.com/line/ibc-go/modules/core/exported"
+	clienttypes "github.com/line/ibc-go/v3/modules/core/02-client/types"
+	host "github.com/line/ibc-go/v3/modules/core/24-host"
+	"github.com/line/ibc-go/v3/modules/core/exported"
 )
 
 var _ exported.Misbehaviour = &Misbehaviour{}

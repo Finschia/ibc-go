@@ -5,8 +5,8 @@ import (
 	sdkerrors "github.com/line/lbm-sdk/types/errors"
 	"github.com/line/lbm-sdk/x/auth/ante"
 
-	ibcante "github.com/line/ibc-go/modules/core/ante"
-	"github.com/line/ibc-go/modules/core/keeper"
+	ibcante "github.com/line/ibc-go/v3/modules/core/ante"
+	"github.com/line/ibc-go/v3/modules/core/keeper"
 )
 
 // HandlerOptions extend the SDK's AnteHandler options by requiring the IBC keeper.

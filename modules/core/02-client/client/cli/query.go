@@ -9,9 +9,9 @@ import (
 	"github.com/line/lbm-sdk/version"
 	"github.com/spf13/cobra"
 
-	"github.com/line/ibc-go/modules/core/02-client/client/utils"
-	"github.com/line/ibc-go/modules/core/02-client/types"
-	host "github.com/line/ibc-go/modules/core/24-host"
+	"github.com/line/ibc-go/v3/modules/core/02-client/client/utils"
+	"github.com/line/ibc-go/v3/modules/core/02-client/types"
+	host "github.com/line/ibc-go/v3/modules/core/24-host"
 )
 
 const (

@@ -9,11 +9,11 @@ import (
 
 	sdk "github.com/line/lbm-sdk/types"
 
-	ibctransfertypes "github.com/line/ibc-go/modules/apps/transfer/types"
-	connectiontypes "github.com/line/ibc-go/modules/core/03-connection/types"
-	commitmenttypes "github.com/line/ibc-go/modules/core/23-commitment/types"
-	ibcoctypes "github.com/line/ibc-go/modules/light-clients/99-ostracon/types"
-	"github.com/line/ibc-go/testing/mock"
+	ibctransfertypes "github.com/line/ibc-go/v3/modules/apps/transfer/types"
+	connectiontypes "github.com/line/ibc-go/v3/modules/core/03-connection/types"
+	commitmenttypes "github.com/line/ibc-go/v3/modules/core/23-commitment/types"
+	ibcoctypes "github.com/line/ibc-go/v3/modules/light-clients/99-ostracon/types"
+	"github.com/line/ibc-go/v3/testing/mock"
 )
 
 const (

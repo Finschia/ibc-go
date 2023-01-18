@@ -3,9 +3,9 @@ package types
 import (
 	sdkerrors "github.com/line/lbm-sdk/types/errors"
 
-	commitmenttypes "github.com/line/ibc-go/modules/core/23-commitment/types"
-	host "github.com/line/ibc-go/modules/core/24-host"
-	"github.com/line/ibc-go/modules/core/exported"
+	commitmenttypes "github.com/line/ibc-go/v3/modules/core/23-commitment/types"
+	host "github.com/line/ibc-go/v3/modules/core/24-host"
+	"github.com/line/ibc-go/v3/modules/core/exported"
 )
 
 var _ exported.ConnectionI = (*ConnectionEnd)(nil)

@@ -9,15 +9,15 @@ import (
 	octypes "github.com/line/ostracon/types"
 	"github.com/stretchr/testify/suite"
 
-	ibcclient "github.com/line/ibc-go/modules/core/02-client"
-	clientv100 "github.com/line/ibc-go/modules/core/02-client/legacy/v100"
-	clienttypes "github.com/line/ibc-go/modules/core/02-client/types"
-	connectiontypes "github.com/line/ibc-go/modules/core/03-connection/types"
-	host "github.com/line/ibc-go/modules/core/24-host"
-	v100 "github.com/line/ibc-go/modules/core/legacy/v100"
-	"github.com/line/ibc-go/modules/core/types"
-	ibctesting "github.com/line/ibc-go/testing"
-	"github.com/line/ibc-go/testing/simapp"
+	ibcclient "github.com/line/ibc-go/v3/modules/core/02-client"
+	clientv100 "github.com/line/ibc-go/v3/modules/core/02-client/legacy/v100"
+	clienttypes "github.com/line/ibc-go/v3/modules/core/02-client/types"
+	connectiontypes "github.com/line/ibc-go/v3/modules/core/03-connection/types"
+	host "github.com/line/ibc-go/v3/modules/core/24-host"
+	v100 "github.com/line/ibc-go/v3/modules/core/legacy/v100"
+	"github.com/line/ibc-go/v3/modules/core/types"
+	ibctesting "github.com/line/ibc-go/v3/testing"
+	"github.com/line/ibc-go/v3/testing/simapp"
 )
 
 type LegacyTestSuite struct {

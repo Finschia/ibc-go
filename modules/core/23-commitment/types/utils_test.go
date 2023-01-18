@@ -7,7 +7,7 @@ import (
 	crypto "github.com/line/ostracon/proto/ostracon/crypto"
 	"github.com/stretchr/testify/require"
 
-	"github.com/line/ibc-go/modules/core/23-commitment/types"
+	"github.com/line/ibc-go/v3/modules/core/23-commitment/types"
 )
 
 func (suite *MerkleTestSuite) TestConvertProofs() {

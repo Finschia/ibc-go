@@ -7,15 +7,15 @@ import (
 	upgradetypes "github.com/line/lbm-sdk/x/upgrade/types"
 	"github.com/stretchr/testify/suite"
 
-	clienttypes "github.com/line/ibc-go/modules/core/02-client/types"
-	channeltypes "github.com/line/ibc-go/modules/core/04-channel/types"
-	commitmenttypes "github.com/line/ibc-go/modules/core/23-commitment/types"
-	host "github.com/line/ibc-go/modules/core/24-host"
-	"github.com/line/ibc-go/modules/core/exported"
-	"github.com/line/ibc-go/modules/core/keeper"
-	ibcoctypes "github.com/line/ibc-go/modules/light-clients/99-ostracon/types"
-	ibctesting "github.com/line/ibc-go/testing"
-	ibcmock "github.com/line/ibc-go/testing/mock"
+	clienttypes "github.com/line/ibc-go/v3/modules/core/02-client/types"
+	channeltypes "github.com/line/ibc-go/v3/modules/core/04-channel/types"
+	commitmenttypes "github.com/line/ibc-go/v3/modules/core/23-commitment/types"
+	host "github.com/line/ibc-go/v3/modules/core/24-host"
+	"github.com/line/ibc-go/v3/modules/core/exported"
+	"github.com/line/ibc-go/v3/modules/core/keeper"
+	ibcoctypes "github.com/line/ibc-go/v3/modules/light-clients/99-ostracon/types"
+	ibctesting "github.com/line/ibc-go/v3/testing"
+	ibcmock "github.com/line/ibc-go/v3/testing/mock"
 )
 
 const height = 10
@@ -505,7 +505,7 @@ func (suite *KeeperTestSuite) TestHandleTimeoutPacket() {
 // and unordered channels. It verifies that the deletion of a packet
 // commitment occurs. It tests high level properties like ordering and basic
 // sanity checks. More rigorous testing of 'TimeoutOnClose' and
-//'TimeoutExecuted' can be found in the 04-channel/keeper/timeout_test.go.
+// 'TimeoutExecuted' can be found in the 04-channel/keeper/timeout_test.go.
 func (suite *KeeperTestSuite) TestHandleTimeoutOnClosePacket() {
 	var (
 		packet    channeltypes.Packet

@@ -7,9 +7,9 @@ import (
 	"github.com/line/lbm-sdk/codec"
 	abci "github.com/line/ostracon/abci/types"
 
-	clienttypes "github.com/line/ibc-go/modules/core/02-client/types"
-	commitmenttypes "github.com/line/ibc-go/modules/core/23-commitment/types"
-	host "github.com/line/ibc-go/modules/core/24-host"
+	clienttypes "github.com/line/ibc-go/v3/modules/core/02-client/types"
+	commitmenttypes "github.com/line/ibc-go/v3/modules/core/23-commitment/types"
+	host "github.com/line/ibc-go/v3/modules/core/24-host"
 )
 
 // QueryOstraconProof performs an ABCI query with the given key and returns

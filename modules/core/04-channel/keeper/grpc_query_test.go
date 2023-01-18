@@ -6,11 +6,11 @@ import (
 	sdk "github.com/line/lbm-sdk/types"
 	"github.com/line/lbm-sdk/types/query"
 
-	clienttypes "github.com/line/ibc-go/modules/core/02-client/types"
-	connectiontypes "github.com/line/ibc-go/modules/core/03-connection/types"
-	"github.com/line/ibc-go/modules/core/04-channel/types"
-	"github.com/line/ibc-go/modules/core/exported"
-	ibctesting "github.com/line/ibc-go/testing"
+	clienttypes "github.com/line/ibc-go/v3/modules/core/02-client/types"
+	connectiontypes "github.com/line/ibc-go/v3/modules/core/03-connection/types"
+	"github.com/line/ibc-go/v3/modules/core/04-channel/types"
+	"github.com/line/ibc-go/v3/modules/core/exported"
+	ibctesting "github.com/line/ibc-go/v3/testing"
 )
 
 func (suite *KeeperTestSuite) TestQueryChannel() {

@@ -8,11 +8,11 @@ import (
 	sdkerrors "github.com/line/lbm-sdk/types/errors"
 	paramtypes "github.com/line/lbm-sdk/x/params/types"
 
-	clienttypes "github.com/line/ibc-go/modules/core/02-client/types"
-	"github.com/line/ibc-go/modules/core/03-connection/types"
-	commitmenttypes "github.com/line/ibc-go/modules/core/23-commitment/types"
-	host "github.com/line/ibc-go/modules/core/24-host"
-	"github.com/line/ibc-go/modules/core/exported"
+	clienttypes "github.com/line/ibc-go/v3/modules/core/02-client/types"
+	"github.com/line/ibc-go/v3/modules/core/03-connection/types"
+	commitmenttypes "github.com/line/ibc-go/v3/modules/core/23-commitment/types"
+	host "github.com/line/ibc-go/v3/modules/core/24-host"
+	"github.com/line/ibc-go/v3/modules/core/exported"
 )
 
 // Keeper defines the IBC connection keeper

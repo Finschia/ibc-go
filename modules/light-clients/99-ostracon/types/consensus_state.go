@@ -7,9 +7,9 @@ import (
 	ocbytes "github.com/line/ostracon/libs/bytes"
 	octypes "github.com/line/ostracon/types"
 
-	clienttypes "github.com/line/ibc-go/modules/core/02-client/types"
-	commitmenttypes "github.com/line/ibc-go/modules/core/23-commitment/types"
-	"github.com/line/ibc-go/modules/core/exported"
+	clienttypes "github.com/line/ibc-go/v3/modules/core/02-client/types"
+	commitmenttypes "github.com/line/ibc-go/v3/modules/core/23-commitment/types"
+	"github.com/line/ibc-go/v3/modules/core/exported"
 )
 
 // SentinelRoot is used as a stand-in root value for the consensus state set at the upgrade height

@@ -11,8 +11,8 @@ import (
 	simtypes "github.com/line/lbm-sdk/types/simulation"
 	"github.com/stretchr/testify/require"
 
-	"github.com/line/ibc-go/modules/apps/transfer/simulation"
-	"github.com/line/ibc-go/modules/apps/transfer/types"
+	"github.com/line/ibc-go/v3/modules/apps/transfer/simulation"
+	"github.com/line/ibc-go/v3/modules/apps/transfer/types"
 )
 
 // TestRandomizedGenState tests the normal scenario of applying RandomizedGenState.

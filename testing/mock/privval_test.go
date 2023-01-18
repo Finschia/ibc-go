@@ -7,7 +7,7 @@ import (
 	octypes "github.com/line/ostracon/types"
 	"github.com/stretchr/testify/require"
 
-	"github.com/line/ibc-go/testing/mock"
+	"github.com/line/ibc-go/v3/testing/mock"
 )
 
 const chainID = "testChain"

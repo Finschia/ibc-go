@@ -6,8 +6,8 @@ import (
 
 	sdk "github.com/line/lbm-sdk/types"
 
-	"github.com/line/ibc-go/modules/core/04-channel/types"
-	"github.com/line/ibc-go/modules/core/exported"
+	"github.com/line/ibc-go/v3/modules/core/04-channel/types"
+	"github.com/line/ibc-go/v3/modules/core/exported"
 )
 
 // EmitChannelOpenInitEvent emits a channel open init event

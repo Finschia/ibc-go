@@ -7,10 +7,10 @@ import (
 	"github.com/line/lbm-sdk/codec"
 	sdkerrors "github.com/line/lbm-sdk/types/errors"
 
-	"github.com/line/ibc-go/modules/core/02-client/types"
-	host "github.com/line/ibc-go/modules/core/24-host"
-	"github.com/line/ibc-go/modules/core/exported"
-	ibcoctypes "github.com/line/ibc-go/modules/light-clients/99-ostracon/types"
+	"github.com/line/ibc-go/v3/modules/core/02-client/types"
+	host "github.com/line/ibc-go/v3/modules/core/24-host"
+	"github.com/line/ibc-go/v3/modules/core/exported"
+	ibcoctypes "github.com/line/ibc-go/v3/modules/light-clients/99-ostracon/types"
 )
 
 // MigrateGenesis accepts exported v1.0.0 IBC client genesis file and migrates it to:

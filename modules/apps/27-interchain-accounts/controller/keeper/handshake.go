@@ -8,8 +8,8 @@ import (
 	sdkerrors "github.com/line/lbm-sdk/types/errors"
 	capabilitytypes "github.com/line/lbm-sdk/x/capability/types"
 
-	icatypes "github.com/line/ibc-go/modules/apps/27-interchain-accounts/types"
-	channeltypes "github.com/line/ibc-go/modules/core/04-channel/types"
+	icatypes "github.com/line/ibc-go/v3/modules/apps/27-interchain-accounts/types"
+	channeltypes "github.com/line/ibc-go/v3/modules/core/04-channel/types"
 )
 
 // OnChanOpenInit performs basic validation of channel initialization.

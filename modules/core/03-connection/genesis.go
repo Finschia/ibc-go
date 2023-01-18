@@ -3,8 +3,8 @@ package connection
 import (
 	sdk "github.com/line/lbm-sdk/types"
 
-	"github.com/line/ibc-go/modules/core/03-connection/keeper"
-	"github.com/line/ibc-go/modules/core/03-connection/types"
+	"github.com/line/ibc-go/v3/modules/core/03-connection/keeper"
+	"github.com/line/ibc-go/v3/modules/core/03-connection/types"
 )
 
 // InitGenesis initializes the ibc connection submodule's state from a provided genesis

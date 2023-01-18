@@ -6,8 +6,8 @@ import (
 
 	"github.com/stretchr/testify/suite"
 
-	"github.com/line/ibc-go/modules/core/03-connection/types"
-	ibctesting "github.com/line/ibc-go/testing"
+	"github.com/line/ibc-go/v3/modules/core/03-connection/types"
+	ibctesting "github.com/line/ibc-go/v3/testing"
 )
 
 type KeeperTestSuite struct {

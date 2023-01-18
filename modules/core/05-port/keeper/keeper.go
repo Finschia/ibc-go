@@ -8,8 +8,8 @@ import (
 	capabilitytypes "github.com/line/lbm-sdk/x/capability/types"
 	"github.com/line/ostracon/libs/log"
 
-	"github.com/line/ibc-go/modules/core/05-port/types"
-	host "github.com/line/ibc-go/modules/core/24-host"
+	"github.com/line/ibc-go/v3/modules/core/05-port/types"
+	host "github.com/line/ibc-go/v3/modules/core/24-host"
 )
 
 // Keeper defines the IBC connection keeper

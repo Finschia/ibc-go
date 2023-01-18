@@ -10,11 +10,11 @@ import (
 	sdk "github.com/line/lbm-sdk/types"
 	sdkerrors "github.com/line/lbm-sdk/types/errors"
 
-	clienttypes "github.com/line/ibc-go/modules/core/02-client/types"
-	host "github.com/line/ibc-go/modules/core/24-host"
-	"github.com/line/ibc-go/modules/core/exported"
-	smtypes "github.com/line/ibc-go/modules/light-clients/06-solomachine/types"
-	ibcoctypes "github.com/line/ibc-go/modules/light-clients/99-ostracon/types"
+	clienttypes "github.com/line/ibc-go/v3/modules/core/02-client/types"
+	host "github.com/line/ibc-go/v3/modules/core/24-host"
+	"github.com/line/ibc-go/v3/modules/core/exported"
+	smtypes "github.com/line/ibc-go/v3/modules/light-clients/06-solomachine/types"
+	ibcoctypes "github.com/line/ibc-go/v3/modules/light-clients/99-ostracon/types"
 )
 
 // MigrateStore performs in-place store migrations from SDK v0.40 of the IBC module to v1.0.0 of ibc-go.

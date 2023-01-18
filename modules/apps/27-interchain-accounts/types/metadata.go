@@ -4,7 +4,7 @@ import (
 	sdk "github.com/line/lbm-sdk/types"
 	sdkerrors "github.com/line/lbm-sdk/types/errors"
 
-	connectiontypes "github.com/line/ibc-go/modules/core/03-connection/types"
+	connectiontypes "github.com/line/ibc-go/v3/modules/core/03-connection/types"
 )
 
 const (

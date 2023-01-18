@@ -5,9 +5,9 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	clienttypes "github.com/line/ibc-go/modules/core/02-client/types"
-	channeltypes "github.com/line/ibc-go/modules/core/04-channel/types"
-	"github.com/line/ibc-go/testing/mock"
+	clienttypes "github.com/line/ibc-go/v3/modules/core/02-client/types"
+	channeltypes "github.com/line/ibc-go/v3/modules/core/04-channel/types"
+	"github.com/line/ibc-go/v3/testing/mock"
 )
 
 func TestCreateCapabilityName(t *testing.T) {

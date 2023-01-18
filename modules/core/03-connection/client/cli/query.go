@@ -8,9 +8,9 @@ import (
 	"github.com/line/lbm-sdk/version"
 	"github.com/spf13/cobra"
 
-	"github.com/line/ibc-go/modules/core/03-connection/client/utils"
-	"github.com/line/ibc-go/modules/core/03-connection/types"
-	host "github.com/line/ibc-go/modules/core/24-host"
+	"github.com/line/ibc-go/v3/modules/core/03-connection/client/utils"
+	"github.com/line/ibc-go/v3/modules/core/03-connection/types"
+	host "github.com/line/ibc-go/v3/modules/core/24-host"
 )
 
 // GetCmdQueryConnections defines the command to query all the connection ends

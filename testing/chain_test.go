@@ -6,8 +6,8 @@ import (
 	octypes "github.com/line/ostracon/types"
 	"github.com/stretchr/testify/require"
 
-	ibctesting "github.com/line/ibc-go/testing"
-	"github.com/line/ibc-go/testing/mock"
+	ibctesting "github.com/line/ibc-go/v3/testing"
+	"github.com/line/ibc-go/v3/testing/mock"
 )
 
 func TestCreateSortedSignerArray(t *testing.T) {

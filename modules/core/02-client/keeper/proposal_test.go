@@ -4,10 +4,10 @@ import (
 	govtypes "github.com/line/lbm-sdk/x/gov/types"
 	upgradetypes "github.com/line/lbm-sdk/x/upgrade/types"
 
-	"github.com/line/ibc-go/modules/core/02-client/types"
-	"github.com/line/ibc-go/modules/core/exported"
-	ibcoctypes "github.com/line/ibc-go/modules/light-clients/99-ostracon/types"
-	ibctesting "github.com/line/ibc-go/testing"
+	"github.com/line/ibc-go/v3/modules/core/02-client/types"
+	"github.com/line/ibc-go/v3/modules/core/exported"
+	ibcoctypes "github.com/line/ibc-go/v3/modules/light-clients/99-ostracon/types"
+	ibctesting "github.com/line/ibc-go/v3/testing"
 )
 
 func (suite *KeeperTestSuite) TestClientUpdateProposal() {

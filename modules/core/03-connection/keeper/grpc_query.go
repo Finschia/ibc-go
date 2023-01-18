@@ -10,9 +10,9 @@ import (
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"
 
-	clienttypes "github.com/line/ibc-go/modules/core/02-client/types"
-	"github.com/line/ibc-go/modules/core/03-connection/types"
-	host "github.com/line/ibc-go/modules/core/24-host"
+	clienttypes "github.com/line/ibc-go/v3/modules/core/02-client/types"
+	"github.com/line/ibc-go/v3/modules/core/03-connection/types"
+	host "github.com/line/ibc-go/v3/modules/core/24-host"
 )
 
 var _ types.QueryServer = Keeper{}

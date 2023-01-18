@@ -6,14 +6,14 @@ import (
 	capabilitykeeper "github.com/line/lbm-sdk/x/capability/keeper"
 	paramtypes "github.com/line/lbm-sdk/x/params/types"
 
-	clientkeeper "github.com/line/ibc-go/modules/core/02-client/keeper"
-	clienttypes "github.com/line/ibc-go/modules/core/02-client/types"
-	connectionkeeper "github.com/line/ibc-go/modules/core/03-connection/keeper"
-	connectiontypes "github.com/line/ibc-go/modules/core/03-connection/types"
-	channelkeeper "github.com/line/ibc-go/modules/core/04-channel/keeper"
-	portkeeper "github.com/line/ibc-go/modules/core/05-port/keeper"
-	porttypes "github.com/line/ibc-go/modules/core/05-port/types"
-	"github.com/line/ibc-go/modules/core/types"
+	clientkeeper "github.com/line/ibc-go/v3/modules/core/02-client/keeper"
+	clienttypes "github.com/line/ibc-go/v3/modules/core/02-client/types"
+	connectionkeeper "github.com/line/ibc-go/v3/modules/core/03-connection/keeper"
+	connectiontypes "github.com/line/ibc-go/v3/modules/core/03-connection/types"
+	channelkeeper "github.com/line/ibc-go/v3/modules/core/04-channel/keeper"
+	portkeeper "github.com/line/ibc-go/v3/modules/core/05-port/keeper"
+	porttypes "github.com/line/ibc-go/v3/modules/core/05-port/types"
+	"github.com/line/ibc-go/v3/modules/core/types"
 )
 
 var _ types.QueryServer = (*Keeper)(nil)

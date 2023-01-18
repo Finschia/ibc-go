@@ -7,8 +7,8 @@ import (
 	"github.com/line/lbm-sdk/codec"
 	"github.com/line/lbm-sdk/types/kv"
 
-	"github.com/line/ibc-go/modules/core/03-connection/types"
-	host "github.com/line/ibc-go/modules/core/24-host"
+	"github.com/line/ibc-go/v3/modules/core/03-connection/types"
+	host "github.com/line/ibc-go/v3/modules/core/24-host"
 )
 
 // NewDecodeStore returns a decoder function closure that unmarshals the KVPair's

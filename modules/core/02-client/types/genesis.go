@@ -6,8 +6,8 @@ import (
 
 	codectypes "github.com/line/lbm-sdk/codec/types"
 
-	host "github.com/line/ibc-go/modules/core/24-host"
-	"github.com/line/ibc-go/modules/core/exported"
+	host "github.com/line/ibc-go/v3/modules/core/24-host"
+	"github.com/line/ibc-go/v3/modules/core/exported"
 )
 
 var (

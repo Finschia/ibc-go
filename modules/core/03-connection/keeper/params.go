@@ -3,7 +3,7 @@ package keeper
 import (
 	sdk "github.com/line/lbm-sdk/types"
 
-	"github.com/line/ibc-go/modules/core/03-connection/types"
+	"github.com/line/ibc-go/v3/modules/core/03-connection/types"
 )
 
 // GetMaxExpectedTimePerBlock retrieves the maximum expected time per block from the paramstore

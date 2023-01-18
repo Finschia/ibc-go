@@ -8,7 +8,7 @@ import (
 	"github.com/line/lbm-sdk/version"
 	"github.com/spf13/cobra"
 
-	"github.com/line/ibc-go/modules/apps/27-interchain-accounts/controller/types"
+	"github.com/line/ibc-go/v3/modules/apps/27-interchain-accounts/controller/types"
 )
 
 // GetCmdParams returns the command handler for the controller submodule parameter querying.

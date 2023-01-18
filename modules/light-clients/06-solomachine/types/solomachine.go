@@ -4,7 +4,7 @@ import (
 	codectypes "github.com/line/lbm-sdk/codec/types"
 	cryptotypes "github.com/line/lbm-sdk/crypto/types"
 
-	"github.com/line/ibc-go/modules/core/exported"
+	"github.com/line/ibc-go/v3/modules/core/exported"
 )
 
 // Interface implementation checks.

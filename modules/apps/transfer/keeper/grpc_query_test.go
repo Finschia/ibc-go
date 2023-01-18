@@ -6,7 +6,7 @@ import (
 	sdk "github.com/line/lbm-sdk/types"
 	"github.com/line/lbm-sdk/types/query"
 
-	"github.com/line/ibc-go/modules/apps/transfer/types"
+	"github.com/line/ibc-go/v3/modules/apps/transfer/types"
 )
 
 func (suite *KeeperTestSuite) TestQueryDenomTrace() {

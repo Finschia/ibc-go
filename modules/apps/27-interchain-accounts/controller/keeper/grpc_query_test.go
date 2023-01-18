@@ -3,7 +3,7 @@ package keeper_test
 import (
 	sdk "github.com/line/lbm-sdk/types"
 
-	"github.com/line/ibc-go/modules/apps/27-interchain-accounts/controller/types"
+	"github.com/line/ibc-go/v3/modules/apps/27-interchain-accounts/controller/types"
 )
 
 func (suite *KeeperTestSuite) TestQueryParams() {

@@ -1,8 +1,8 @@
 package types_test
 
 import (
-	"github.com/line/ibc-go/modules/core/02-client/types"
-	ibcoctypes "github.com/line/ibc-go/modules/light-clients/99-ostracon/types"
+	"github.com/line/ibc-go/v3/modules/core/02-client/types"
+	ibcoctypes "github.com/line/ibc-go/v3/modules/light-clients/99-ostracon/types"
 )
 
 func (suite *TypesTestSuite) TestMarshalHeader() {

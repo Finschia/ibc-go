@@ -5,9 +5,9 @@ import (
 	sdk "github.com/line/lbm-sdk/types"
 	sdkerrors "github.com/line/lbm-sdk/types/errors"
 
-	"github.com/line/ibc-go/modules/apps/27-interchain-accounts/host/types"
-	icatypes "github.com/line/ibc-go/modules/apps/27-interchain-accounts/types"
-	channeltypes "github.com/line/ibc-go/modules/core/04-channel/types"
+	"github.com/line/ibc-go/v3/modules/apps/27-interchain-accounts/host/types"
+	icatypes "github.com/line/ibc-go/v3/modules/apps/27-interchain-accounts/types"
+	channeltypes "github.com/line/ibc-go/v3/modules/core/04-channel/types"
 )
 
 // OnRecvPacket handles a given interchain accounts packet on a destination host chain.

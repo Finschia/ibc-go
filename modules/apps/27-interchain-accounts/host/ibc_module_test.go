@@ -14,13 +14,13 @@ import (
 	ocstate "github.com/line/ostracon/state"
 	"github.com/stretchr/testify/suite"
 
-	"github.com/line/ibc-go/modules/apps/27-interchain-accounts/host/types"
-	icatypes "github.com/line/ibc-go/modules/apps/27-interchain-accounts/types"
-	clienttypes "github.com/line/ibc-go/modules/core/02-client/types"
-	channeltypes "github.com/line/ibc-go/modules/core/04-channel/types"
-	host "github.com/line/ibc-go/modules/core/24-host"
-	"github.com/line/ibc-go/modules/core/exported"
-	ibctesting "github.com/line/ibc-go/testing"
+	"github.com/line/ibc-go/v3/modules/apps/27-interchain-accounts/host/types"
+	icatypes "github.com/line/ibc-go/v3/modules/apps/27-interchain-accounts/types"
+	clienttypes "github.com/line/ibc-go/v3/modules/core/02-client/types"
+	channeltypes "github.com/line/ibc-go/v3/modules/core/04-channel/types"
+	host "github.com/line/ibc-go/v3/modules/core/24-host"
+	"github.com/line/ibc-go/v3/modules/core/exported"
+	ibctesting "github.com/line/ibc-go/v3/testing"
 )
 
 var (

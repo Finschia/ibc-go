@@ -8,9 +8,9 @@ import (
 	ocproto "github.com/line/ostracon/proto/ostracon/types"
 	"github.com/stretchr/testify/suite"
 
-	clienttypes "github.com/line/ibc-go/modules/core/02-client/types"
-	"github.com/line/ibc-go/modules/core/exported"
-	"github.com/line/ibc-go/testing/simapp"
+	clienttypes "github.com/line/ibc-go/v3/modules/core/02-client/types"
+	"github.com/line/ibc-go/v3/modules/core/exported"
+	"github.com/line/ibc-go/v3/testing/simapp"
 )
 
 const (

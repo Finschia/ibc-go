@@ -7,11 +7,11 @@ import (
 	ocproto "github.com/line/ostracon/proto/ostracon/types"
 	octypes "github.com/line/ostracon/types"
 
-	clienttypes "github.com/line/ibc-go/modules/core/02-client/types"
-	"github.com/line/ibc-go/modules/core/exported"
-	"github.com/line/ibc-go/modules/light-clients/99-ostracon/types"
-	ibctesting "github.com/line/ibc-go/testing"
-	ibctestingmock "github.com/line/ibc-go/testing/mock"
+	clienttypes "github.com/line/ibc-go/v3/modules/core/02-client/types"
+	"github.com/line/ibc-go/v3/modules/core/exported"
+	"github.com/line/ibc-go/v3/modules/light-clients/99-ostracon/types"
+	ibctesting "github.com/line/ibc-go/v3/testing"
+	ibctestingmock "github.com/line/ibc-go/v3/testing/mock"
 )
 
 func (suite *OstraconTestSuite) TestMisbehaviour() {

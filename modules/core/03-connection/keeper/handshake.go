@@ -8,10 +8,10 @@ import (
 	sdk "github.com/line/lbm-sdk/types"
 	sdkerrors "github.com/line/lbm-sdk/types/errors"
 
-	clienttypes "github.com/line/ibc-go/modules/core/02-client/types"
-	"github.com/line/ibc-go/modules/core/03-connection/types"
-	commitmenttypes "github.com/line/ibc-go/modules/core/23-commitment/types"
-	"github.com/line/ibc-go/modules/core/exported"
+	clienttypes "github.com/line/ibc-go/v3/modules/core/02-client/types"
+	"github.com/line/ibc-go/v3/modules/core/03-connection/types"
+	commitmenttypes "github.com/line/ibc-go/v3/modules/core/23-commitment/types"
+	"github.com/line/ibc-go/v3/modules/core/exported"
 )
 
 // ConnOpenInit initialises a connection attempt on chain A. The generated connection identifier

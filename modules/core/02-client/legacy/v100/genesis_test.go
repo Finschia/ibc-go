@@ -9,14 +9,14 @@ import (
 	"github.com/line/lbm-sdk/codec"
 	codectypes "github.com/line/lbm-sdk/codec/types"
 
-	ibcclient "github.com/line/ibc-go/modules/core/02-client"
-	v100 "github.com/line/ibc-go/modules/core/02-client/legacy/v100"
-	"github.com/line/ibc-go/modules/core/02-client/types"
-	host "github.com/line/ibc-go/modules/core/24-host"
-	"github.com/line/ibc-go/modules/core/exported"
-	ibcoctypes "github.com/line/ibc-go/modules/light-clients/99-ostracon/types"
-	ibctesting "github.com/line/ibc-go/testing"
-	"github.com/line/ibc-go/testing/simapp"
+	ibcclient "github.com/line/ibc-go/v3/modules/core/02-client"
+	v100 "github.com/line/ibc-go/v3/modules/core/02-client/legacy/v100"
+	"github.com/line/ibc-go/v3/modules/core/02-client/types"
+	host "github.com/line/ibc-go/v3/modules/core/24-host"
+	"github.com/line/ibc-go/v3/modules/core/exported"
+	ibcoctypes "github.com/line/ibc-go/v3/modules/light-clients/99-ostracon/types"
+	ibctesting "github.com/line/ibc-go/v3/testing"
+	"github.com/line/ibc-go/v3/testing/simapp"
 )
 
 func (suite *LegacyTestSuite) TestMigrateGenesisSolomachine() {

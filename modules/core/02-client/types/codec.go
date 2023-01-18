@@ -8,7 +8,7 @@ import (
 	"github.com/line/lbm-sdk/types/msgservice"
 	govtypes "github.com/line/lbm-sdk/x/gov/types"
 
-	"github.com/line/ibc-go/modules/core/exported"
+	"github.com/line/ibc-go/v3/modules/core/exported"
 )
 
 // RegisterInterfaces registers the client interfaces to protobuf Any.

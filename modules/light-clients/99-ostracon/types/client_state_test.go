@@ -5,14 +5,14 @@ import (
 
 	ics23 "github.com/confio/ics23/go"
 
-	clienttypes "github.com/line/ibc-go/modules/core/02-client/types"
-	channeltypes "github.com/line/ibc-go/modules/core/04-channel/types"
-	commitmenttypes "github.com/line/ibc-go/modules/core/23-commitment/types"
-	host "github.com/line/ibc-go/modules/core/24-host"
-	"github.com/line/ibc-go/modules/core/exported"
-	"github.com/line/ibc-go/modules/light-clients/99-ostracon/types"
-	ibctesting "github.com/line/ibc-go/testing"
-	ibcmock "github.com/line/ibc-go/testing/mock"
+	clienttypes "github.com/line/ibc-go/v3/modules/core/02-client/types"
+	channeltypes "github.com/line/ibc-go/v3/modules/core/04-channel/types"
+	commitmenttypes "github.com/line/ibc-go/v3/modules/core/23-commitment/types"
+	host "github.com/line/ibc-go/v3/modules/core/24-host"
+	"github.com/line/ibc-go/v3/modules/core/exported"
+	"github.com/line/ibc-go/v3/modules/light-clients/99-ostracon/types"
+	ibctesting "github.com/line/ibc-go/v3/testing"
+	ibcmock "github.com/line/ibc-go/v3/testing/mock"
 )
 
 const (

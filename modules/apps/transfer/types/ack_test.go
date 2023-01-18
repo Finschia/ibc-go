@@ -9,8 +9,8 @@ import (
 	ocstate "github.com/line/ostracon/state"
 	"github.com/stretchr/testify/suite"
 
-	"github.com/line/ibc-go/modules/apps/transfer/types"
-	ibctesting "github.com/line/ibc-go/testing"
+	"github.com/line/ibc-go/v3/modules/apps/transfer/types"
+	ibctesting "github.com/line/ibc-go/v3/testing"
 )
 
 const (

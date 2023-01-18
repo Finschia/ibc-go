@@ -5,7 +5,7 @@ import (
 
 	"github.com/line/lbm-sdk/codec"
 
-	"github.com/line/ibc-go/modules/core/exported"
+	"github.com/line/ibc-go/v3/modules/core/exported"
 )
 
 // MustUnmarshalClientState attempts to decode and return an ClientState object from

@@ -5,9 +5,9 @@ import (
 
 	sdkerrors "github.com/line/lbm-sdk/types/errors"
 
-	clienttypes "github.com/line/ibc-go/modules/core/02-client/types"
-	host "github.com/line/ibc-go/modules/core/24-host"
-	"github.com/line/ibc-go/modules/core/exported"
+	clienttypes "github.com/line/ibc-go/v3/modules/core/02-client/types"
+	host "github.com/line/ibc-go/v3/modules/core/24-host"
+	"github.com/line/ibc-go/v3/modules/core/exported"
 )
 
 var _ exported.Misbehaviour = &Misbehaviour{}

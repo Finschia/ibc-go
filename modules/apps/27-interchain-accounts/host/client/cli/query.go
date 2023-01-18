@@ -12,10 +12,10 @@ import (
 	abci "github.com/line/ostracon/abci/types"
 	"github.com/spf13/cobra"
 
-	"github.com/line/ibc-go/modules/apps/27-interchain-accounts/host/types"
-	icatypes "github.com/line/ibc-go/modules/apps/27-interchain-accounts/types"
-	channeltypes "github.com/line/ibc-go/modules/core/04-channel/types"
-	host "github.com/line/ibc-go/modules/core/24-host"
+	"github.com/line/ibc-go/v3/modules/apps/27-interchain-accounts/host/types"
+	icatypes "github.com/line/ibc-go/v3/modules/apps/27-interchain-accounts/types"
+	channeltypes "github.com/line/ibc-go/v3/modules/core/04-channel/types"
+	host "github.com/line/ibc-go/v3/modules/core/24-host"
 )
 
 // GetCmdParams returns the command handler for the host submodule parameter querying.

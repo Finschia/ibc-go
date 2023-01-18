@@ -1,14 +1,14 @@
 package types_test
 
 import (
-	clienttypes "github.com/line/ibc-go/modules/core/02-client/types"
-	connectiontypes "github.com/line/ibc-go/modules/core/03-connection/types"
-	channeltypes "github.com/line/ibc-go/modules/core/04-channel/types"
-	commitmenttypes "github.com/line/ibc-go/modules/core/23-commitment/types"
-	"github.com/line/ibc-go/modules/core/exported"
-	"github.com/line/ibc-go/modules/light-clients/06-solomachine/types"
-	ibcoctypes "github.com/line/ibc-go/modules/light-clients/99-ostracon/types"
-	ibctesting "github.com/line/ibc-go/testing"
+	clienttypes "github.com/line/ibc-go/v3/modules/core/02-client/types"
+	connectiontypes "github.com/line/ibc-go/v3/modules/core/03-connection/types"
+	channeltypes "github.com/line/ibc-go/v3/modules/core/04-channel/types"
+	commitmenttypes "github.com/line/ibc-go/v3/modules/core/23-commitment/types"
+	"github.com/line/ibc-go/v3/modules/core/exported"
+	"github.com/line/ibc-go/v3/modules/light-clients/06-solomachine/types"
+	ibcoctypes "github.com/line/ibc-go/v3/modules/light-clients/99-ostracon/types"
+	ibctesting "github.com/line/ibc-go/v3/testing"
 )
 
 const (

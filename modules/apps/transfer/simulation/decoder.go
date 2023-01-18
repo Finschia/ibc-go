@@ -6,7 +6,7 @@ import (
 
 	"github.com/line/lbm-sdk/types/kv"
 
-	"github.com/line/ibc-go/modules/apps/transfer/types"
+	"github.com/line/ibc-go/v3/modules/apps/transfer/types"
 )
 
 // TransferUnmarshaler defines the expected encoding store functions.

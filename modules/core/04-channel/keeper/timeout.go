@@ -7,10 +7,10 @@ import (
 	sdkerrors "github.com/line/lbm-sdk/types/errors"
 	capabilitytypes "github.com/line/lbm-sdk/x/capability/types"
 
-	connectiontypes "github.com/line/ibc-go/modules/core/03-connection/types"
-	"github.com/line/ibc-go/modules/core/04-channel/types"
-	host "github.com/line/ibc-go/modules/core/24-host"
-	"github.com/line/ibc-go/modules/core/exported"
+	connectiontypes "github.com/line/ibc-go/v3/modules/core/03-connection/types"
+	"github.com/line/ibc-go/v3/modules/core/04-channel/types"
+	host "github.com/line/ibc-go/v3/modules/core/24-host"
+	"github.com/line/ibc-go/v3/modules/core/exported"
 )
 
 // TimeoutPacket is called by a module which originally attempted to send a

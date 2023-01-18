@@ -25,7 +25,7 @@ import (
 	"github.com/stretchr/testify/require"
 	dbm "github.com/tendermint/tm-db"
 
-	"github.com/line/ibc-go/testing/simapp/helpers"
+	"github.com/line/ibc-go/v3/testing/simapp/helpers"
 )
 
 // DefaultConsensusParams defines the default Tendermint consensus params used in

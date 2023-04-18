@@ -4,11 +4,11 @@ import (
 	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
 	tmtypes "github.com/tendermint/tendermint/types"
 
-	cryptocodec "github.com/line/lbm-sdk/crypto/codec"
-	"github.com/line/lbm-sdk/crypto/keys/ed25519"
-	cryptotypes "github.com/line/lbm-sdk/crypto/types"
-	"github.com/line/ostracon/crypto"
-	octypes "github.com/line/ostracon/types"
+	cryptocodec "github.com/Finschia/finschia-sdk/crypto/codec"
+	"github.com/Finschia/finschia-sdk/crypto/keys/ed25519"
+	cryptotypes "github.com/Finschia/finschia-sdk/crypto/types"
+	"github.com/Finschia/ostracon/crypto"
+	octypes "github.com/Finschia/ostracon/types"
 )
 
 var _ octypes.PrivValidator = PV{}

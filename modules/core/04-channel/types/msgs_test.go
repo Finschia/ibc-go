@@ -8,11 +8,11 @@ import (
 	abci "github.com/tendermint/tendermint/abci/types"
 	dbm "github.com/tendermint/tm-db"
 
-	"github.com/line/lbm-sdk/store/iavl"
-	"github.com/line/lbm-sdk/store/rootmulti"
-	storetypes "github.com/line/lbm-sdk/store/types"
-	sdk "github.com/line/lbm-sdk/types"
-	"github.com/line/ostracon/libs/log"
+	"github.com/Finschia/finschia-sdk/store/iavl"
+	"github.com/Finschia/finschia-sdk/store/rootmulti"
+	storetypes "github.com/Finschia/finschia-sdk/store/types"
+	sdk "github.com/Finschia/finschia-sdk/types"
+	"github.com/Finschia/ostracon/libs/log"
 
 	clienttypes "github.com/Finschia/ibc-go/v3/modules/core/02-client/types"
 	"github.com/Finschia/ibc-go/v3/modules/core/04-channel/types"

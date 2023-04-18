@@ -3,10 +3,10 @@ package utils
 import (
 	"context"
 
-	"github.com/line/lbm-sdk/client"
-	"github.com/line/lbm-sdk/codec"
-	sdkerrors "github.com/line/lbm-sdk/types/errors"
-	octypes "github.com/line/ostracon/types"
+	"github.com/Finschia/finschia-sdk/client"
+	"github.com/Finschia/finschia-sdk/codec"
+	sdkerrors "github.com/Finschia/finschia-sdk/types/errors"
+	octypes "github.com/Finschia/ostracon/types"
 
 	"github.com/Finschia/ibc-go/v3/modules/core/02-client/types"
 	commitmenttypes "github.com/Finschia/ibc-go/v3/modules/core/23-commitment/types"

@@ -1,9 +1,9 @@
 package mock
 
 import (
-	sdk "github.com/line/lbm-sdk/types"
-	capabilitykeeper "github.com/line/lbm-sdk/x/capability/keeper"
-	capabilitytypes "github.com/line/lbm-sdk/x/capability/types"
+	sdk "github.com/Finschia/finschia-sdk/types"
+	capabilitykeeper "github.com/Finschia/finschia-sdk/x/capability/keeper"
+	capabilitytypes "github.com/Finschia/finschia-sdk/x/capability/types"
 
 	channeltypes "github.com/Finschia/ibc-go/v3/modules/core/04-channel/types"
 	"github.com/Finschia/ibc-go/v3/modules/core/exported"

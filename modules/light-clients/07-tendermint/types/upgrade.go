@@ -3,10 +3,10 @@ package types
 import (
 	"fmt"
 
-	"github.com/line/lbm-sdk/codec"
-	sdk "github.com/line/lbm-sdk/types"
-	sdkerrors "github.com/line/lbm-sdk/types/errors"
-	upgradetypes "github.com/line/lbm-sdk/x/upgrade/types"
+	"github.com/Finschia/finschia-sdk/codec"
+	sdk "github.com/Finschia/finschia-sdk/types"
+	sdkerrors "github.com/Finschia/finschia-sdk/types/errors"
+	upgradetypes "github.com/Finschia/finschia-sdk/x/upgrade/types"
 
 	clienttypes "github.com/Finschia/ibc-go/v3/modules/core/02-client/types"
 	commitmenttypes "github.com/Finschia/ibc-go/v3/modules/core/23-commitment/types"

@@ -3,8 +3,8 @@ package types
 import (
 	"encoding/base64"
 
-	sdk "github.com/line/lbm-sdk/types"
-	sdkerrors "github.com/line/lbm-sdk/types/errors"
+	sdk "github.com/Finschia/finschia-sdk/types"
+	sdkerrors "github.com/Finschia/finschia-sdk/types/errors"
 
 	clienttypes "github.com/Finschia/ibc-go/v3/modules/core/02-client/types"
 	commitmenttypes "github.com/Finschia/ibc-go/v3/modules/core/23-commitment/types"

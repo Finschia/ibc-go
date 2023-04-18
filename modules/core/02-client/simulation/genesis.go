@@ -3,7 +3,7 @@ package simulation
 import (
 	"math/rand"
 
-	simtypes "github.com/line/lbm-sdk/types/simulation"
+	simtypes "github.com/Finschia/finschia-sdk/types/simulation"
 
 	"github.com/Finschia/ibc-go/v3/modules/core/02-client/types"
 )

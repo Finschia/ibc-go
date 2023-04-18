@@ -1,7 +1,7 @@
 package cli
 
 import (
-	"github.com/line/lbm-sdk/client"
+	"github.com/Finschia/finschia-sdk/client"
 	"github.com/spf13/cobra"
 
 	"github.com/Finschia/ibc-go/v3/modules/core/02-client/types"

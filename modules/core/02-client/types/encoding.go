@@ -3,7 +3,7 @@ package types
 import (
 	"fmt"
 
-	"github.com/line/lbm-sdk/codec"
+	"github.com/Finschia/finschia-sdk/codec"
 
 	"github.com/Finschia/ibc-go/v3/modules/core/exported"
 )

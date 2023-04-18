@@ -1,8 +1,8 @@
 package types_test
 
 import (
-	codectypes "github.com/line/lbm-sdk/codec/types"
-	sdk "github.com/line/lbm-sdk/types"
+	codectypes "github.com/Finschia/finschia-sdk/codec/types"
+	sdk "github.com/Finschia/finschia-sdk/types"
 
 	"github.com/Finschia/ibc-go/v3/modules/core/exported"
 	"github.com/Finschia/ibc-go/v3/modules/light-clients/06-solomachine/types"

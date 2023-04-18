@@ -1,8 +1,8 @@
 package types_test
 
 import (
-	cryptotypes "github.com/line/lbm-sdk/crypto/types"
-	"github.com/line/lbm-sdk/types/tx/signing"
+	cryptotypes "github.com/Finschia/finschia-sdk/crypto/types"
+	"github.com/Finschia/finschia-sdk/types/tx/signing"
 
 	"github.com/Finschia/ibc-go/v3/modules/light-clients/06-solomachine/types"
 	solomachinetypes "github.com/Finschia/ibc-go/v3/modules/light-clients/06-solomachine/types"

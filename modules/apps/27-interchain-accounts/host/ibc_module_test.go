@@ -8,11 +8,11 @@ import (
 	"github.com/stretchr/testify/suite"
 	abcitypes "github.com/tendermint/tendermint/abci/types"
 
-	sdk "github.com/line/lbm-sdk/types"
-	banktypes "github.com/line/lbm-sdk/x/bank/types"
-	capabilitytypes "github.com/line/lbm-sdk/x/capability/types"
-	ocprotostate "github.com/line/ostracon/proto/ostracon/state"
-	ocstate "github.com/line/ostracon/state"
+	sdk "github.com/Finschia/finschia-sdk/types"
+	banktypes "github.com/Finschia/finschia-sdk/x/bank/types"
+	capabilitytypes "github.com/Finschia/finschia-sdk/x/capability/types"
+	ocprotostate "github.com/Finschia/ostracon/proto/ostracon/state"
+	ocstate "github.com/Finschia/ostracon/state"
 
 	"github.com/Finschia/ibc-go/v3/modules/apps/27-interchain-accounts/host/types"
 	icatypes "github.com/Finschia/ibc-go/v3/modules/apps/27-interchain-accounts/types"

@@ -3,7 +3,7 @@ package types
 import (
 	"fmt"
 
-	sdk "github.com/line/lbm-sdk/types"
+	sdk "github.com/Finschia/finschia-sdk/types"
 )
 
 // The router is a map from module name to the IBCModule

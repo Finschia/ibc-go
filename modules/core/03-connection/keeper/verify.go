@@ -3,8 +3,8 @@ package keeper
 import (
 	"math"
 
-	sdk "github.com/line/lbm-sdk/types"
-	sdkerrors "github.com/line/lbm-sdk/types/errors"
+	sdk "github.com/Finschia/finschia-sdk/types"
+	sdkerrors "github.com/Finschia/finschia-sdk/types/errors"
 
 	clienttypes "github.com/Finschia/ibc-go/v3/modules/core/02-client/types"
 	"github.com/Finschia/ibc-go/v3/modules/core/exported"

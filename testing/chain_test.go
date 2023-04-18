@@ -3,7 +3,7 @@ package ibctesting_test
 import (
 	"testing"
 
-	octypes "github.com/line/ostracon/types"
+	octypes "github.com/Finschia/ostracon/types"
 	"github.com/stretchr/testify/require"
 
 	ibctesting "github.com/Finschia/ibc-go/v3/testing"

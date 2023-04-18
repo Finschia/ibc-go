@@ -3,7 +3,7 @@ package types_test
 import (
 	"time"
 
-	octypes "github.com/line/ostracon/types"
+	octypes "github.com/Finschia/ostracon/types"
 
 	client "github.com/Finschia/ibc-go/v3/modules/core/02-client"
 	"github.com/Finschia/ibc-go/v3/modules/core/02-client/types"

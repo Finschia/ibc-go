@@ -3,7 +3,7 @@ package transfer_test
 import (
 	"math"
 
-	capabilitytypes "github.com/line/lbm-sdk/x/capability/types"
+	capabilitytypes "github.com/Finschia/finschia-sdk/x/capability/types"
 
 	"github.com/Finschia/ibc-go/v3/modules/apps/transfer/types"
 	channeltypes "github.com/Finschia/ibc-go/v3/modules/core/04-channel/types"

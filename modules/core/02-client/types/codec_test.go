@@ -1,7 +1,7 @@
 package types_test
 
 import (
-	codectypes "github.com/line/lbm-sdk/codec/types"
+	codectypes "github.com/Finschia/finschia-sdk/codec/types"
 
 	"github.com/Finschia/ibc-go/v3/modules/core/02-client/types"
 	commitmenttypes "github.com/Finschia/ibc-go/v3/modules/core/23-commitment/types"

@@ -3,10 +3,10 @@ package keeper
 import (
 	"bytes"
 
+	"github.com/Finschia/finschia-sdk/telemetry"
+	sdk "github.com/Finschia/finschia-sdk/types"
+	sdkerrors "github.com/Finschia/finschia-sdk/types/errors"
 	"github.com/gogo/protobuf/proto"
-	"github.com/line/lbm-sdk/telemetry"
-	sdk "github.com/line/lbm-sdk/types"
-	sdkerrors "github.com/line/lbm-sdk/types/errors"
 
 	clienttypes "github.com/Finschia/ibc-go/v3/modules/core/02-client/types"
 	"github.com/Finschia/ibc-go/v3/modules/core/03-connection/types"

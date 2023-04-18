@@ -1,9 +1,9 @@
 package keeper_test
 
 import (
-	sdk "github.com/line/lbm-sdk/types"
-	banktypes "github.com/line/lbm-sdk/x/bank/types"
-	capabilitytypes "github.com/line/lbm-sdk/x/capability/types"
+	sdk "github.com/Finschia/finschia-sdk/types"
+	banktypes "github.com/Finschia/finschia-sdk/x/bank/types"
+	capabilitytypes "github.com/Finschia/finschia-sdk/x/capability/types"
 
 	icatypes "github.com/Finschia/ibc-go/v3/modules/apps/27-interchain-accounts/types"
 	clienttypes "github.com/Finschia/ibc-go/v3/modules/core/02-client/types"

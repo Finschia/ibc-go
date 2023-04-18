@@ -1,7 +1,7 @@
 package types_test
 
 import (
-	upgradetypes "github.com/line/lbm-sdk/x/upgrade/types"
+	upgradetypes "github.com/Finschia/finschia-sdk/x/upgrade/types"
 
 	clienttypes "github.com/Finschia/ibc-go/v3/modules/core/02-client/types"
 	commitmenttypes "github.com/Finschia/ibc-go/v3/modules/core/23-commitment/types"

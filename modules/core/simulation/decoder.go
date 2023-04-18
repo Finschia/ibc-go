@@ -3,7 +3,7 @@ package simulation
 import (
 	"fmt"
 
-	"github.com/line/lbm-sdk/types/kv"
+	"github.com/Finschia/finschia-sdk/types/kv"
 
 	clientsim "github.com/Finschia/ibc-go/v3/modules/core/02-client/simulation"
 	connectionsim "github.com/Finschia/ibc-go/v3/modules/core/03-connection/simulation"

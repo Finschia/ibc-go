@@ -4,8 +4,8 @@ import (
 	"bytes"
 	"fmt"
 
-	"github.com/line/lbm-sdk/codec"
-	"github.com/line/lbm-sdk/types/kv"
+	"github.com/Finschia/finschia-sdk/codec"
+	"github.com/Finschia/finschia-sdk/types/kv"
 
 	"github.com/Finschia/ibc-go/v3/modules/core/03-connection/types"
 	host "github.com/Finschia/ibc-go/v3/modules/core/24-host"

@@ -4,7 +4,7 @@ import (
 	"bytes"
 	"fmt"
 
-	"github.com/line/lbm-sdk/types/kv"
+	"github.com/Finschia/finschia-sdk/types/kv"
 
 	"github.com/Finschia/ibc-go/v3/modules/apps/transfer/types"
 )

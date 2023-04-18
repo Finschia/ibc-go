@@ -4,9 +4,9 @@ import (
 	"context"
 	"encoding/binary"
 
-	"github.com/line/lbm-sdk/client"
-	"github.com/line/lbm-sdk/codec"
-	sdkerrors "github.com/line/lbm-sdk/types/errors"
+	"github.com/Finschia/finschia-sdk/client"
+	"github.com/Finschia/finschia-sdk/codec"
+	sdkerrors "github.com/Finschia/finschia-sdk/types/errors"
 
 	clientutils "github.com/Finschia/ibc-go/v3/modules/core/02-client/client/utils"
 	clienttypes "github.com/Finschia/ibc-go/v3/modules/core/02-client/types"

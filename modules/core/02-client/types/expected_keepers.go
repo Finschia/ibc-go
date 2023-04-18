@@ -3,9 +3,9 @@ package types
 import (
 	"time"
 
-	sdk "github.com/line/lbm-sdk/types"
-	stakingtypes "github.com/line/lbm-sdk/x/staking/types"
-	upgradetypes "github.com/line/lbm-sdk/x/upgrade/types"
+	sdk "github.com/Finschia/finschia-sdk/types"
+	stakingtypes "github.com/Finschia/finschia-sdk/x/staking/types"
+	upgradetypes "github.com/Finschia/finschia-sdk/x/upgrade/types"
 )
 
 // StakingKeeper expected staking keeper

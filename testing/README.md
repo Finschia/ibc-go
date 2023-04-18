@@ -252,7 +252,7 @@ package transfertesting
 import (
 	"encoding/json"
 
-	"github.com/line/ostracon/libs/log"
+	"github.com/Finschia/ostracon/libs/log"
 	dbm "github.com/tendermint/tm-db"
 
 	"github.com/Finschia/ibc-go/v3/modules/applications/transfer/simapp"

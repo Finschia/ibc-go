@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/line/lbm-sdk/crypto/keys/secp256k1"
-	sdk "github.com/line/lbm-sdk/types"
+	"github.com/Finschia/finschia-sdk/crypto/keys/secp256k1"
+	sdk "github.com/Finschia/finschia-sdk/types"
 	"github.com/stretchr/testify/require"
 
 	clienttypes "github.com/Finschia/ibc-go/v3/modules/core/02-client/types"

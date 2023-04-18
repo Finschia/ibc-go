@@ -7,10 +7,10 @@ import (
 	"github.com/stretchr/testify/suite"
 	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
 
-	"github.com/line/lbm-sdk/codec"
-	sdk "github.com/line/lbm-sdk/types"
-	ocbytes "github.com/line/ostracon/libs/bytes"
-	octypes "github.com/line/ostracon/types"
+	"github.com/Finschia/finschia-sdk/codec"
+	sdk "github.com/Finschia/finschia-sdk/types"
+	ocbytes "github.com/Finschia/ostracon/libs/bytes"
+	octypes "github.com/Finschia/ostracon/types"
 
 	clienttypes "github.com/Finschia/ibc-go/v3/modules/core/02-client/types"
 	ibcoctypes "github.com/Finschia/ibc-go/v3/modules/light-clients/07-tendermint/types"

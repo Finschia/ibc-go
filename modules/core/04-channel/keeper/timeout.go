@@ -4,9 +4,9 @@ import (
 	"bytes"
 	"strconv"
 
-	sdk "github.com/line/lbm-sdk/types"
-	sdkerrors "github.com/line/lbm-sdk/types/errors"
-	capabilitytypes "github.com/line/lbm-sdk/x/capability/types"
+	sdk "github.com/Finschia/finschia-sdk/types"
+	sdkerrors "github.com/Finschia/finschia-sdk/types/errors"
+	capabilitytypes "github.com/Finschia/finschia-sdk/x/capability/types"
 
 	connectiontypes "github.com/Finschia/ibc-go/v3/modules/core/03-connection/types"
 	"github.com/Finschia/ibc-go/v3/modules/core/04-channel/types"

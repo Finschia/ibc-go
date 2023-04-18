@@ -1,9 +1,9 @@
 package client
 
 import (
-	sdk "github.com/line/lbm-sdk/types"
-	sdkerrors "github.com/line/lbm-sdk/types/errors"
-	govtypes "github.com/line/lbm-sdk/x/gov/types"
+	sdk "github.com/Finschia/finschia-sdk/types"
+	sdkerrors "github.com/Finschia/finschia-sdk/types/errors"
+	govtypes "github.com/Finschia/finschia-sdk/x/gov/types"
 
 	"github.com/Finschia/ibc-go/v3/modules/core/02-client/keeper"
 	"github.com/Finschia/ibc-go/v3/modules/core/02-client/types"

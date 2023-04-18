@@ -3,7 +3,7 @@ package types
 import (
 	"strings"
 
-	sdkerrors "github.com/line/lbm-sdk/types/errors"
+	sdkerrors "github.com/Finschia/finschia-sdk/types/errors"
 
 	"github.com/Finschia/ibc-go/v3/modules/core/exported"
 )

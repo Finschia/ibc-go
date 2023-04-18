@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"time"
 
-	upgradetypes "github.com/line/lbm-sdk/x/upgrade/types"
-	octypes "github.com/line/ostracon/types"
+	upgradetypes "github.com/Finschia/finschia-sdk/x/upgrade/types"
+	octypes "github.com/Finschia/ostracon/types"
 
 	"github.com/Finschia/ibc-go/v3/modules/core/02-client/types"
 	clienttypes "github.com/Finschia/ibc-go/v3/modules/core/02-client/types"

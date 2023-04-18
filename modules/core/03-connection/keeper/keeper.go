@@ -1,12 +1,12 @@
 package keeper
 
 import (
-	"github.com/line/ostracon/libs/log"
+	"github.com/Finschia/ostracon/libs/log"
 
-	"github.com/line/lbm-sdk/codec"
-	sdk "github.com/line/lbm-sdk/types"
-	sdkerrors "github.com/line/lbm-sdk/types/errors"
-	paramtypes "github.com/line/lbm-sdk/x/params/types"
+	"github.com/Finschia/finschia-sdk/codec"
+	sdk "github.com/Finschia/finschia-sdk/types"
+	sdkerrors "github.com/Finschia/finschia-sdk/types/errors"
+	paramtypes "github.com/Finschia/finschia-sdk/x/params/types"
 
 	clienttypes "github.com/Finschia/ibc-go/v3/modules/core/02-client/types"
 	"github.com/Finschia/ibc-go/v3/modules/core/03-connection/types"

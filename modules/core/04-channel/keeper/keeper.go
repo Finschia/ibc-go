@@ -4,12 +4,12 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/line/lbm-sdk/codec"
-	sdk "github.com/line/lbm-sdk/types"
-	sdkerrors "github.com/line/lbm-sdk/types/errors"
-	capabilitykeeper "github.com/line/lbm-sdk/x/capability/keeper"
-	capabilitytypes "github.com/line/lbm-sdk/x/capability/types"
-	"github.com/line/ostracon/libs/log"
+	"github.com/Finschia/finschia-sdk/codec"
+	sdk "github.com/Finschia/finschia-sdk/types"
+	sdkerrors "github.com/Finschia/finschia-sdk/types/errors"
+	capabilitykeeper "github.com/Finschia/finschia-sdk/x/capability/keeper"
+	capabilitytypes "github.com/Finschia/finschia-sdk/x/capability/types"
+	"github.com/Finschia/ostracon/libs/log"
 	db "github.com/tendermint/tm-db"
 
 	clienttypes "github.com/Finschia/ibc-go/v3/modules/core/02-client/types"

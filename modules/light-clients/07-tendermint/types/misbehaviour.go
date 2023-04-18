@@ -5,8 +5,8 @@ import (
 
 	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
 
-	sdkerrors "github.com/line/lbm-sdk/types/errors"
-	octypes "github.com/line/ostracon/types"
+	sdkerrors "github.com/Finschia/finschia-sdk/types/errors"
+	octypes "github.com/Finschia/ostracon/types"
 
 	clienttypes "github.com/Finschia/ibc-go/v3/modules/core/02-client/types"
 	host "github.com/Finschia/ibc-go/v3/modules/core/24-host"

@@ -12,7 +12,7 @@ See the policy linked above for more details on submissions and rewards and read
 this [blog post](https://blog.cosmos.network/bug-bounty-program-for-tendermint-cosmos-833c67693586) for the program scope.
 
 The following is a list of examples of the kinds of bugs we're most interested
-in for the IBC Golang repository. Please refer to the corresponding repositories for vulnerabilities on the [LBM SDK](https://github.com/line/lbm-sdk/blob/main/SECURITY.md) and [Ostracon](https://github.com/line/ostracon/blob/main/SECURITY.md) repositories.
+in for the IBC Golang repository. Please refer to the corresponding repositories for vulnerabilities on the [Finschia SDK](https://github.com/Finschia/finschia-sdk/blob/main/SECURITY.md) and [Ostracon](https://github.com/Finschia/ostracon/blob/main/SECURITY.md) repositories.
 
 ### IBC Core
 

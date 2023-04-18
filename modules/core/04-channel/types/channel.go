@@ -1,7 +1,7 @@
 package types
 
 import (
-	sdkerrors "github.com/line/lbm-sdk/types/errors"
+	sdkerrors "github.com/Finschia/finschia-sdk/types/errors"
 
 	host "github.com/Finschia/ibc-go/v3/modules/core/24-host"
 	"github.com/Finschia/ibc-go/v3/modules/core/exported"

@@ -7,7 +7,7 @@ package ibctesting
 import (
 	"time"
 
-	sdk "github.com/line/lbm-sdk/types"
+	sdk "github.com/Finschia/finschia-sdk/types"
 
 	ibctransfertypes "github.com/Finschia/ibc-go/v3/modules/apps/transfer/types"
 	connectiontypes "github.com/Finschia/ibc-go/v3/modules/core/03-connection/types"

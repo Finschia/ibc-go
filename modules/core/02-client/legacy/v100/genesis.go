@@ -4,8 +4,8 @@ import (
 	"bytes"
 	"time"
 
-	"github.com/line/lbm-sdk/codec"
-	sdkerrors "github.com/line/lbm-sdk/types/errors"
+	"github.com/Finschia/finschia-sdk/codec"
+	sdkerrors "github.com/Finschia/finschia-sdk/types/errors"
 
 	"github.com/Finschia/ibc-go/v3/modules/core/02-client/types"
 	host "github.com/Finschia/ibc-go/v3/modules/core/24-host"

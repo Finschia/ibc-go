@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"testing"
 
-	sdk "github.com/line/lbm-sdk/types"
-	capabilitytypes "github.com/line/lbm-sdk/x/capability/types"
+	sdk "github.com/Finschia/finschia-sdk/types"
+	capabilitytypes "github.com/Finschia/finschia-sdk/x/capability/types"
 	"github.com/stretchr/testify/suite"
 
 	"github.com/Finschia/ibc-go/v3/modules/apps/27-interchain-accounts/controller/types"

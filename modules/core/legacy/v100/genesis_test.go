@@ -3,10 +3,10 @@ package v100_test
 import (
 	"testing"
 
-	"github.com/line/lbm-sdk/client"
-	codectypes "github.com/line/lbm-sdk/codec/types"
-	genutiltypes "github.com/line/lbm-sdk/x/genutil/types"
-	octypes "github.com/line/ostracon/types"
+	"github.com/Finschia/finschia-sdk/client"
+	codectypes "github.com/Finschia/finschia-sdk/codec/types"
+	genutiltypes "github.com/Finschia/finschia-sdk/x/genutil/types"
+	octypes "github.com/Finschia/ostracon/types"
 	"github.com/stretchr/testify/suite"
 
 	ibcclient "github.com/Finschia/ibc-go/v3/modules/core/02-client"

@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"strings"
 
-	paramtypes "github.com/line/lbm-sdk/x/params/types"
+	paramtypes "github.com/Finschia/finschia-sdk/x/params/types"
 
 	"github.com/Finschia/ibc-go/v3/modules/core/exported"
 )

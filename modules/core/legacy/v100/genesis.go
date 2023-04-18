@@ -1,10 +1,10 @@
 package v100
 
 import (
-	"github.com/line/lbm-sdk/client"
-	"github.com/line/lbm-sdk/codec"
-	genutiltypes "github.com/line/lbm-sdk/x/genutil/types"
-	octypes "github.com/line/ostracon/types"
+	"github.com/Finschia/finschia-sdk/client"
+	"github.com/Finschia/finschia-sdk/codec"
+	genutiltypes "github.com/Finschia/finschia-sdk/x/genutil/types"
+	octypes "github.com/Finschia/ostracon/types"
 
 	clientv100 "github.com/Finschia/ibc-go/v3/modules/core/02-client/legacy/v100"
 	clienttypes "github.com/Finschia/ibc-go/v3/modules/core/02-client/types"

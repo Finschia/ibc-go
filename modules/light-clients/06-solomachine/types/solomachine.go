@@ -1,8 +1,8 @@
 package types
 
 import (
-	codectypes "github.com/line/lbm-sdk/codec/types"
-	cryptotypes "github.com/line/lbm-sdk/crypto/types"
+	codectypes "github.com/Finschia/finschia-sdk/codec/types"
+	cryptotypes "github.com/Finschia/finschia-sdk/crypto/types"
 
 	"github.com/Finschia/ibc-go/v3/modules/core/exported"
 )

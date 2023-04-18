@@ -4,12 +4,12 @@ import (
 	"strings"
 	"time"
 
+	"github.com/Finschia/finschia-sdk/codec"
+	sdk "github.com/Finschia/finschia-sdk/types"
+	sdkerrors "github.com/Finschia/finschia-sdk/types/errors"
+	"github.com/Finschia/ostracon/light"
+	octypes "github.com/Finschia/ostracon/types"
 	ics23 "github.com/confio/ics23/go"
-	"github.com/line/lbm-sdk/codec"
-	sdk "github.com/line/lbm-sdk/types"
-	sdkerrors "github.com/line/lbm-sdk/types/errors"
-	"github.com/line/ostracon/light"
-	octypes "github.com/line/ostracon/types"
 
 	clienttypes "github.com/Finschia/ibc-go/v3/modules/core/02-client/types"
 	connectiontypes "github.com/Finschia/ibc-go/v3/modules/core/03-connection/types"

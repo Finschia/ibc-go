@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"time"
 
-	paramtypes "github.com/line/lbm-sdk/x/params/types"
+	paramtypes "github.com/Finschia/finschia-sdk/x/params/types"
 )
 
 // DefaultTimePerBlock is the default value for maximum expected time per block (in nanoseconds).

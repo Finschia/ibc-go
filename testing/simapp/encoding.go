@@ -1,7 +1,7 @@
 package simapp
 
 import (
-	"github.com/line/lbm-sdk/std"
+	"github.com/Finschia/finschia-sdk/std"
 
 	simappparams "github.com/Finschia/ibc-go/v3/testing/simapp/params"
 )

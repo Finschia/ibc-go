@@ -4,8 +4,8 @@ import (
 	"errors"
 	"fmt"
 
-	sdkerrors "github.com/line/lbm-sdk/types/errors"
-	capabilitytypes "github.com/line/lbm-sdk/x/capability/types"
+	sdkerrors "github.com/Finschia/finschia-sdk/types/errors"
+	capabilitytypes "github.com/Finschia/finschia-sdk/x/capability/types"
 
 	clienttypes "github.com/Finschia/ibc-go/v3/modules/core/02-client/types"
 	connectiontypes "github.com/Finschia/ibc-go/v3/modules/core/03-connection/types"

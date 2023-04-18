@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"math"
 
-	sdk "github.com/line/lbm-sdk/types"
-	sdkerrors "github.com/line/lbm-sdk/types/errors"
-	capabilitytypes "github.com/line/lbm-sdk/x/capability/types"
+	sdk "github.com/Finschia/finschia-sdk/types"
+	sdkerrors "github.com/Finschia/finschia-sdk/types/errors"
+	capabilitytypes "github.com/Finschia/finschia-sdk/x/capability/types"
 
 	"github.com/Finschia/ibc-go/v3/modules/apps/transfer/keeper"
 	"github.com/Finschia/ibc-go/v3/modules/apps/transfer/types"

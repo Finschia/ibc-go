@@ -7,7 +7,7 @@ import (
 	"fmt"
 	"math/rand"
 
-	"github.com/line/lbm-sdk/types/module"
+	"github.com/Finschia/finschia-sdk/types/module"
 
 	clientsims "github.com/Finschia/ibc-go/v3/modules/core/02-client/simulation"
 	clienttypes "github.com/Finschia/ibc-go/v3/modules/core/02-client/types"

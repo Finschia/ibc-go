@@ -5,11 +5,11 @@ import (
 	"regexp"
 	"strings"
 
-	crypto "github.com/line/lbm-sdk/crypto/types"
-	sdk "github.com/line/lbm-sdk/types"
-	sdkaddress "github.com/line/lbm-sdk/types/address"
-	sdkerrors "github.com/line/lbm-sdk/types/errors"
-	authtypes "github.com/line/lbm-sdk/x/auth/types"
+	crypto "github.com/Finschia/finschia-sdk/crypto/types"
+	sdk "github.com/Finschia/finschia-sdk/types"
+	sdkaddress "github.com/Finschia/finschia-sdk/types/address"
+	sdkerrors "github.com/Finschia/finschia-sdk/types/errors"
+	authtypes "github.com/Finschia/finschia-sdk/x/auth/types"
 	yaml "gopkg.in/yaml.v2"
 )
 

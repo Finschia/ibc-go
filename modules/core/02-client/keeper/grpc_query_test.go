@@ -3,10 +3,10 @@ package keeper_test
 import (
 	"fmt"
 
-	codectypes "github.com/line/lbm-sdk/codec/types"
-	sdk "github.com/line/lbm-sdk/types"
-	grpctypes "github.com/line/lbm-sdk/types/grpc"
-	"github.com/line/lbm-sdk/types/query"
+	codectypes "github.com/Finschia/finschia-sdk/codec/types"
+	sdk "github.com/Finschia/finschia-sdk/types"
+	grpctypes "github.com/Finschia/finschia-sdk/types/grpc"
+	"github.com/Finschia/finschia-sdk/types/query"
 	"google.golang.org/grpc/metadata"
 
 	"github.com/Finschia/ibc-go/v3/modules/core/02-client/types"

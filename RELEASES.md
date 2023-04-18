@@ -11,7 +11,7 @@ This is visually explained in the following decision tree:
   <img src="releases-decision-tree.png?raw=true" alt="Releases decision tree" width="40%" />
 </p>
 
-When bumping the dependencies of [LBM SDK](https://github.com/line/lbm-sdk) and [Ostracon](https://github.com/line/ostracon) we will only treat patch releases as non state-machine breaking.
+When bumping the dependencies of [Finschia SDK](https://github.com/Finschia/finschia-sdk) and [Ostracon](https://github.com/Finschia/ostracon) we will only treat patch releases as non state-machine breaking.
 
 ## <a name="backwards"></a> Backwards compatibility
 

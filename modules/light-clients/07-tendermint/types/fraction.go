@@ -1,8 +1,8 @@
 package types
 
 import (
-	ocmath "github.com/line/ostracon/libs/math"
-	"github.com/line/ostracon/light"
+	ocmath "github.com/Finschia/ostracon/libs/math"
+	"github.com/Finschia/ostracon/light"
 )
 
 // DefaultTrustLevel is the tendermint light client default trust level

@@ -4,10 +4,10 @@ import (
 	"fmt"
 	"reflect"
 
-	"github.com/line/lbm-sdk/codec"
-	sdk "github.com/line/lbm-sdk/types"
-	capabilitykeeper "github.com/line/lbm-sdk/x/capability/keeper"
-	paramtypes "github.com/line/lbm-sdk/x/params/types"
+	"github.com/Finschia/finschia-sdk/codec"
+	sdk "github.com/Finschia/finschia-sdk/types"
+	capabilitykeeper "github.com/Finschia/finschia-sdk/x/capability/keeper"
+	paramtypes "github.com/Finschia/finschia-sdk/x/params/types"
 
 	clientkeeper "github.com/Finschia/ibc-go/v3/modules/core/02-client/keeper"
 	clienttypes "github.com/Finschia/ibc-go/v3/modules/core/02-client/types"

@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/line/lbm-sdk/types/kv"
+	"github.com/Finschia/finschia-sdk/types/kv"
 	"github.com/stretchr/testify/require"
 
 	"github.com/Finschia/ibc-go/v3/modules/apps/transfer/simulation"

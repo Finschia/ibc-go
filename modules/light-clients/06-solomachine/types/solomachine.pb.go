@@ -5,11 +5,11 @@ package types
 
 import (
 	fmt "fmt"
+	types "github.com/Finschia/finschia-sdk/codec/types"
 	types1 "github.com/Finschia/ibc-go/v3/modules/core/03-connection/types"
 	types2 "github.com/Finschia/ibc-go/v3/modules/core/04-channel/types"
 	_ "github.com/gogo/protobuf/gogoproto"
 	proto "github.com/gogo/protobuf/proto"
-	types "github.com/line/lbm-sdk/codec/types"
 	io "io"
 	math "math"
 	math_bits "math/bits"

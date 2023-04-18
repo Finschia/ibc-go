@@ -1,9 +1,9 @@
 package keeper
 
 import (
-	sdk "github.com/line/lbm-sdk/types"
-	sdkerrors "github.com/line/lbm-sdk/types/errors"
-	authtypes "github.com/line/lbm-sdk/x/auth/types"
+	sdk "github.com/Finschia/finschia-sdk/types"
+	sdkerrors "github.com/Finschia/finschia-sdk/types/errors"
+	authtypes "github.com/Finschia/finschia-sdk/x/auth/types"
 
 	icatypes "github.com/Finschia/ibc-go/v3/modules/apps/27-interchain-accounts/types"
 	channeltypes "github.com/Finschia/ibc-go/v3/modules/core/04-channel/types"

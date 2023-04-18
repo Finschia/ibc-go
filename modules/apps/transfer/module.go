@@ -17,11 +17,11 @@ import (
 	"github.com/line/lbm-sdk/types/module"
 	simtypes "github.com/line/lbm-sdk/types/simulation"
 
-	"github.com/line/ibc-go/v3/modules/apps/transfer/client/cli"
-	"github.com/line/ibc-go/v3/modules/apps/transfer/keeper"
-	"github.com/line/ibc-go/v3/modules/apps/transfer/simulation"
-	"github.com/line/ibc-go/v3/modules/apps/transfer/types"
-	porttypes "github.com/line/ibc-go/v3/modules/core/05-port/types"
+	"github.com/Finschia/ibc-go/v3/modules/apps/transfer/client/cli"
+	"github.com/Finschia/ibc-go/v3/modules/apps/transfer/keeper"
+	"github.com/Finschia/ibc-go/v3/modules/apps/transfer/simulation"
+	"github.com/Finschia/ibc-go/v3/modules/apps/transfer/types"
+	porttypes "github.com/Finschia/ibc-go/v3/modules/core/05-port/types"
 )
 
 var (

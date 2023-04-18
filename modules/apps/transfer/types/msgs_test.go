@@ -8,7 +8,7 @@ import (
 	sdk "github.com/line/lbm-sdk/types"
 	"github.com/stretchr/testify/require"
 
-	clienttypes "github.com/line/ibc-go/v3/modules/core/02-client/types"
+	clienttypes "github.com/Finschia/ibc-go/v3/modules/core/02-client/types"
 )
 
 // define constants used for testing

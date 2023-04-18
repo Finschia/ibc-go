@@ -18,16 +18,16 @@ import (
 	simtypes "github.com/line/lbm-sdk/types/simulation"
 	ocabci "github.com/line/ostracon/abci/types"
 
-	ibcclient "github.com/line/ibc-go/v3/modules/core/02-client"
-	clientkeeper "github.com/line/ibc-go/v3/modules/core/02-client/keeper"
-	clienttypes "github.com/line/ibc-go/v3/modules/core/02-client/types"
-	connectiontypes "github.com/line/ibc-go/v3/modules/core/03-connection/types"
-	channeltypes "github.com/line/ibc-go/v3/modules/core/04-channel/types"
-	host "github.com/line/ibc-go/v3/modules/core/24-host"
-	"github.com/line/ibc-go/v3/modules/core/client/cli"
-	"github.com/line/ibc-go/v3/modules/core/keeper"
-	"github.com/line/ibc-go/v3/modules/core/simulation"
-	"github.com/line/ibc-go/v3/modules/core/types"
+	ibcclient "github.com/Finschia/ibc-go/v3/modules/core/02-client"
+	clientkeeper "github.com/Finschia/ibc-go/v3/modules/core/02-client/keeper"
+	clienttypes "github.com/Finschia/ibc-go/v3/modules/core/02-client/types"
+	connectiontypes "github.com/Finschia/ibc-go/v3/modules/core/03-connection/types"
+	channeltypes "github.com/Finschia/ibc-go/v3/modules/core/04-channel/types"
+	host "github.com/Finschia/ibc-go/v3/modules/core/24-host"
+	"github.com/Finschia/ibc-go/v3/modules/core/client/cli"
+	"github.com/Finschia/ibc-go/v3/modules/core/keeper"
+	"github.com/Finschia/ibc-go/v3/modules/core/simulation"
+	"github.com/Finschia/ibc-go/v3/modules/core/types"
 )
 
 var (

@@ -3,7 +3,7 @@ package keeper
 import (
 	sdk "github.com/line/lbm-sdk/types"
 
-	"github.com/line/ibc-go/v3/modules/apps/27-interchain-accounts/controller/types"
+	"github.com/Finschia/ibc-go/v3/modules/apps/27-interchain-accounts/controller/types"
 )
 
 // IsControllerEnabled retrieves the controller enabled boolean from the paramstore.

@@ -25,8 +25,8 @@ import (
 	"github.com/line/ostracon/libs/log"
 	octypes "github.com/line/ostracon/types"
 
-	"github.com/line/ibc-go/v3/modules/core/keeper"
-	"github.com/line/ibc-go/v3/testing/simapp"
+	"github.com/Finschia/ibc-go/v3/modules/core/keeper"
+	"github.com/Finschia/ibc-go/v3/testing/simapp"
 )
 
 var DefaultTestingAppInit func() (TestingApp, map[string]json.RawMessage) = SetupTestingApp

@@ -3,8 +3,8 @@ package keeper_test
 import (
 	"fmt"
 
-	transferkeeper "github.com/line/ibc-go/v3/modules/apps/transfer/keeper"
-	transfertypes "github.com/line/ibc-go/v3/modules/apps/transfer/types"
+	transferkeeper "github.com/Finschia/ibc-go/v3/modules/apps/transfer/keeper"
+	transfertypes "github.com/Finschia/ibc-go/v3/modules/apps/transfer/types"
 )
 
 func (suite *KeeperTestSuite) TestMigratorMigrateTraces() {

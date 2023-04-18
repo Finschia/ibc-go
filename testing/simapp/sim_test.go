@@ -31,9 +31,9 @@ import (
 	stakingtypes "github.com/line/lbm-sdk/x/staking/types"
 	"github.com/line/ostracon/libs/log"
 
-	ibctransfertypes "github.com/line/ibc-go/v3/modules/apps/transfer/types"
-	ibchost "github.com/line/ibc-go/v3/modules/core/24-host"
-	"github.com/line/ibc-go/v3/testing/simapp/helpers"
+	ibctransfertypes "github.com/Finschia/ibc-go/v3/modules/apps/transfer/types"
+	ibchost "github.com/Finschia/ibc-go/v3/modules/core/24-host"
+	"github.com/Finschia/ibc-go/v3/testing/simapp/helpers"
 )
 
 // Get flags every time the simulator is run

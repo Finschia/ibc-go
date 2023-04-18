@@ -1,10 +1,10 @@
 package types_test
 
 import (
-	controllertypes "github.com/line/ibc-go/v3/modules/apps/27-interchain-accounts/controller/types"
-	hosttypes "github.com/line/ibc-go/v3/modules/apps/27-interchain-accounts/host/types"
-	"github.com/line/ibc-go/v3/modules/apps/27-interchain-accounts/types"
-	ibctesting "github.com/line/ibc-go/v3/testing"
+	controllertypes "github.com/Finschia/ibc-go/v3/modules/apps/27-interchain-accounts/controller/types"
+	hosttypes "github.com/Finschia/ibc-go/v3/modules/apps/27-interchain-accounts/host/types"
+	"github.com/Finschia/ibc-go/v3/modules/apps/27-interchain-accounts/types"
+	ibctesting "github.com/Finschia/ibc-go/v3/testing"
 )
 
 func (suite *TypesTestSuite) TestValidateGenesisState() {

@@ -3,7 +3,7 @@ package keeper
 import (
 	sdk "github.com/line/lbm-sdk/types"
 
-	v100 "github.com/line/ibc-go/v3/modules/core/02-client/legacy/v100"
+	v100 "github.com/Finschia/ibc-go/v3/modules/core/02-client/legacy/v100"
 )
 
 // Migrator is a struct for handling in-place store migrations.

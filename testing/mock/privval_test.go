@@ -8,7 +8,7 @@ import (
 
 	octypes "github.com/line/ostracon/types"
 
-	"github.com/line/ibc-go/v3/testing/mock"
+	"github.com/Finschia/ibc-go/v3/testing/mock"
 )
 
 const chainID = "testChain"

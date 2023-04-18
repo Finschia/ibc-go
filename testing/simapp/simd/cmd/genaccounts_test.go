@@ -16,8 +16,8 @@ import (
 	"github.com/spf13/viper"
 	"github.com/stretchr/testify/require"
 
-	"github.com/line/ibc-go/v3/testing/simapp"
-	simcmd "github.com/line/ibc-go/v3/testing/simapp/simd/cmd"
+	"github.com/Finschia/ibc-go/v3/testing/simapp"
+	simcmd "github.com/Finschia/ibc-go/v3/testing/simapp/simd/cmd"
 )
 
 var testMbm = module.NewBasicManager(genutil.AppModuleBasic{})

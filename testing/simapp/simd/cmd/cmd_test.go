@@ -8,8 +8,8 @@ import (
 	"github.com/line/lbm-sdk/x/genutil/client/cli"
 	"github.com/stretchr/testify/require"
 
-	"github.com/line/ibc-go/v3/testing/simapp"
-	"github.com/line/ibc-go/v3/testing/simapp/simd/cmd"
+	"github.com/Finschia/ibc-go/v3/testing/simapp"
+	"github.com/Finschia/ibc-go/v3/testing/simapp/simd/cmd"
 )
 
 func TestInitCmd(t *testing.T) {

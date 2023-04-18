@@ -3,7 +3,7 @@ package keeper
 import (
 	sdk "github.com/line/lbm-sdk/types"
 
-	"github.com/line/ibc-go/v3/modules/apps/transfer/types"
+	"github.com/Finschia/ibc-go/v3/modules/apps/transfer/types"
 )
 
 // GetSendEnabled retrieves the send enabled boolean from the paramstore

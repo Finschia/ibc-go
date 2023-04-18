@@ -14,9 +14,9 @@ import (
 	"github.com/line/lbm-sdk/types/module"
 	capabilitytypes "github.com/line/lbm-sdk/x/capability/types"
 
-	channeltypes "github.com/line/ibc-go/v3/modules/core/04-channel/types"
-	porttypes "github.com/line/ibc-go/v3/modules/core/05-port/types"
-	host "github.com/line/ibc-go/v3/modules/core/24-host"
+	channeltypes "github.com/Finschia/ibc-go/v3/modules/core/04-channel/types"
+	porttypes "github.com/Finschia/ibc-go/v3/modules/core/05-port/types"
+	host "github.com/Finschia/ibc-go/v3/modules/core/24-host"
 )
 
 const (

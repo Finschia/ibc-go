@@ -10,12 +10,12 @@ import (
 	govtypes "github.com/line/lbm-sdk/x/gov/types"
 	stakingtypes "github.com/line/lbm-sdk/x/staking/types"
 
-	"github.com/line/ibc-go/v3/modules/apps/27-interchain-accounts/host/types"
-	icatypes "github.com/line/ibc-go/v3/modules/apps/27-interchain-accounts/types"
-	transfertypes "github.com/line/ibc-go/v3/modules/apps/transfer/types"
-	clienttypes "github.com/line/ibc-go/v3/modules/core/02-client/types"
-	channeltypes "github.com/line/ibc-go/v3/modules/core/04-channel/types"
-	ibctesting "github.com/line/ibc-go/v3/testing"
+	"github.com/Finschia/ibc-go/v3/modules/apps/27-interchain-accounts/host/types"
+	icatypes "github.com/Finschia/ibc-go/v3/modules/apps/27-interchain-accounts/types"
+	transfertypes "github.com/Finschia/ibc-go/v3/modules/apps/transfer/types"
+	clienttypes "github.com/Finschia/ibc-go/v3/modules/core/02-client/types"
+	channeltypes "github.com/Finschia/ibc-go/v3/modules/core/04-channel/types"
+	ibctesting "github.com/Finschia/ibc-go/v3/testing"
 )
 
 func (suite *KeeperTestSuite) TestOnRecvPacket() {

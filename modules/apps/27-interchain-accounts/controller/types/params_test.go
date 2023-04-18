@@ -5,7 +5,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/line/ibc-go/v3/modules/apps/27-interchain-accounts/controller/types"
+	"github.com/Finschia/ibc-go/v3/modules/apps/27-interchain-accounts/controller/types"
 )
 
 func TestValidateParams(t *testing.T) {

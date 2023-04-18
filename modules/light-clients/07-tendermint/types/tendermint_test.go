@@ -12,11 +12,11 @@ import (
 	ocbytes "github.com/line/ostracon/libs/bytes"
 	octypes "github.com/line/ostracon/types"
 
-	clienttypes "github.com/line/ibc-go/v3/modules/core/02-client/types"
-	ibcoctypes "github.com/line/ibc-go/v3/modules/light-clients/07-tendermint/types"
-	ibctesting "github.com/line/ibc-go/v3/testing"
-	ibctestingmock "github.com/line/ibc-go/v3/testing/mock"
-	"github.com/line/ibc-go/v3/testing/simapp"
+	clienttypes "github.com/Finschia/ibc-go/v3/modules/core/02-client/types"
+	ibcoctypes "github.com/Finschia/ibc-go/v3/modules/light-clients/07-tendermint/types"
+	ibctesting "github.com/Finschia/ibc-go/v3/testing"
+	ibctestingmock "github.com/Finschia/ibc-go/v3/testing/mock"
+	"github.com/Finschia/ibc-go/v3/testing/simapp"
 )
 
 const (

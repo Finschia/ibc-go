@@ -3,12 +3,12 @@ package types
 import (
 	"github.com/gogo/protobuf/grpc"
 
-	client "github.com/line/ibc-go/v3/modules/core/02-client"
-	clienttypes "github.com/line/ibc-go/v3/modules/core/02-client/types"
-	connection "github.com/line/ibc-go/v3/modules/core/03-connection"
-	connectiontypes "github.com/line/ibc-go/v3/modules/core/03-connection/types"
-	channel "github.com/line/ibc-go/v3/modules/core/04-channel"
-	channeltypes "github.com/line/ibc-go/v3/modules/core/04-channel/types"
+	client "github.com/Finschia/ibc-go/v3/modules/core/02-client"
+	clienttypes "github.com/Finschia/ibc-go/v3/modules/core/02-client/types"
+	connection "github.com/Finschia/ibc-go/v3/modules/core/03-connection"
+	connectiontypes "github.com/Finschia/ibc-go/v3/modules/core/03-connection/types"
+	channel "github.com/Finschia/ibc-go/v3/modules/core/04-channel"
+	channeltypes "github.com/Finschia/ibc-go/v3/modules/core/04-channel/types"
 )
 
 // QueryServer defines the IBC interfaces that the gRPC query server must implement

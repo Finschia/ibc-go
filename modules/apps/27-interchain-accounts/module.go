@@ -15,16 +15,16 @@ import (
 	sdk "github.com/line/lbm-sdk/types"
 	"github.com/line/lbm-sdk/types/module"
 
-	"github.com/line/ibc-go/v3/modules/apps/27-interchain-accounts/client/cli"
-	"github.com/line/ibc-go/v3/modules/apps/27-interchain-accounts/controller"
-	controllerkeeper "github.com/line/ibc-go/v3/modules/apps/27-interchain-accounts/controller/keeper"
-	controllertypes "github.com/line/ibc-go/v3/modules/apps/27-interchain-accounts/controller/types"
-	"github.com/line/ibc-go/v3/modules/apps/27-interchain-accounts/host"
-	hostkeeper "github.com/line/ibc-go/v3/modules/apps/27-interchain-accounts/host/keeper"
-	hosttypes "github.com/line/ibc-go/v3/modules/apps/27-interchain-accounts/host/types"
-	"github.com/line/ibc-go/v3/modules/apps/27-interchain-accounts/types"
-	porttypes "github.com/line/ibc-go/v3/modules/core/05-port/types"
-	ibchost "github.com/line/ibc-go/v3/modules/core/24-host"
+	"github.com/Finschia/ibc-go/v3/modules/apps/27-interchain-accounts/client/cli"
+	"github.com/Finschia/ibc-go/v3/modules/apps/27-interchain-accounts/controller"
+	controllerkeeper "github.com/Finschia/ibc-go/v3/modules/apps/27-interchain-accounts/controller/keeper"
+	controllertypes "github.com/Finschia/ibc-go/v3/modules/apps/27-interchain-accounts/controller/types"
+	"github.com/Finschia/ibc-go/v3/modules/apps/27-interchain-accounts/host"
+	hostkeeper "github.com/Finschia/ibc-go/v3/modules/apps/27-interchain-accounts/host/keeper"
+	hosttypes "github.com/Finschia/ibc-go/v3/modules/apps/27-interchain-accounts/host/types"
+	"github.com/Finschia/ibc-go/v3/modules/apps/27-interchain-accounts/types"
+	porttypes "github.com/Finschia/ibc-go/v3/modules/core/05-port/types"
+	ibchost "github.com/Finschia/ibc-go/v3/modules/core/24-host"
 )
 
 var (

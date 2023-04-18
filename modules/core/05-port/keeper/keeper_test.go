@@ -9,8 +9,8 @@ import (
 
 	sdk "github.com/line/lbm-sdk/types"
 
-	"github.com/line/ibc-go/v3/modules/core/05-port/keeper"
-	"github.com/line/ibc-go/v3/testing/simapp"
+	"github.com/Finschia/ibc-go/v3/modules/core/05-port/keeper"
+	"github.com/Finschia/ibc-go/v3/testing/simapp"
 )
 
 var (

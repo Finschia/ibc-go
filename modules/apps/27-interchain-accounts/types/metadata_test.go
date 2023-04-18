@@ -1,8 +1,8 @@
 package types_test
 
 import (
-	"github.com/line/ibc-go/v3/modules/apps/27-interchain-accounts/types"
-	ibctesting "github.com/line/ibc-go/v3/testing"
+	"github.com/Finschia/ibc-go/v3/modules/apps/27-interchain-accounts/types"
+	ibctesting "github.com/Finschia/ibc-go/v3/testing"
 )
 
 // use TestVersion as metadata being compared against

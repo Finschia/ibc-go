@@ -6,7 +6,7 @@ import (
 
 	paramtypes "github.com/line/lbm-sdk/x/params/types"
 
-	"github.com/line/ibc-go/v3/modules/core/exported"
+	"github.com/Finschia/ibc-go/v3/modules/core/exported"
 )
 
 var (

@@ -13,7 +13,7 @@ import (
 	"github.com/line/ostracon/libs/log"
 	dbm "github.com/tendermint/tm-db"
 
-	"github.com/line/ibc-go/v3/testing/simapp/helpers"
+	"github.com/Finschia/ibc-go/v3/testing/simapp/helpers"
 )
 
 // SetupSimulation creates the config, db (levelDB), temporary directory and logger for

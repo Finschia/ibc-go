@@ -9,11 +9,11 @@ import (
 	sdk "github.com/line/lbm-sdk/types"
 	sdkerrors "github.com/line/lbm-sdk/types/errors"
 
-	clienttypes "github.com/line/ibc-go/v3/modules/core/02-client/types"
-	connectiontypes "github.com/line/ibc-go/v3/modules/core/03-connection/types"
-	channeltypes "github.com/line/ibc-go/v3/modules/core/04-channel/types"
-	porttypes "github.com/line/ibc-go/v3/modules/core/05-port/types"
-	coretypes "github.com/line/ibc-go/v3/modules/core/types"
+	clienttypes "github.com/Finschia/ibc-go/v3/modules/core/02-client/types"
+	connectiontypes "github.com/Finschia/ibc-go/v3/modules/core/03-connection/types"
+	channeltypes "github.com/Finschia/ibc-go/v3/modules/core/04-channel/types"
+	porttypes "github.com/Finschia/ibc-go/v3/modules/core/05-port/types"
+	coretypes "github.com/Finschia/ibc-go/v3/modules/core/types"
 )
 
 var (

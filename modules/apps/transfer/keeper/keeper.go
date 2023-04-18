@@ -11,8 +11,8 @@ import (
 	ocbytes "github.com/line/ostracon/libs/bytes"
 	"github.com/line/ostracon/libs/log"
 
-	"github.com/line/ibc-go/v3/modules/apps/transfer/types"
-	host "github.com/line/ibc-go/v3/modules/core/24-host"
+	"github.com/Finschia/ibc-go/v3/modules/apps/transfer/types"
+	host "github.com/Finschia/ibc-go/v3/modules/core/24-host"
 )
 
 // Keeper defines the IBC fungible transfer keeper

@@ -5,14 +5,14 @@ import (
 
 	octypes "github.com/line/ostracon/types"
 
-	client "github.com/line/ibc-go/v3/modules/core/02-client"
-	"github.com/line/ibc-go/v3/modules/core/02-client/types"
-	commitmenttypes "github.com/line/ibc-go/v3/modules/core/23-commitment/types"
-	"github.com/line/ibc-go/v3/modules/core/exported"
-	ibcoctypes "github.com/line/ibc-go/v3/modules/light-clients/07-tendermint/types"
-	localhosttypes "github.com/line/ibc-go/v3/modules/light-clients/09-localhost/types"
-	ibctesting "github.com/line/ibc-go/v3/testing"
-	ibctestingmock "github.com/line/ibc-go/v3/testing/mock"
+	client "github.com/Finschia/ibc-go/v3/modules/core/02-client"
+	"github.com/Finschia/ibc-go/v3/modules/core/02-client/types"
+	commitmenttypes "github.com/Finschia/ibc-go/v3/modules/core/23-commitment/types"
+	"github.com/Finschia/ibc-go/v3/modules/core/exported"
+	ibcoctypes "github.com/Finschia/ibc-go/v3/modules/light-clients/07-tendermint/types"
+	localhosttypes "github.com/Finschia/ibc-go/v3/modules/light-clients/09-localhost/types"
+	ibctesting "github.com/Finschia/ibc-go/v3/testing"
+	ibctestingmock "github.com/Finschia/ibc-go/v3/testing/mock"
 )
 
 const (

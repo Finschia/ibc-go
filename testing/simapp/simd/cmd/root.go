@@ -31,8 +31,8 @@ import (
 	"github.com/spf13/cobra"
 	dbm "github.com/tendermint/tm-db"
 
-	"github.com/line/ibc-go/v3/testing/simapp"
-	"github.com/line/ibc-go/v3/testing/simapp/params"
+	"github.com/Finschia/ibc-go/v3/testing/simapp"
+	"github.com/Finschia/ibc-go/v3/testing/simapp/params"
 )
 
 // NewRootCmd creates a new root command for simd. It is called once in the

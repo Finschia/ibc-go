@@ -6,9 +6,9 @@ import (
 
 	"github.com/line/lbm-sdk/types/kv"
 
-	"github.com/line/ibc-go/v3/modules/core/02-client/keeper"
-	host "github.com/line/ibc-go/v3/modules/core/24-host"
-	"github.com/line/ibc-go/v3/modules/core/exported"
+	"github.com/Finschia/ibc-go/v3/modules/core/02-client/keeper"
+	host "github.com/Finschia/ibc-go/v3/modules/core/24-host"
+	"github.com/Finschia/ibc-go/v3/modules/core/exported"
 )
 
 var _ ClientUnmarshaler = (*keeper.Keeper)(nil)

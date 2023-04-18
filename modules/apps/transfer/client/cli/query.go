@@ -8,7 +8,7 @@ import (
 	"github.com/line/lbm-sdk/version"
 	"github.com/spf13/cobra"
 
-	"github.com/line/ibc-go/v3/modules/apps/transfer/types"
+	"github.com/Finschia/ibc-go/v3/modules/apps/transfer/types"
 )
 
 // GetCmdQueryDenomTrace defines the command to query a a denomination trace from a given trace hash or ibc denom.

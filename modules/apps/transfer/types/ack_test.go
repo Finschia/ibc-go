@@ -10,8 +10,8 @@ import (
 	ocprotostate "github.com/line/ostracon/proto/ostracon/state"
 	ocstate "github.com/line/ostracon/state"
 
-	"github.com/line/ibc-go/v3/modules/apps/transfer/types"
-	ibctesting "github.com/line/ibc-go/v3/testing"
+	"github.com/Finschia/ibc-go/v3/modules/apps/transfer/types"
+	ibctesting "github.com/Finschia/ibc-go/v3/testing"
 )
 
 const (

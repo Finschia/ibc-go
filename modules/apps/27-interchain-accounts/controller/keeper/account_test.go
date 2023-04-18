@@ -1,10 +1,10 @@
 package keeper_test
 
 import (
-	icatypes "github.com/line/ibc-go/v3/modules/apps/27-interchain-accounts/types"
-	channeltypes "github.com/line/ibc-go/v3/modules/core/04-channel/types"
-	host "github.com/line/ibc-go/v3/modules/core/24-host"
-	ibctesting "github.com/line/ibc-go/v3/testing"
+	icatypes "github.com/Finschia/ibc-go/v3/modules/apps/27-interchain-accounts/types"
+	channeltypes "github.com/Finschia/ibc-go/v3/modules/core/04-channel/types"
+	host "github.com/Finschia/ibc-go/v3/modules/core/24-host"
+	ibctesting "github.com/Finschia/ibc-go/v3/testing"
 )
 
 func (suite *KeeperTestSuite) TestRegisterInterchainAccount() {

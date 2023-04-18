@@ -11,9 +11,9 @@ import (
 	simtypes "github.com/line/lbm-sdk/types/simulation"
 	"github.com/stretchr/testify/require"
 
-	host "github.com/line/ibc-go/v3/modules/core/24-host"
-	"github.com/line/ibc-go/v3/modules/core/simulation"
-	"github.com/line/ibc-go/v3/modules/core/types"
+	host "github.com/Finschia/ibc-go/v3/modules/core/24-host"
+	"github.com/Finschia/ibc-go/v3/modules/core/simulation"
+	"github.com/Finschia/ibc-go/v3/modules/core/types"
 )
 
 // TestRandomizedGenState tests the normal scenario of applying RandomizedGenState.

@@ -4,7 +4,7 @@ import (
 	"errors"
 	"fmt"
 
-	host "github.com/line/ibc-go/v3/modules/core/24-host"
+	host "github.com/Finschia/ibc-go/v3/modules/core/24-host"
 )
 
 // NewPacketState creates a new PacketState instance.

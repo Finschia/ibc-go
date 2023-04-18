@@ -5,10 +5,10 @@ import (
 	distributiontypes "github.com/line/lbm-sdk/x/distribution/types"
 	govtypes "github.com/line/lbm-sdk/x/gov/types"
 
-	client "github.com/line/ibc-go/v3/modules/core/02-client"
-	clienttypes "github.com/line/ibc-go/v3/modules/core/02-client/types"
-	ibcoctypes "github.com/line/ibc-go/v3/modules/light-clients/07-tendermint/types"
-	ibctesting "github.com/line/ibc-go/v3/testing"
+	client "github.com/Finschia/ibc-go/v3/modules/core/02-client"
+	clienttypes "github.com/Finschia/ibc-go/v3/modules/core/02-client/types"
+	ibcoctypes "github.com/Finschia/ibc-go/v3/modules/light-clients/07-tendermint/types"
+	ibctesting "github.com/Finschia/ibc-go/v3/testing"
 )
 
 func (suite *ClientTestSuite) TestNewClientUpdateProposalHandler() {

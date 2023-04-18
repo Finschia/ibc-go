@@ -12,10 +12,10 @@ import (
 	paramtypes "github.com/line/lbm-sdk/x/params/types"
 	"github.com/line/ostracon/libs/log"
 
-	"github.com/line/ibc-go/v3/modules/apps/27-interchain-accounts/controller/types"
-	icatypes "github.com/line/ibc-go/v3/modules/apps/27-interchain-accounts/types"
-	channeltypes "github.com/line/ibc-go/v3/modules/core/04-channel/types"
-	host "github.com/line/ibc-go/v3/modules/core/24-host"
+	"github.com/Finschia/ibc-go/v3/modules/apps/27-interchain-accounts/controller/types"
+	icatypes "github.com/Finschia/ibc-go/v3/modules/apps/27-interchain-accounts/types"
+	channeltypes "github.com/Finschia/ibc-go/v3/modules/core/04-channel/types"
+	host "github.com/Finschia/ibc-go/v3/modules/core/24-host"
 )
 
 // Keeper defines the IBC interchain accounts controller keeper

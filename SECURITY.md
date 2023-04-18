@@ -16,17 +16,17 @@ in for the IBC Golang repository. Please refer to the corresponding repositories
 
 ### IBC Core
 
-- [`02-client`](https://github.com/line/ibc-go/tree/main/modules/core/02-client)
-- [`03-connection`](https://github.com/line/ibc-go/tree/main/modules/core/03-connection)
-- [`04-channel`](https://github.com/line/ibc-go/tree/main/modules/core/04-channel)
-- [`05-port`](https://github.com/line/ibc-go/tree/main/modules/core/05-port)
-- [`23-commitment`](https://github.com/line/ibc-go/tree/main/modules/core/23-commitment)
-- [`24-host`](https://github.com/line/ibc-go/tree/main/modules/core/24-host)
+- [`02-client`](https://github.com/Finschia/ibc-go/tree/main/modules/core/02-client)
+- [`03-connection`](https://github.com/Finschia/ibc-go/tree/main/modules/core/03-connection)
+- [`04-channel`](https://github.com/Finschia/ibc-go/tree/main/modules/core/04-channel)
+- [`05-port`](https://github.com/Finschia/ibc-go/tree/main/modules/core/05-port)
+- [`23-commitment`](https://github.com/Finschia/ibc-go/tree/main/modules/core/23-commitment)
+- [`24-host`](https://github.com/Finschia/ibc-go/tree/main/modules/core/24-host)
 
 ### IBC Applications
 
-- [`transfer`](https://github.com/line/ibc-go/tree/main/modules/apps/transfer)
+- [`transfer`](https://github.com/Finschia/ibc-go/tree/main/modules/apps/transfer)
 
 ### Light Clients
 
-- [`07-tendermint`](https://github.com/line/ibc-go/tree/main/modules/light-clients/07-tendermint)
+- [`07-tendermint`](https://github.com/Finschia/ibc-go/tree/main/modules/light-clients/07-tendermint)

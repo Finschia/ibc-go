@@ -20,7 +20,7 @@
 ## [v3.3.2](https://github.com/Finschia/ibc-go/compare/v3.3.1...v3.3.2) - 2023.04.03
 
 ### Features
-* [\#5](https://github.com/Finschia/ibc-go/pull/5) apply the changes of lbm-sdk and ostracon proto
+* [\#5](https://github.com/Finschia/ibc-go/pull/5) apply the changes of finschia-sdk and ostracon proto
 * [\#6](https://github.com/Finschia/ibc-go/pull/6) change to use 07-tendermint
 
 ### Improvements

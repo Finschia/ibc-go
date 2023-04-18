@@ -20,10 +20,10 @@ import (
 )
 
 const (
-	chainID                        = "lbm"
-	chainIDRevision0               = "lbm-revision-0"
-	chainIDRevision1               = "lbm-revision-1"
-	clientID                       = "lbmmainnet"
+	chainID                        = "fnsa"
+	chainIDRevision0               = "fnsa-revision-0"
+	chainIDRevision1               = "fnsa-revision-1"
+	clientID                       = "fnsamainnet"
 	trustingPeriod   time.Duration = time.Hour * 24 * 7 * 2
 	ubdPeriod        time.Duration = time.Hour * 24 * 7 * 3
 	maxClockDrift    time.Duration = time.Second * 10

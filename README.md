@@ -26,7 +26,7 @@
   <a href="https://sourcegraph.com/github.com/Finschia/ibc-go?badge">
     <img alt="Imported by" src="https://sourcegraph.com/github.com/Finschia/ibc-go/-/badge.svg" />
   </a>
-    <img alt="Lint Status" src="https://github.com/line/cosmos-sdk/workflows/Lint/badge.svg" />
+    <img alt="Lint Status" src="https://github.com/Finschia/ibc-go/workflows/Lint/badge.svg" />
 </div>
 
 The Inter-Blockchain Communication protocol (IBC) allows blockchains to talk to each other. IBC handles transport across different sovereign blockchains. This end-to-end, connection-oriented, stateful protocol provides reliable, ordered, and authenticated communication between heterogeneous blockchains. This IBC implementation in Golang is built as a Cosmos SDK module.
@@ -68,5 +68,5 @@ For an overview of upcoming changes to ibc-go take a look at the [roadmap](./doc
 ## Resources
 
 - [IBC Website](https://ibcprotocol.org/)
-- [IBC Specification](https://github.com/line/ibc)
+- [IBC Specification](https://github.com/cosmos/ibc)
 - [Documentation](https://ibc.cosmos.network/main/ibc/overview.html)

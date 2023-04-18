@@ -4,6 +4,7 @@
 ## [Unreleased](https://github.com/Finschia/ibc-go/compare/v3.3.2...HEAD)
 
 ### Features
+* (all) [\#10](https://github.com/Finschia/ibc-go/pull/10) chore: fix path due to change in organization
 
 ### Improvements
 

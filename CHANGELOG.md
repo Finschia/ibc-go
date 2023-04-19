@@ -1,13 +1,11 @@
 # Changelog
 
 
-## [Unreleased](https://github.com/Finschia/ibc-go/compare/v3.3.2...HEAD)
+## [Unreleased](https://github.com/Finschia/ibc-go/compare/v3.3.3...HEAD)
 
 ### Features
-* (all) [\#10](https://github.com/Finschia/ibc-go/pull/10) chore: fix path due to change in organization
 
 ### Improvements
-* [\#11](https://github.com/Finschia/ibc-go/pull/11) fix: delete queries generated from the removed `QueryAppVersionRequest`/`QueryAppVersionResponse`
 
 ### Bug Fixes
 
@@ -16,6 +14,15 @@
 ### Build, CI
 
 ### Document Updates
+
+
+## [v3.3.3](https://github.com/Finschia/ibc-go/compare/v3.3.2...v3.3.3) - 2023.04.19
+
+### Features
+* (all) [\#10](https://github.com/Finschia/ibc-go/pull/10) chore: fix path due to change in organization
+
+### Improvements
+* [\#11](https://github.com/Finschia/ibc-go/pull/11) fix: delete queries generated from the removed `QueryAppVersionRequest`/`QueryAppVersionResponse`
 
 
 ## [v3.3.2](https://github.com/Finschia/ibc-go/compare/v3.3.1...v3.3.2) - 2023.04.03

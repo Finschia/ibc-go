@@ -6,6 +6,7 @@
 ### Features
 
 ### Improvements
+* [\#11](https://github.com/Finschia/ibc-go/pull/11) fix: delete queries generated from the removed `QueryAppVersionRequest`/`QueryAppVersionResponse`
 
 ### Bug Fixes
 

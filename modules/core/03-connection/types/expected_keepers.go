@@ -1,9 +1,9 @@
 package types
 
 import (
-	sdk "github.com/line/lbm-sdk/types"
+	sdk "github.com/Finschia/finschia-sdk/types"
 
-	"github.com/line/ibc-go/v3/modules/core/exported"
+	"github.com/Finschia/ibc-go/v3/modules/core/exported"
 )
 
 // ClientKeeper expected account IBC client keeper

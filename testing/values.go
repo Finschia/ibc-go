@@ -7,13 +7,13 @@ package ibctesting
 import (
 	"time"
 
-	sdk "github.com/line/lbm-sdk/types"
+	sdk "github.com/Finschia/finschia-sdk/types"
 
-	ibctransfertypes "github.com/line/ibc-go/v3/modules/apps/transfer/types"
-	connectiontypes "github.com/line/ibc-go/v3/modules/core/03-connection/types"
-	commitmenttypes "github.com/line/ibc-go/v3/modules/core/23-commitment/types"
-	ibcoctypes "github.com/line/ibc-go/v3/modules/light-clients/07-tendermint/types"
-	"github.com/line/ibc-go/v3/testing/mock"
+	ibctransfertypes "github.com/Finschia/ibc-go/v3/modules/apps/transfer/types"
+	connectiontypes "github.com/Finschia/ibc-go/v3/modules/core/03-connection/types"
+	commitmenttypes "github.com/Finschia/ibc-go/v3/modules/core/23-commitment/types"
+	ibcoctypes "github.com/Finschia/ibc-go/v3/modules/light-clients/07-tendermint/types"
+	"github.com/Finschia/ibc-go/v3/testing/mock"
 )
 
 const (

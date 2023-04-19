@@ -1,18 +1,18 @@
 package keeper
 
 import (
-	"github.com/line/lbm-sdk/codec"
-	"github.com/line/lbm-sdk/store/prefix"
-	sdk "github.com/line/lbm-sdk/types"
-	authtypes "github.com/line/lbm-sdk/x/auth/types"
-	capabilitykeeper "github.com/line/lbm-sdk/x/capability/keeper"
-	capabilitytypes "github.com/line/lbm-sdk/x/capability/types"
-	paramtypes "github.com/line/lbm-sdk/x/params/types"
-	ocbytes "github.com/line/ostracon/libs/bytes"
-	"github.com/line/ostracon/libs/log"
+	"github.com/Finschia/finschia-sdk/codec"
+	"github.com/Finschia/finschia-sdk/store/prefix"
+	sdk "github.com/Finschia/finschia-sdk/types"
+	authtypes "github.com/Finschia/finschia-sdk/x/auth/types"
+	capabilitykeeper "github.com/Finschia/finschia-sdk/x/capability/keeper"
+	capabilitytypes "github.com/Finschia/finschia-sdk/x/capability/types"
+	paramtypes "github.com/Finschia/finschia-sdk/x/params/types"
+	ocbytes "github.com/Finschia/ostracon/libs/bytes"
+	"github.com/Finschia/ostracon/libs/log"
 
-	"github.com/line/ibc-go/v3/modules/apps/transfer/types"
-	host "github.com/line/ibc-go/v3/modules/core/24-host"
+	"github.com/Finschia/ibc-go/v3/modules/apps/transfer/types"
+	host "github.com/Finschia/ibc-go/v3/modules/core/24-host"
 )
 
 // Keeper defines the IBC fungible transfer keeper

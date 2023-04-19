@@ -4,11 +4,11 @@ import (
 	"fmt"
 	"math/rand"
 
+	simtypes "github.com/Finschia/finschia-sdk/types/simulation"
+	"github.com/Finschia/finschia-sdk/x/simulation"
 	gogotypes "github.com/gogo/protobuf/types"
-	simtypes "github.com/line/lbm-sdk/types/simulation"
-	"github.com/line/lbm-sdk/x/simulation"
 
-	"github.com/line/ibc-go/v3/modules/apps/transfer/types"
+	"github.com/Finschia/ibc-go/v3/modules/apps/transfer/types"
 )
 
 // ParamChanges defines the parameters that can be modified by param change proposals

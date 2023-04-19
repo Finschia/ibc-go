@@ -4,7 +4,7 @@ import (
 	ics23 "github.com/confio/ics23/go"
 	"github.com/tendermint/tendermint/proto/tendermint/crypto"
 
-	sdkerrors "github.com/line/lbm-sdk/types/errors"
+	sdkerrors "github.com/Finschia/finschia-sdk/types/errors"
 )
 
 // ConvertProofs converts crypto.ProofOps into MerkleProof

@@ -4,13 +4,13 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/line/lbm-sdk/types/kv"
+	"github.com/Finschia/finschia-sdk/types/kv"
 	"github.com/stretchr/testify/require"
 
-	"github.com/line/ibc-go/v3/modules/core/03-connection/simulation"
-	"github.com/line/ibc-go/v3/modules/core/03-connection/types"
-	host "github.com/line/ibc-go/v3/modules/core/24-host"
-	"github.com/line/ibc-go/v3/testing/simapp"
+	"github.com/Finschia/ibc-go/v3/modules/core/03-connection/simulation"
+	"github.com/Finschia/ibc-go/v3/modules/core/03-connection/types"
+	host "github.com/Finschia/ibc-go/v3/modules/core/24-host"
+	"github.com/Finschia/ibc-go/v3/testing/simapp"
 )
 
 func TestDecodeStore(t *testing.T) {

@@ -3,9 +3,9 @@ package types
 import (
 	"fmt"
 
-	"github.com/line/lbm-sdk/codec"
+	"github.com/Finschia/finschia-sdk/codec"
 
-	"github.com/line/ibc-go/v3/modules/core/exported"
+	"github.com/Finschia/ibc-go/v3/modules/core/exported"
 )
 
 // MustUnmarshalClientState attempts to decode and return an ClientState object from

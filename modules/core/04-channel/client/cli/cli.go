@@ -1,10 +1,10 @@
 package cli
 
 import (
-	"github.com/line/lbm-sdk/client"
+	"github.com/Finschia/finschia-sdk/client"
 	"github.com/spf13/cobra"
 
-	"github.com/line/ibc-go/v3/modules/core/04-channel/types"
+	"github.com/Finschia/ibc-go/v3/modules/core/04-channel/types"
 )
 
 // GetQueryCmd returns the query commands for IBC channels

@@ -3,13 +3,13 @@ package types
 import (
 	"time"
 
-	sdkerrors "github.com/line/lbm-sdk/types/errors"
-	ocbytes "github.com/line/ostracon/libs/bytes"
-	octypes "github.com/line/ostracon/types"
+	sdkerrors "github.com/Finschia/finschia-sdk/types/errors"
+	ocbytes "github.com/Finschia/ostracon/libs/bytes"
+	octypes "github.com/Finschia/ostracon/types"
 
-	clienttypes "github.com/line/ibc-go/v3/modules/core/02-client/types"
-	commitmenttypes "github.com/line/ibc-go/v3/modules/core/23-commitment/types"
-	"github.com/line/ibc-go/v3/modules/core/exported"
+	clienttypes "github.com/Finschia/ibc-go/v3/modules/core/02-client/types"
+	commitmenttypes "github.com/Finschia/ibc-go/v3/modules/core/23-commitment/types"
+	"github.com/Finschia/ibc-go/v3/modules/core/exported"
 )
 
 // SentinelRoot is used as a stand-in root value for the consensus state set at the upgrade height

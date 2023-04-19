@@ -4,17 +4,17 @@ import (
 	"testing"
 	"time"
 
-	sdk "github.com/line/lbm-sdk/types"
-	capabilitykeeper "github.com/line/lbm-sdk/x/capability/keeper"
-	stakingkeeper "github.com/line/lbm-sdk/x/staking/keeper"
-	stakingtypes "github.com/line/lbm-sdk/x/staking/types"
-	upgradekeeper "github.com/line/lbm-sdk/x/upgrade/keeper"
+	sdk "github.com/Finschia/finschia-sdk/types"
+	capabilitykeeper "github.com/Finschia/finschia-sdk/x/capability/keeper"
+	stakingkeeper "github.com/Finschia/finschia-sdk/x/staking/keeper"
+	stakingtypes "github.com/Finschia/finschia-sdk/x/staking/types"
+	upgradekeeper "github.com/Finschia/finschia-sdk/x/upgrade/keeper"
 	"github.com/stretchr/testify/suite"
 
-	clienttypes "github.com/line/ibc-go/v3/modules/core/02-client/types"
-	ibchost "github.com/line/ibc-go/v3/modules/core/24-host"
-	ibckeeper "github.com/line/ibc-go/v3/modules/core/keeper"
-	ibctesting "github.com/line/ibc-go/v3/testing"
+	clienttypes "github.com/Finschia/ibc-go/v3/modules/core/02-client/types"
+	ibchost "github.com/Finschia/ibc-go/v3/modules/core/24-host"
+	ibckeeper "github.com/Finschia/ibc-go/v3/modules/core/keeper"
+	ibctesting "github.com/Finschia/ibc-go/v3/testing"
 )
 
 type KeeperTestSuite struct {

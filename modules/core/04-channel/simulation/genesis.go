@@ -3,9 +3,9 @@ package simulation
 import (
 	"math/rand"
 
-	simtypes "github.com/line/lbm-sdk/types/simulation"
+	simtypes "github.com/Finschia/finschia-sdk/types/simulation"
 
-	"github.com/line/ibc-go/v3/modules/core/04-channel/types"
+	"github.com/Finschia/ibc-go/v3/modules/core/04-channel/types"
 )
 
 // GenChannelGenesis returns the default channel genesis state.

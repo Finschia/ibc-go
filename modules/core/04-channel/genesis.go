@@ -1,10 +1,10 @@
 package channel
 
 import (
-	sdk "github.com/line/lbm-sdk/types"
+	sdk "github.com/Finschia/finschia-sdk/types"
 
-	"github.com/line/ibc-go/v3/modules/core/04-channel/keeper"
-	"github.com/line/ibc-go/v3/modules/core/04-channel/types"
+	"github.com/Finschia/ibc-go/v3/modules/core/04-channel/keeper"
+	"github.com/Finschia/ibc-go/v3/modules/core/04-channel/types"
 )
 
 // InitGenesis initializes the ibc channel submodule's state from a provided genesis

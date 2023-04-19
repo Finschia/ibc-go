@@ -3,16 +3,16 @@ package types
 import (
 	"reflect"
 
-	"github.com/line/lbm-sdk/codec"
-	cryptotypes "github.com/line/lbm-sdk/crypto/types"
-	sdk "github.com/line/lbm-sdk/types"
-	sdkerrors "github.com/line/lbm-sdk/types/errors"
-	"github.com/line/lbm-sdk/types/tx/signing"
+	"github.com/Finschia/finschia-sdk/codec"
+	cryptotypes "github.com/Finschia/finschia-sdk/crypto/types"
+	sdk "github.com/Finschia/finschia-sdk/types"
+	sdkerrors "github.com/Finschia/finschia-sdk/types/errors"
+	"github.com/Finschia/finschia-sdk/types/tx/signing"
 
-	clienttypes "github.com/line/ibc-go/v3/modules/core/02-client/types"
-	commitmenttypes "github.com/line/ibc-go/v3/modules/core/23-commitment/types"
-	host "github.com/line/ibc-go/v3/modules/core/24-host"
-	"github.com/line/ibc-go/v3/modules/core/exported"
+	clienttypes "github.com/Finschia/ibc-go/v3/modules/core/02-client/types"
+	commitmenttypes "github.com/Finschia/ibc-go/v3/modules/core/23-commitment/types"
+	host "github.com/Finschia/ibc-go/v3/modules/core/24-host"
+	"github.com/Finschia/ibc-go/v3/modules/core/exported"
 )
 
 var _ exported.ClientState = (*ClientState)(nil)

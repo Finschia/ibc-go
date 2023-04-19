@@ -1,17 +1,17 @@
 package types
 
 import (
-	"github.com/line/lbm-sdk/codec"
-	cryptotypes "github.com/line/lbm-sdk/crypto/types"
-	"github.com/line/lbm-sdk/crypto/types/multisig"
-	sdkerrors "github.com/line/lbm-sdk/types/errors"
-	"github.com/line/lbm-sdk/types/tx/signing"
+	"github.com/Finschia/finschia-sdk/codec"
+	cryptotypes "github.com/Finschia/finschia-sdk/crypto/types"
+	"github.com/Finschia/finschia-sdk/crypto/types/multisig"
+	sdkerrors "github.com/Finschia/finschia-sdk/types/errors"
+	"github.com/Finschia/finschia-sdk/types/tx/signing"
 
-	clienttypes "github.com/line/ibc-go/v3/modules/core/02-client/types"
-	connectiontypes "github.com/line/ibc-go/v3/modules/core/03-connection/types"
-	channeltypes "github.com/line/ibc-go/v3/modules/core/04-channel/types"
-	commitmenttypes "github.com/line/ibc-go/v3/modules/core/23-commitment/types"
-	"github.com/line/ibc-go/v3/modules/core/exported"
+	clienttypes "github.com/Finschia/ibc-go/v3/modules/core/02-client/types"
+	connectiontypes "github.com/Finschia/ibc-go/v3/modules/core/03-connection/types"
+	channeltypes "github.com/Finschia/ibc-go/v3/modules/core/04-channel/types"
+	commitmenttypes "github.com/Finschia/ibc-go/v3/modules/core/23-commitment/types"
+	"github.com/Finschia/ibc-go/v3/modules/core/exported"
 )
 
 // VerifySignature verifies if the the provided public key generated the signature

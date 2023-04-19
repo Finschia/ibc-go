@@ -7,10 +7,10 @@ import (
 	"github.com/stretchr/testify/suite"
 	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
 
-	sdk "github.com/line/lbm-sdk/types"
+	sdk "github.com/Finschia/finschia-sdk/types"
 
-	"github.com/line/ibc-go/v3/modules/core/05-port/keeper"
-	"github.com/line/ibc-go/v3/testing/simapp"
+	"github.com/Finschia/ibc-go/v3/modules/core/05-port/keeper"
+	"github.com/Finschia/ibc-go/v3/testing/simapp"
 )
 
 var (

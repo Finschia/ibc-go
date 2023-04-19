@@ -3,9 +3,9 @@ package types
 import (
 	"strings"
 
-	sdkerrors "github.com/line/lbm-sdk/types/errors"
+	sdkerrors "github.com/Finschia/finschia-sdk/types/errors"
 
-	"github.com/line/ibc-go/v3/modules/core/exported"
+	"github.com/Finschia/ibc-go/v3/modules/core/exported"
 )
 
 var (

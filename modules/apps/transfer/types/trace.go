@@ -7,13 +7,13 @@ import (
 	"sort"
 	"strings"
 
-	sdk "github.com/line/lbm-sdk/types"
-	sdkerrors "github.com/line/lbm-sdk/types/errors"
-	ocbytes "github.com/line/ostracon/libs/bytes"
-	octypes "github.com/line/ostracon/types"
+	sdk "github.com/Finschia/finschia-sdk/types"
+	sdkerrors "github.com/Finschia/finschia-sdk/types/errors"
+	ocbytes "github.com/Finschia/ostracon/libs/bytes"
+	octypes "github.com/Finschia/ostracon/types"
 
-	channeltypes "github.com/line/ibc-go/v3/modules/core/04-channel/types"
-	host "github.com/line/ibc-go/v3/modules/core/24-host"
+	channeltypes "github.com/Finschia/ibc-go/v3/modules/core/04-channel/types"
+	host "github.com/Finschia/ibc-go/v3/modules/core/24-host"
 )
 
 // ParseDenomTrace parses a string with the ibc prefix (denom trace) and the base denomination

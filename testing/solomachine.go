@@ -3,20 +3,20 @@ package ibctesting
 import (
 	"testing"
 
-	"github.com/line/lbm-sdk/codec"
-	codectypes "github.com/line/lbm-sdk/codec/types"
-	kmultisig "github.com/line/lbm-sdk/crypto/keys/multisig"
-	"github.com/line/lbm-sdk/crypto/keys/secp256k1"
-	cryptotypes "github.com/line/lbm-sdk/crypto/types"
-	"github.com/line/lbm-sdk/crypto/types/multisig"
-	"github.com/line/lbm-sdk/types/tx/signing"
+	"github.com/Finschia/finschia-sdk/codec"
+	codectypes "github.com/Finschia/finschia-sdk/codec/types"
+	kmultisig "github.com/Finschia/finschia-sdk/crypto/keys/multisig"
+	"github.com/Finschia/finschia-sdk/crypto/keys/secp256k1"
+	cryptotypes "github.com/Finschia/finschia-sdk/crypto/types"
+	"github.com/Finschia/finschia-sdk/crypto/types/multisig"
+	"github.com/Finschia/finschia-sdk/types/tx/signing"
 	"github.com/stretchr/testify/require"
 
-	clienttypes "github.com/line/ibc-go/v3/modules/core/02-client/types"
-	commitmenttypes "github.com/line/ibc-go/v3/modules/core/23-commitment/types"
-	host "github.com/line/ibc-go/v3/modules/core/24-host"
-	"github.com/line/ibc-go/v3/modules/core/exported"
-	solomachinetypes "github.com/line/ibc-go/v3/modules/light-clients/06-solomachine/types"
+	clienttypes "github.com/Finschia/ibc-go/v3/modules/core/02-client/types"
+	commitmenttypes "github.com/Finschia/ibc-go/v3/modules/core/23-commitment/types"
+	host "github.com/Finschia/ibc-go/v3/modules/core/24-host"
+	"github.com/Finschia/ibc-go/v3/modules/core/exported"
+	solomachinetypes "github.com/Finschia/ibc-go/v3/modules/light-clients/06-solomachine/types"
 )
 
 // Solomachine is a testing helper used to simulate a counterparty

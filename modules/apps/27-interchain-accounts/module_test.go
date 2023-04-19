@@ -7,14 +7,14 @@ import (
 	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
 	dbm "github.com/tendermint/tm-db"
 
-	"github.com/line/ostracon/libs/log"
+	"github.com/Finschia/ostracon/libs/log"
 
-	ica "github.com/line/ibc-go/v3/modules/apps/27-interchain-accounts"
-	controllertypes "github.com/line/ibc-go/v3/modules/apps/27-interchain-accounts/controller/types"
-	hosttypes "github.com/line/ibc-go/v3/modules/apps/27-interchain-accounts/host/types"
-	"github.com/line/ibc-go/v3/modules/apps/27-interchain-accounts/types"
-	ibctesting "github.com/line/ibc-go/v3/testing"
-	"github.com/line/ibc-go/v3/testing/simapp"
+	ica "github.com/Finschia/ibc-go/v3/modules/apps/27-interchain-accounts"
+	controllertypes "github.com/Finschia/ibc-go/v3/modules/apps/27-interchain-accounts/controller/types"
+	hosttypes "github.com/Finschia/ibc-go/v3/modules/apps/27-interchain-accounts/host/types"
+	"github.com/Finschia/ibc-go/v3/modules/apps/27-interchain-accounts/types"
+	ibctesting "github.com/Finschia/ibc-go/v3/testing"
+	"github.com/Finschia/ibc-go/v3/testing/simapp"
 )
 
 type InterchainAccountsTestSuite struct {

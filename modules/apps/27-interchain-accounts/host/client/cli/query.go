@@ -7,16 +7,16 @@ import (
 	"github.com/spf13/cobra"
 	abci "github.com/tendermint/tendermint/abci/types"
 
-	"github.com/line/lbm-sdk/client"
-	"github.com/line/lbm-sdk/client/flags"
-	sdk "github.com/line/lbm-sdk/types"
-	"github.com/line/lbm-sdk/version"
-	"github.com/line/lbm-sdk/x/auth/tx"
+	"github.com/Finschia/finschia-sdk/client"
+	"github.com/Finschia/finschia-sdk/client/flags"
+	sdk "github.com/Finschia/finschia-sdk/types"
+	"github.com/Finschia/finschia-sdk/version"
+	"github.com/Finschia/finschia-sdk/x/auth/tx"
 
-	"github.com/line/ibc-go/v3/modules/apps/27-interchain-accounts/host/types"
-	icatypes "github.com/line/ibc-go/v3/modules/apps/27-interchain-accounts/types"
-	channeltypes "github.com/line/ibc-go/v3/modules/core/04-channel/types"
-	host "github.com/line/ibc-go/v3/modules/core/24-host"
+	"github.com/Finschia/ibc-go/v3/modules/apps/27-interchain-accounts/host/types"
+	icatypes "github.com/Finschia/ibc-go/v3/modules/apps/27-interchain-accounts/types"
+	channeltypes "github.com/Finschia/ibc-go/v3/modules/core/04-channel/types"
+	host "github.com/Finschia/ibc-go/v3/modules/core/24-host"
 )
 
 // GetCmdParams returns the command handler for the host submodule parameter querying.

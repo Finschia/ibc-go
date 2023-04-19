@@ -8,18 +8,18 @@ import (
 	"os"
 	"time"
 
-	"github.com/line/lbm-sdk/codec"
-	"github.com/line/lbm-sdk/crypto/keys/secp256k1"
-	sdk "github.com/line/lbm-sdk/types"
-	"github.com/line/lbm-sdk/types/module"
-	simtypes "github.com/line/lbm-sdk/types/simulation"
-	authtypes "github.com/line/lbm-sdk/x/auth/types"
-	banktypes "github.com/line/lbm-sdk/x/bank/types"
-	stakingtypes "github.com/line/lbm-sdk/x/staking/types"
-	tmjson "github.com/line/ostracon/libs/json"
-	tmtypes "github.com/line/ostracon/types"
+	"github.com/Finschia/finschia-sdk/codec"
+	"github.com/Finschia/finschia-sdk/crypto/keys/secp256k1"
+	sdk "github.com/Finschia/finschia-sdk/types"
+	"github.com/Finschia/finschia-sdk/types/module"
+	simtypes "github.com/Finschia/finschia-sdk/types/simulation"
+	authtypes "github.com/Finschia/finschia-sdk/x/auth/types"
+	banktypes "github.com/Finschia/finschia-sdk/x/bank/types"
+	stakingtypes "github.com/Finschia/finschia-sdk/x/staking/types"
+	tmjson "github.com/Finschia/ostracon/libs/json"
+	tmtypes "github.com/Finschia/ostracon/types"
 
-	simappparams "github.com/line/ibc-go/v3/testing/simapp/params"
+	simappparams "github.com/Finschia/ibc-go/v3/testing/simapp/params"
 )
 
 // AppStateFn returns the initial application state using a genesis or the simulation parameters.

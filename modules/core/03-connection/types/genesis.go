@@ -3,7 +3,7 @@ package types
 import (
 	"fmt"
 
-	host "github.com/line/ibc-go/v3/modules/core/24-host"
+	host "github.com/Finschia/ibc-go/v3/modules/core/24-host"
 )
 
 // NewConnectionPaths creates a ConnectionPaths instance.

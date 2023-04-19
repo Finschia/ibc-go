@@ -3,12 +3,12 @@ package cli
 import (
 	"fmt"
 
-	"github.com/line/lbm-sdk/client"
-	"github.com/line/lbm-sdk/client/flags"
-	"github.com/line/lbm-sdk/version"
+	"github.com/Finschia/finschia-sdk/client"
+	"github.com/Finschia/finschia-sdk/client/flags"
+	"github.com/Finschia/finschia-sdk/version"
 	"github.com/spf13/cobra"
 
-	"github.com/line/ibc-go/v3/modules/apps/27-interchain-accounts/controller/types"
+	"github.com/Finschia/ibc-go/v3/modules/apps/27-interchain-accounts/controller/types"
 )
 
 // GetCmdQueryInterchainAccount returns the command handler for the controller submodule parameter querying.

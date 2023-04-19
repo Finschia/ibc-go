@@ -7,16 +7,16 @@ import (
 	"fmt"
 	"math/rand"
 
-	"github.com/line/lbm-sdk/types/module"
+	"github.com/Finschia/finschia-sdk/types/module"
 
-	clientsims "github.com/line/ibc-go/v3/modules/core/02-client/simulation"
-	clienttypes "github.com/line/ibc-go/v3/modules/core/02-client/types"
-	connectionsims "github.com/line/ibc-go/v3/modules/core/03-connection/simulation"
-	connectiontypes "github.com/line/ibc-go/v3/modules/core/03-connection/types"
-	channelsims "github.com/line/ibc-go/v3/modules/core/04-channel/simulation"
-	channeltypes "github.com/line/ibc-go/v3/modules/core/04-channel/types"
-	host "github.com/line/ibc-go/v3/modules/core/24-host"
-	"github.com/line/ibc-go/v3/modules/core/types"
+	clientsims "github.com/Finschia/ibc-go/v3/modules/core/02-client/simulation"
+	clienttypes "github.com/Finschia/ibc-go/v3/modules/core/02-client/types"
+	connectionsims "github.com/Finschia/ibc-go/v3/modules/core/03-connection/simulation"
+	connectiontypes "github.com/Finschia/ibc-go/v3/modules/core/03-connection/types"
+	channelsims "github.com/Finschia/ibc-go/v3/modules/core/04-channel/simulation"
+	channeltypes "github.com/Finschia/ibc-go/v3/modules/core/04-channel/types"
+	host "github.com/Finschia/ibc-go/v3/modules/core/24-host"
+	"github.com/Finschia/ibc-go/v3/modules/core/types"
 )
 
 // Simulation parameter constants

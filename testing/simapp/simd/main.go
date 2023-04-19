@@ -3,11 +3,11 @@ package main
 import (
 	"os"
 
-	"github.com/line/lbm-sdk/server"
-	svrcmd "github.com/line/lbm-sdk/server/cmd"
+	"github.com/Finschia/finschia-sdk/server"
+	svrcmd "github.com/Finschia/finschia-sdk/server/cmd"
 
-	"github.com/line/ibc-go/v3/testing/simapp"
-	"github.com/line/ibc-go/v3/testing/simapp/simd/cmd"
+	"github.com/Finschia/ibc-go/v3/testing/simapp"
+	"github.com/Finschia/ibc-go/v3/testing/simapp/simd/cmd"
 )
 
 func main() {

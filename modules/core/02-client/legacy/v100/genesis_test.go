@@ -5,18 +5,18 @@ import (
 	"encoding/json"
 	"time"
 
-	"github.com/line/lbm-sdk/client"
-	"github.com/line/lbm-sdk/codec"
-	codectypes "github.com/line/lbm-sdk/codec/types"
+	"github.com/Finschia/finschia-sdk/client"
+	"github.com/Finschia/finschia-sdk/codec"
+	codectypes "github.com/Finschia/finschia-sdk/codec/types"
 
-	ibcclient "github.com/line/ibc-go/v3/modules/core/02-client"
-	v100 "github.com/line/ibc-go/v3/modules/core/02-client/legacy/v100"
-	"github.com/line/ibc-go/v3/modules/core/02-client/types"
-	host "github.com/line/ibc-go/v3/modules/core/24-host"
-	"github.com/line/ibc-go/v3/modules/core/exported"
-	ibcoctypes "github.com/line/ibc-go/v3/modules/light-clients/07-tendermint/types"
-	ibctesting "github.com/line/ibc-go/v3/testing"
-	"github.com/line/ibc-go/v3/testing/simapp"
+	ibcclient "github.com/Finschia/ibc-go/v3/modules/core/02-client"
+	v100 "github.com/Finschia/ibc-go/v3/modules/core/02-client/legacy/v100"
+	"github.com/Finschia/ibc-go/v3/modules/core/02-client/types"
+	host "github.com/Finschia/ibc-go/v3/modules/core/24-host"
+	"github.com/Finschia/ibc-go/v3/modules/core/exported"
+	ibcoctypes "github.com/Finschia/ibc-go/v3/modules/light-clients/07-tendermint/types"
+	ibctesting "github.com/Finschia/ibc-go/v3/testing"
+	"github.com/Finschia/ibc-go/v3/testing/simapp"
 )
 
 func (suite *LegacyTestSuite) TestMigrateGenesisSolomachine() {

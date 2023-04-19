@@ -1,16 +1,16 @@
 package v100
 
 import (
-	"github.com/line/lbm-sdk/client"
-	"github.com/line/lbm-sdk/codec"
-	genutiltypes "github.com/line/lbm-sdk/x/genutil/types"
-	octypes "github.com/line/ostracon/types"
+	"github.com/Finschia/finschia-sdk/client"
+	"github.com/Finschia/finschia-sdk/codec"
+	genutiltypes "github.com/Finschia/finschia-sdk/x/genutil/types"
+	octypes "github.com/Finschia/ostracon/types"
 
-	clientv100 "github.com/line/ibc-go/v3/modules/core/02-client/legacy/v100"
-	clienttypes "github.com/line/ibc-go/v3/modules/core/02-client/types"
-	connectiontypes "github.com/line/ibc-go/v3/modules/core/03-connection/types"
-	host "github.com/line/ibc-go/v3/modules/core/24-host"
-	"github.com/line/ibc-go/v3/modules/core/types"
+	clientv100 "github.com/Finschia/ibc-go/v3/modules/core/02-client/legacy/v100"
+	clienttypes "github.com/Finschia/ibc-go/v3/modules/core/02-client/types"
+	connectiontypes "github.com/Finschia/ibc-go/v3/modules/core/03-connection/types"
+	host "github.com/Finschia/ibc-go/v3/modules/core/24-host"
+	"github.com/Finschia/ibc-go/v3/modules/core/types"
 )
 
 // MigrateGenesis accepts exported v1.0.0 IBC client genesis file and migrates it to:

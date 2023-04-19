@@ -1,12 +1,12 @@
 package types
 
 import (
-	sdk "github.com/line/lbm-sdk/types"
-	authtypes "github.com/line/lbm-sdk/x/auth/types"
-	capabilitytypes "github.com/line/lbm-sdk/x/capability/types"
+	sdk "github.com/Finschia/finschia-sdk/types"
+	authtypes "github.com/Finschia/finschia-sdk/x/auth/types"
+	capabilitytypes "github.com/Finschia/finschia-sdk/x/capability/types"
 
-	channeltypes "github.com/line/ibc-go/v3/modules/core/04-channel/types"
-	ibcexported "github.com/line/ibc-go/v3/modules/core/exported"
+	channeltypes "github.com/Finschia/ibc-go/v3/modules/core/04-channel/types"
+	ibcexported "github.com/Finschia/ibc-go/v3/modules/core/exported"
 )
 
 // AccountKeeper defines the expected account keeper

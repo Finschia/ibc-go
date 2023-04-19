@@ -4,12 +4,12 @@ import (
 	"bytes"
 	"time"
 
-	sdkerrors "github.com/line/lbm-sdk/types/errors"
-	octypes "github.com/line/ostracon/types"
+	sdkerrors "github.com/Finschia/finschia-sdk/types/errors"
+	octypes "github.com/Finschia/ostracon/types"
 
-	clienttypes "github.com/line/ibc-go/v3/modules/core/02-client/types"
-	commitmenttypes "github.com/line/ibc-go/v3/modules/core/23-commitment/types"
-	"github.com/line/ibc-go/v3/modules/core/exported"
+	clienttypes "github.com/Finschia/ibc-go/v3/modules/core/02-client/types"
+	commitmenttypes "github.com/Finschia/ibc-go/v3/modules/core/23-commitment/types"
+	"github.com/Finschia/ibc-go/v3/modules/core/exported"
 )
 
 var _ exported.Header = &Header{}

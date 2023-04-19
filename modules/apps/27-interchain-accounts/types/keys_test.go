@@ -1,7 +1,7 @@
 package types_test
 
 import (
-	"github.com/line/ibc-go/v3/modules/apps/27-interchain-accounts/types"
+	"github.com/Finschia/ibc-go/v3/modules/apps/27-interchain-accounts/types"
 )
 
 func (suite *TypesTestSuite) TestKeyActiveChannel() {

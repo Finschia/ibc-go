@@ -3,12 +3,12 @@ package types
 import (
 	"fmt"
 
-	codectypes "github.com/line/lbm-sdk/codec/types"
-	sdkerrors "github.com/line/lbm-sdk/types/errors"
-	govtypes "github.com/line/lbm-sdk/x/gov/types"
-	upgradetypes "github.com/line/lbm-sdk/x/upgrade/types"
+	codectypes "github.com/Finschia/finschia-sdk/codec/types"
+	sdkerrors "github.com/Finschia/finschia-sdk/types/errors"
+	govtypes "github.com/Finschia/finschia-sdk/x/gov/types"
+	upgradetypes "github.com/Finschia/finschia-sdk/x/upgrade/types"
 
-	"github.com/line/ibc-go/v3/modules/core/exported"
+	"github.com/Finschia/ibc-go/v3/modules/core/exported"
 )
 
 const (

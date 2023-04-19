@@ -4,16 +4,16 @@ import (
 	"fmt"
 	"math"
 
-	sdk "github.com/line/lbm-sdk/types"
-	sdkerrors "github.com/line/lbm-sdk/types/errors"
-	capabilitytypes "github.com/line/lbm-sdk/x/capability/types"
+	sdk "github.com/Finschia/finschia-sdk/types"
+	sdkerrors "github.com/Finschia/finschia-sdk/types/errors"
+	capabilitytypes "github.com/Finschia/finschia-sdk/x/capability/types"
 
-	"github.com/line/ibc-go/v3/modules/apps/transfer/keeper"
-	"github.com/line/ibc-go/v3/modules/apps/transfer/types"
-	channeltypes "github.com/line/ibc-go/v3/modules/core/04-channel/types"
-	porttypes "github.com/line/ibc-go/v3/modules/core/05-port/types"
-	host "github.com/line/ibc-go/v3/modules/core/24-host"
-	ibcexported "github.com/line/ibc-go/v3/modules/core/exported"
+	"github.com/Finschia/ibc-go/v3/modules/apps/transfer/keeper"
+	"github.com/Finschia/ibc-go/v3/modules/apps/transfer/types"
+	channeltypes "github.com/Finschia/ibc-go/v3/modules/core/04-channel/types"
+	porttypes "github.com/Finschia/ibc-go/v3/modules/core/05-port/types"
+	host "github.com/Finschia/ibc-go/v3/modules/core/24-host"
+	ibcexported "github.com/Finschia/ibc-go/v3/modules/core/exported"
 )
 
 // IBCModule implements the ICS26 interface for transfer given the transfer keeper.

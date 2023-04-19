@@ -5,12 +5,12 @@ import (
 
 	abci "github.com/tendermint/tendermint/abci/types"
 
-	"github.com/line/lbm-sdk/client"
-	"github.com/line/lbm-sdk/codec"
+	"github.com/Finschia/finschia-sdk/client"
+	"github.com/Finschia/finschia-sdk/codec"
 
-	clienttypes "github.com/line/ibc-go/v3/modules/core/02-client/types"
-	commitmenttypes "github.com/line/ibc-go/v3/modules/core/23-commitment/types"
-	host "github.com/line/ibc-go/v3/modules/core/24-host"
+	clienttypes "github.com/Finschia/ibc-go/v3/modules/core/02-client/types"
+	commitmenttypes "github.com/Finschia/ibc-go/v3/modules/core/23-commitment/types"
+	host "github.com/Finschia/ibc-go/v3/modules/core/24-host"
 )
 
 // QueryTendermintProof performs an ABCI query with the given key and returns

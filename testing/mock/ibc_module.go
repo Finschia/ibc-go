@@ -5,12 +5,12 @@ import (
 	"fmt"
 	"strconv"
 
-	sdk "github.com/line/lbm-sdk/types"
-	capabilitytypes "github.com/line/lbm-sdk/x/capability/types"
+	sdk "github.com/Finschia/finschia-sdk/types"
+	capabilitytypes "github.com/Finschia/finschia-sdk/x/capability/types"
 
-	channeltypes "github.com/line/ibc-go/v3/modules/core/04-channel/types"
-	host "github.com/line/ibc-go/v3/modules/core/24-host"
-	"github.com/line/ibc-go/v3/modules/core/exported"
+	channeltypes "github.com/Finschia/ibc-go/v3/modules/core/04-channel/types"
+	host "github.com/Finschia/ibc-go/v3/modules/core/24-host"
+	"github.com/Finschia/ibc-go/v3/modules/core/exported"
 )
 
 // IBCModule implements the ICS26 callbacks for testing/mock.

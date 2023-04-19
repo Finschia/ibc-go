@@ -6,17 +6,17 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/line/lbm-sdk/client"
-	"github.com/line/lbm-sdk/codec"
-	sdkerrors "github.com/line/lbm-sdk/types/errors"
+	"github.com/Finschia/finschia-sdk/client"
+	"github.com/Finschia/finschia-sdk/codec"
+	sdkerrors "github.com/Finschia/finschia-sdk/types/errors"
 
-	clientutils "github.com/line/ibc-go/v3/modules/core/02-client/client/utils"
-	clienttypes "github.com/line/ibc-go/v3/modules/core/02-client/types"
-	"github.com/line/ibc-go/v3/modules/core/03-connection/types"
-	commitmenttypes "github.com/line/ibc-go/v3/modules/core/23-commitment/types"
-	host "github.com/line/ibc-go/v3/modules/core/24-host"
-	ibcclient "github.com/line/ibc-go/v3/modules/core/client"
-	"github.com/line/ibc-go/v3/modules/core/exported"
+	clientutils "github.com/Finschia/ibc-go/v3/modules/core/02-client/client/utils"
+	clienttypes "github.com/Finschia/ibc-go/v3/modules/core/02-client/types"
+	"github.com/Finschia/ibc-go/v3/modules/core/03-connection/types"
+	commitmenttypes "github.com/Finschia/ibc-go/v3/modules/core/23-commitment/types"
+	host "github.com/Finschia/ibc-go/v3/modules/core/24-host"
+	ibcclient "github.com/Finschia/ibc-go/v3/modules/core/client"
+	"github.com/Finschia/ibc-go/v3/modules/core/exported"
 )
 
 // QueryConnection returns a connection end.

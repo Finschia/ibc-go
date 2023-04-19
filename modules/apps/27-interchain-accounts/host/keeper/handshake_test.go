@@ -1,15 +1,15 @@
 package keeper_test
 
 import (
-	sdk "github.com/line/lbm-sdk/types"
-	authtypes "github.com/line/lbm-sdk/x/auth/types"
-	capabilitytypes "github.com/line/lbm-sdk/x/capability/types"
+	sdk "github.com/Finschia/finschia-sdk/types"
+	authtypes "github.com/Finschia/finschia-sdk/x/auth/types"
+	capabilitytypes "github.com/Finschia/finschia-sdk/x/capability/types"
 
-	hosttypes "github.com/line/ibc-go/v3/modules/apps/27-interchain-accounts/host/types"
-	icatypes "github.com/line/ibc-go/v3/modules/apps/27-interchain-accounts/types"
-	channeltypes "github.com/line/ibc-go/v3/modules/core/04-channel/types"
-	host "github.com/line/ibc-go/v3/modules/core/24-host"
-	ibctesting "github.com/line/ibc-go/v3/testing"
+	hosttypes "github.com/Finschia/ibc-go/v3/modules/apps/27-interchain-accounts/host/types"
+	icatypes "github.com/Finschia/ibc-go/v3/modules/apps/27-interchain-accounts/types"
+	channeltypes "github.com/Finschia/ibc-go/v3/modules/core/04-channel/types"
+	host "github.com/Finschia/ibc-go/v3/modules/core/24-host"
+	ibctesting "github.com/Finschia/ibc-go/v3/testing"
 )
 
 // open and close channel is a helper function for TestOnChanOpenTry for reopening accounts

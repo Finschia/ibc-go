@@ -3,14 +3,14 @@ package keeper_test
 import (
 	"fmt"
 
-	sdk "github.com/line/lbm-sdk/types"
+	sdk "github.com/Finschia/finschia-sdk/types"
 
-	"github.com/line/ibc-go/v3/modules/apps/transfer/types"
-	clienttypes "github.com/line/ibc-go/v3/modules/core/02-client/types"
-	channeltypes "github.com/line/ibc-go/v3/modules/core/04-channel/types"
-	host "github.com/line/ibc-go/v3/modules/core/24-host"
-	ibctesting "github.com/line/ibc-go/v3/testing"
-	"github.com/line/ibc-go/v3/testing/simapp"
+	"github.com/Finschia/ibc-go/v3/modules/apps/transfer/types"
+	clienttypes "github.com/Finschia/ibc-go/v3/modules/core/02-client/types"
+	channeltypes "github.com/Finschia/ibc-go/v3/modules/core/04-channel/types"
+	host "github.com/Finschia/ibc-go/v3/modules/core/24-host"
+	ibctesting "github.com/Finschia/ibc-go/v3/testing"
+	"github.com/Finschia/ibc-go/v3/testing/simapp"
 )
 
 // test sending from chainA to chainB using both coin that orignate on

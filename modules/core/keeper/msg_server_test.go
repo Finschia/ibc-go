@@ -1,18 +1,18 @@
 package keeper_test
 
 import (
-	sdk "github.com/line/lbm-sdk/types"
-	upgradetypes "github.com/line/lbm-sdk/x/upgrade/types"
+	sdk "github.com/Finschia/finschia-sdk/types"
+	upgradetypes "github.com/Finschia/finschia-sdk/x/upgrade/types"
 
-	clienttypes "github.com/line/ibc-go/v3/modules/core/02-client/types"
-	channeltypes "github.com/line/ibc-go/v3/modules/core/04-channel/types"
-	commitmenttypes "github.com/line/ibc-go/v3/modules/core/23-commitment/types"
-	host "github.com/line/ibc-go/v3/modules/core/24-host"
-	"github.com/line/ibc-go/v3/modules/core/exported"
-	"github.com/line/ibc-go/v3/modules/core/keeper"
-	ibcoctypes "github.com/line/ibc-go/v3/modules/light-clients/07-tendermint/types"
-	ibctesting "github.com/line/ibc-go/v3/testing"
-	ibcmock "github.com/line/ibc-go/v3/testing/mock"
+	clienttypes "github.com/Finschia/ibc-go/v3/modules/core/02-client/types"
+	channeltypes "github.com/Finschia/ibc-go/v3/modules/core/04-channel/types"
+	commitmenttypes "github.com/Finschia/ibc-go/v3/modules/core/23-commitment/types"
+	host "github.com/Finschia/ibc-go/v3/modules/core/24-host"
+	"github.com/Finschia/ibc-go/v3/modules/core/exported"
+	"github.com/Finschia/ibc-go/v3/modules/core/keeper"
+	ibcoctypes "github.com/Finschia/ibc-go/v3/modules/light-clients/07-tendermint/types"
+	ibctesting "github.com/Finschia/ibc-go/v3/testing"
+	ibcmock "github.com/Finschia/ibc-go/v3/testing/mock"
 )
 
 var (

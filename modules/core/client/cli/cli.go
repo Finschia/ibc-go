@@ -3,12 +3,12 @@ package cli
 import (
 	"github.com/spf13/cobra"
 
-	"github.com/line/lbm-sdk/client"
+	"github.com/Finschia/finschia-sdk/client"
 
-	ibcclient "github.com/line/ibc-go/v3/modules/core/02-client"
-	connection "github.com/line/ibc-go/v3/modules/core/03-connection"
-	channel "github.com/line/ibc-go/v3/modules/core/04-channel"
-	host "github.com/line/ibc-go/v3/modules/core/24-host"
+	ibcclient "github.com/Finschia/ibc-go/v3/modules/core/02-client"
+	connection "github.com/Finschia/ibc-go/v3/modules/core/03-connection"
+	channel "github.com/Finschia/ibc-go/v3/modules/core/04-channel"
+	host "github.com/Finschia/ibc-go/v3/modules/core/24-host"
 )
 
 // GetTxCmd returns the transaction commands for this module

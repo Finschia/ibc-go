@@ -1,10 +1,10 @@
 package types_test
 
 import (
-	"github.com/line/ibc-go/v3/modules/core/exported"
-	"github.com/line/ibc-go/v3/modules/light-clients/06-solomachine/types"
-	ibcoctypes "github.com/line/ibc-go/v3/modules/light-clients/07-tendermint/types"
-	ibctesting "github.com/line/ibc-go/v3/testing"
+	"github.com/Finschia/ibc-go/v3/modules/core/exported"
+	"github.com/Finschia/ibc-go/v3/modules/light-clients/06-solomachine/types"
+	ibcoctypes "github.com/Finschia/ibc-go/v3/modules/light-clients/07-tendermint/types"
+	ibctesting "github.com/Finschia/ibc-go/v3/testing"
 )
 
 func (suite *SoloMachineTestSuite) TestCheckSubstituteAndUpdateState() {

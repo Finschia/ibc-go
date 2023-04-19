@@ -7,19 +7,19 @@ import (
 	"github.com/stretchr/testify/suite"
 	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
 
-	"github.com/line/lbm-sdk/codec"
+	"github.com/Finschia/finschia-sdk/codec"
 
-	ibc "github.com/line/ibc-go/v3/modules/core"
-	clienttypes "github.com/line/ibc-go/v3/modules/core/02-client/types"
-	connectiontypes "github.com/line/ibc-go/v3/modules/core/03-connection/types"
-	channeltypes "github.com/line/ibc-go/v3/modules/core/04-channel/types"
-	commitmenttypes "github.com/line/ibc-go/v3/modules/core/23-commitment/types"
-	"github.com/line/ibc-go/v3/modules/core/exported"
-	"github.com/line/ibc-go/v3/modules/core/types"
-	ibcoctypes "github.com/line/ibc-go/v3/modules/light-clients/07-tendermint/types"
-	localhosttypes "github.com/line/ibc-go/v3/modules/light-clients/09-localhost/types"
-	ibctesting "github.com/line/ibc-go/v3/testing"
-	"github.com/line/ibc-go/v3/testing/simapp"
+	ibc "github.com/Finschia/ibc-go/v3/modules/core"
+	clienttypes "github.com/Finschia/ibc-go/v3/modules/core/02-client/types"
+	connectiontypes "github.com/Finschia/ibc-go/v3/modules/core/03-connection/types"
+	channeltypes "github.com/Finschia/ibc-go/v3/modules/core/04-channel/types"
+	commitmenttypes "github.com/Finschia/ibc-go/v3/modules/core/23-commitment/types"
+	"github.com/Finschia/ibc-go/v3/modules/core/exported"
+	"github.com/Finschia/ibc-go/v3/modules/core/types"
+	ibcoctypes "github.com/Finschia/ibc-go/v3/modules/light-clients/07-tendermint/types"
+	localhosttypes "github.com/Finschia/ibc-go/v3/modules/light-clients/09-localhost/types"
+	ibctesting "github.com/Finschia/ibc-go/v3/testing"
+	"github.com/Finschia/ibc-go/v3/testing/simapp"
 )
 
 const (

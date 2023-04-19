@@ -5,7 +5,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/line/ibc-go/v3/modules/apps/transfer/types"
+	"github.com/Finschia/ibc-go/v3/modules/apps/transfer/types"
 )
 
 // Test that there is domain separation between the port id and the channel id otherwise an

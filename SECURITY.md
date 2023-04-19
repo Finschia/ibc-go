@@ -12,21 +12,21 @@ See the policy linked above for more details on submissions and rewards and read
 this [blog post](https://blog.cosmos.network/bug-bounty-program-for-tendermint-cosmos-833c67693586) for the program scope.
 
 The following is a list of examples of the kinds of bugs we're most interested
-in for the IBC Golang repository. Please refer to the corresponding repositories for vulnerabilities on the [LBM SDK](https://github.com/line/lbm-sdk/blob/main/SECURITY.md) and [Ostracon](https://github.com/line/ostracon/blob/main/SECURITY.md) repositories.
+in for the IBC Golang repository. Please refer to the corresponding repositories for vulnerabilities on the [Finschia SDK](https://github.com/Finschia/finschia-sdk/blob/main/SECURITY.md) and [Ostracon](https://github.com/Finschia/ostracon/blob/main/SECURITY.md) repositories.
 
 ### IBC Core
 
-- [`02-client`](https://github.com/line/ibc-go/tree/main/modules/core/02-client)
-- [`03-connection`](https://github.com/line/ibc-go/tree/main/modules/core/03-connection)
-- [`04-channel`](https://github.com/line/ibc-go/tree/main/modules/core/04-channel)
-- [`05-port`](https://github.com/line/ibc-go/tree/main/modules/core/05-port)
-- [`23-commitment`](https://github.com/line/ibc-go/tree/main/modules/core/23-commitment)
-- [`24-host`](https://github.com/line/ibc-go/tree/main/modules/core/24-host)
+- [`02-client`](https://github.com/Finschia/ibc-go/tree/main/modules/core/02-client)
+- [`03-connection`](https://github.com/Finschia/ibc-go/tree/main/modules/core/03-connection)
+- [`04-channel`](https://github.com/Finschia/ibc-go/tree/main/modules/core/04-channel)
+- [`05-port`](https://github.com/Finschia/ibc-go/tree/main/modules/core/05-port)
+- [`23-commitment`](https://github.com/Finschia/ibc-go/tree/main/modules/core/23-commitment)
+- [`24-host`](https://github.com/Finschia/ibc-go/tree/main/modules/core/24-host)
 
 ### IBC Applications
 
-- [`transfer`](https://github.com/line/ibc-go/tree/main/modules/apps/transfer)
+- [`transfer`](https://github.com/Finschia/ibc-go/tree/main/modules/apps/transfer)
 
 ### Light Clients
 
-- [`07-tendermint`](https://github.com/line/ibc-go/tree/main/modules/light-clients/07-tendermint)
+- [`07-tendermint`](https://github.com/Finschia/ibc-go/tree/main/modules/light-clients/07-tendermint)

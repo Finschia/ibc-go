@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"regexp"
 
-	sdkerrors "github.com/line/lbm-sdk/types/errors"
+	sdkerrors "github.com/Finschia/finschia-sdk/types/errors"
 
-	host "github.com/line/ibc-go/v3/modules/core/24-host"
+	host "github.com/Finschia/ibc-go/v3/modules/core/24-host"
 )
 
 const (

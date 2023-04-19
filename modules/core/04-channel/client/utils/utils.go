@@ -4,16 +4,16 @@ import (
 	"context"
 	"encoding/binary"
 
-	"github.com/line/lbm-sdk/client"
-	"github.com/line/lbm-sdk/codec"
-	sdkerrors "github.com/line/lbm-sdk/types/errors"
+	"github.com/Finschia/finschia-sdk/client"
+	"github.com/Finschia/finschia-sdk/codec"
+	sdkerrors "github.com/Finschia/finschia-sdk/types/errors"
 
-	clientutils "github.com/line/ibc-go/v3/modules/core/02-client/client/utils"
-	clienttypes "github.com/line/ibc-go/v3/modules/core/02-client/types"
-	"github.com/line/ibc-go/v3/modules/core/04-channel/types"
-	host "github.com/line/ibc-go/v3/modules/core/24-host"
-	ibcclient "github.com/line/ibc-go/v3/modules/core/client"
-	"github.com/line/ibc-go/v3/modules/core/exported"
+	clientutils "github.com/Finschia/ibc-go/v3/modules/core/02-client/client/utils"
+	clienttypes "github.com/Finschia/ibc-go/v3/modules/core/02-client/types"
+	"github.com/Finschia/ibc-go/v3/modules/core/04-channel/types"
+	host "github.com/Finschia/ibc-go/v3/modules/core/24-host"
+	ibcclient "github.com/Finschia/ibc-go/v3/modules/core/client"
+	"github.com/Finschia/ibc-go/v3/modules/core/exported"
 )
 
 // QueryChannel returns a channel end.

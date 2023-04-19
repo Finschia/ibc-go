@@ -3,12 +3,12 @@ package transfer_test
 import (
 	"testing"
 
-	sdk "github.com/line/lbm-sdk/types"
+	sdk "github.com/Finschia/finschia-sdk/types"
 	"github.com/stretchr/testify/suite"
 
-	"github.com/line/ibc-go/v3/modules/apps/transfer/types"
-	clienttypes "github.com/line/ibc-go/v3/modules/core/02-client/types"
-	ibctesting "github.com/line/ibc-go/v3/testing"
+	"github.com/Finschia/ibc-go/v3/modules/apps/transfer/types"
+	clienttypes "github.com/Finschia/ibc-go/v3/modules/core/02-client/types"
+	ibctesting "github.com/Finschia/ibc-go/v3/testing"
 )
 
 type TransferTestSuite struct {

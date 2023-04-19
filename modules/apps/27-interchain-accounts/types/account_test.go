@@ -5,13 +5,13 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/line/lbm-sdk/crypto/keys/secp256k1"
-	sdk "github.com/line/lbm-sdk/types"
-	authtypes "github.com/line/lbm-sdk/x/auth/types"
+	"github.com/Finschia/finschia-sdk/crypto/keys/secp256k1"
+	sdk "github.com/Finschia/finschia-sdk/types"
+	authtypes "github.com/Finschia/finschia-sdk/x/auth/types"
 	"github.com/stretchr/testify/suite"
 
-	"github.com/line/ibc-go/v3/modules/apps/27-interchain-accounts/types"
-	ibctesting "github.com/line/ibc-go/v3/testing"
+	"github.com/Finschia/ibc-go/v3/modules/apps/27-interchain-accounts/types"
+	ibctesting "github.com/Finschia/ibc-go/v3/testing"
 )
 
 var (

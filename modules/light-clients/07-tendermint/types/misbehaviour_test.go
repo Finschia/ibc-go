@@ -5,14 +5,14 @@ import (
 
 	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
 
-	"github.com/line/ostracon/crypto/tmhash"
-	octypes "github.com/line/ostracon/types"
+	"github.com/Finschia/ostracon/crypto/tmhash"
+	octypes "github.com/Finschia/ostracon/types"
 
-	clienttypes "github.com/line/ibc-go/v3/modules/core/02-client/types"
-	"github.com/line/ibc-go/v3/modules/core/exported"
-	"github.com/line/ibc-go/v3/modules/light-clients/07-tendermint/types"
-	ibctesting "github.com/line/ibc-go/v3/testing"
-	ibctestingmock "github.com/line/ibc-go/v3/testing/mock"
+	clienttypes "github.com/Finschia/ibc-go/v3/modules/core/02-client/types"
+	"github.com/Finschia/ibc-go/v3/modules/core/exported"
+	"github.com/Finschia/ibc-go/v3/modules/light-clients/07-tendermint/types"
+	ibctesting "github.com/Finschia/ibc-go/v3/testing"
+	ibctestingmock "github.com/Finschia/ibc-go/v3/testing/mock"
 )
 
 func (suite *TendermintTestSuite) TestMisbehaviour() {

@@ -7,7 +7,7 @@ import (
 	abci "github.com/tendermint/tendermint/abci/types"
 	"github.com/tendermint/tendermint/proto/tendermint/crypto"
 
-	"github.com/line/ibc-go/v3/modules/core/23-commitment/types"
+	"github.com/Finschia/ibc-go/v3/modules/core/23-commitment/types"
 )
 
 func (suite *MerkleTestSuite) TestConvertProofs() {

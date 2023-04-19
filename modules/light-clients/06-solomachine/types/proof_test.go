@@ -1,12 +1,12 @@
 package types_test
 
 import (
-	cryptotypes "github.com/line/lbm-sdk/crypto/types"
-	"github.com/line/lbm-sdk/types/tx/signing"
+	cryptotypes "github.com/Finschia/finschia-sdk/crypto/types"
+	"github.com/Finschia/finschia-sdk/types/tx/signing"
 
-	"github.com/line/ibc-go/v3/modules/light-clients/06-solomachine/types"
-	solomachinetypes "github.com/line/ibc-go/v3/modules/light-clients/06-solomachine/types"
-	ibctesting "github.com/line/ibc-go/v3/testing"
+	"github.com/Finschia/ibc-go/v3/modules/light-clients/06-solomachine/types"
+	solomachinetypes "github.com/Finschia/ibc-go/v3/modules/light-clients/06-solomachine/types"
+	ibctesting "github.com/Finschia/ibc-go/v3/testing"
 )
 
 func (suite *SoloMachineTestSuite) TestVerifySignature() {

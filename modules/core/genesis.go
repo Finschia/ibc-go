@@ -1,13 +1,13 @@
 package ibc
 
 import (
-	sdk "github.com/line/lbm-sdk/types"
+	sdk "github.com/Finschia/finschia-sdk/types"
 
-	client "github.com/line/ibc-go/v3/modules/core/02-client"
-	connection "github.com/line/ibc-go/v3/modules/core/03-connection"
-	channel "github.com/line/ibc-go/v3/modules/core/04-channel"
-	"github.com/line/ibc-go/v3/modules/core/keeper"
-	"github.com/line/ibc-go/v3/modules/core/types"
+	client "github.com/Finschia/ibc-go/v3/modules/core/02-client"
+	connection "github.com/Finschia/ibc-go/v3/modules/core/03-connection"
+	channel "github.com/Finschia/ibc-go/v3/modules/core/04-channel"
+	"github.com/Finschia/ibc-go/v3/modules/core/keeper"
+	"github.com/Finschia/ibc-go/v3/modules/core/types"
 )
 
 // InitGenesis initializes the ibc state from a provided genesis

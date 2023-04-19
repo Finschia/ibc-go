@@ -1,9 +1,9 @@
 package types
 
 import (
-	controllertypes "github.com/line/ibc-go/v3/modules/apps/27-interchain-accounts/controller/types"
-	hosttypes "github.com/line/ibc-go/v3/modules/apps/27-interchain-accounts/host/types"
-	host "github.com/line/ibc-go/v3/modules/core/24-host"
+	controllertypes "github.com/Finschia/ibc-go/v3/modules/apps/27-interchain-accounts/controller/types"
+	hosttypes "github.com/Finschia/ibc-go/v3/modules/apps/27-interchain-accounts/host/types"
+	host "github.com/Finschia/ibc-go/v3/modules/core/24-host"
 )
 
 // DefaultGenesis creates and returns the interchain accounts GenesisState

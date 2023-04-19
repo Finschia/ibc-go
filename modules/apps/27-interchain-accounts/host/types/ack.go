@@ -3,9 +3,9 @@ package types
 import (
 	"fmt"
 
-	sdkerrors "github.com/line/lbm-sdk/types/errors"
+	sdkerrors "github.com/Finschia/finschia-sdk/types/errors"
 
-	channeltypes "github.com/line/ibc-go/v3/modules/core/04-channel/types"
+	channeltypes "github.com/Finschia/ibc-go/v3/modules/core/04-channel/types"
 )
 
 const (

@@ -1,12 +1,12 @@
 package simapp
 
 import (
-	sdk "github.com/line/lbm-sdk/types"
-	sdkerrors "github.com/line/lbm-sdk/types/errors"
-	"github.com/line/lbm-sdk/x/auth/ante"
+	sdk "github.com/Finschia/finschia-sdk/types"
+	sdkerrors "github.com/Finschia/finschia-sdk/types/errors"
+	"github.com/Finschia/finschia-sdk/x/auth/ante"
 
-	ibcante "github.com/line/ibc-go/v3/modules/core/ante"
-	"github.com/line/ibc-go/v3/modules/core/keeper"
+	ibcante "github.com/Finschia/ibc-go/v3/modules/core/ante"
+	"github.com/Finschia/ibc-go/v3/modules/core/keeper"
 )
 
 // HandlerOptions extend the SDK's AnteHandler options by requiring the IBC keeper.

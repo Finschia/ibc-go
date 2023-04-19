@@ -3,16 +3,16 @@ package keeper_test
 import (
 	"fmt"
 
-	codectypes "github.com/line/lbm-sdk/codec/types"
-	sdk "github.com/line/lbm-sdk/types"
-	grpctypes "github.com/line/lbm-sdk/types/grpc"
-	"github.com/line/lbm-sdk/types/query"
+	codectypes "github.com/Finschia/finschia-sdk/codec/types"
+	sdk "github.com/Finschia/finschia-sdk/types"
+	grpctypes "github.com/Finschia/finschia-sdk/types/grpc"
+	"github.com/Finschia/finschia-sdk/types/query"
 	"google.golang.org/grpc/metadata"
 
-	"github.com/line/ibc-go/v3/modules/core/02-client/types"
-	"github.com/line/ibc-go/v3/modules/core/exported"
-	ibcoctypes "github.com/line/ibc-go/v3/modules/light-clients/07-tendermint/types"
-	ibctesting "github.com/line/ibc-go/v3/testing"
+	"github.com/Finschia/ibc-go/v3/modules/core/02-client/types"
+	"github.com/Finschia/ibc-go/v3/modules/core/exported"
+	ibcoctypes "github.com/Finschia/ibc-go/v3/modules/light-clients/07-tendermint/types"
+	ibctesting "github.com/Finschia/ibc-go/v3/testing"
 )
 
 func (suite *KeeperTestSuite) TestQueryClientState() {

@@ -3,12 +3,12 @@ package types_test
 import (
 	"testing"
 
-	"github.com/line/lbm-sdk/codec"
-	codectypes "github.com/line/lbm-sdk/codec/types"
+	"github.com/Finschia/finschia-sdk/codec"
+	codectypes "github.com/Finschia/finschia-sdk/codec/types"
 	"github.com/stretchr/testify/require"
 
-	clienttypes "github.com/line/ibc-go/v3/modules/core/02-client/types"
-	"github.com/line/ibc-go/v3/modules/core/04-channel/types"
+	clienttypes "github.com/Finschia/ibc-go/v3/modules/core/02-client/types"
+	"github.com/Finschia/ibc-go/v3/modules/core/04-channel/types"
 )
 
 func TestCommitPacket(t *testing.T) {

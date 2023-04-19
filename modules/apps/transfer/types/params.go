@@ -3,7 +3,7 @@ package types
 import (
 	"fmt"
 
-	paramtypes "github.com/line/lbm-sdk/x/params/types"
+	paramtypes "github.com/Finschia/finschia-sdk/x/params/types"
 )
 
 const (

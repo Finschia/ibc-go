@@ -3,9 +3,9 @@ package keeper
 import (
 	"fmt"
 
-	sdk "github.com/line/lbm-sdk/types"
+	sdk "github.com/Finschia/finschia-sdk/types"
 
-	"github.com/line/ibc-go/v3/modules/apps/transfer/types"
+	"github.com/Finschia/ibc-go/v3/modules/apps/transfer/types"
 )
 
 // Migrator is a struct for handling in-place store migrations.

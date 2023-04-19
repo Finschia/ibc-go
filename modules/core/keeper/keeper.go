@@ -4,19 +4,19 @@ import (
 	"fmt"
 	"reflect"
 
-	"github.com/line/lbm-sdk/codec"
-	sdk "github.com/line/lbm-sdk/types"
-	capabilitykeeper "github.com/line/lbm-sdk/x/capability/keeper"
-	paramtypes "github.com/line/lbm-sdk/x/params/types"
+	"github.com/Finschia/finschia-sdk/codec"
+	sdk "github.com/Finschia/finschia-sdk/types"
+	capabilitykeeper "github.com/Finschia/finschia-sdk/x/capability/keeper"
+	paramtypes "github.com/Finschia/finschia-sdk/x/params/types"
 
-	clientkeeper "github.com/line/ibc-go/v3/modules/core/02-client/keeper"
-	clienttypes "github.com/line/ibc-go/v3/modules/core/02-client/types"
-	connectionkeeper "github.com/line/ibc-go/v3/modules/core/03-connection/keeper"
-	connectiontypes "github.com/line/ibc-go/v3/modules/core/03-connection/types"
-	channelkeeper "github.com/line/ibc-go/v3/modules/core/04-channel/keeper"
-	portkeeper "github.com/line/ibc-go/v3/modules/core/05-port/keeper"
-	porttypes "github.com/line/ibc-go/v3/modules/core/05-port/types"
-	"github.com/line/ibc-go/v3/modules/core/types"
+	clientkeeper "github.com/Finschia/ibc-go/v3/modules/core/02-client/keeper"
+	clienttypes "github.com/Finschia/ibc-go/v3/modules/core/02-client/types"
+	connectionkeeper "github.com/Finschia/ibc-go/v3/modules/core/03-connection/keeper"
+	connectiontypes "github.com/Finschia/ibc-go/v3/modules/core/03-connection/types"
+	channelkeeper "github.com/Finschia/ibc-go/v3/modules/core/04-channel/keeper"
+	portkeeper "github.com/Finschia/ibc-go/v3/modules/core/05-port/keeper"
+	porttypes "github.com/Finschia/ibc-go/v3/modules/core/05-port/types"
+	"github.com/Finschia/ibc-go/v3/modules/core/types"
 )
 
 var _ types.QueryServer = (*Keeper)(nil)

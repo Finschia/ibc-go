@@ -3,14 +3,14 @@ package keeper_test
 import (
 	"fmt"
 
-	capabilitytypes "github.com/line/lbm-sdk/x/capability/types"
+	capabilitytypes "github.com/Finschia/finschia-sdk/x/capability/types"
 
-	clienttypes "github.com/line/ibc-go/v3/modules/core/02-client/types"
-	connectiontypes "github.com/line/ibc-go/v3/modules/core/03-connection/types"
-	"github.com/line/ibc-go/v3/modules/core/04-channel/types"
-	host "github.com/line/ibc-go/v3/modules/core/24-host"
-	"github.com/line/ibc-go/v3/modules/core/exported"
-	ibctesting "github.com/line/ibc-go/v3/testing"
+	clienttypes "github.com/Finschia/ibc-go/v3/modules/core/02-client/types"
+	connectiontypes "github.com/Finschia/ibc-go/v3/modules/core/03-connection/types"
+	"github.com/Finschia/ibc-go/v3/modules/core/04-channel/types"
+	host "github.com/Finschia/ibc-go/v3/modules/core/24-host"
+	"github.com/Finschia/ibc-go/v3/modules/core/exported"
+	ibctesting "github.com/Finschia/ibc-go/v3/testing"
 )
 
 type testCase = struct {

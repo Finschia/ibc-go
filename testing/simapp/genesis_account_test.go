@@ -4,13 +4,13 @@ import (
 	"testing"
 	"time"
 
-	"github.com/line/lbm-sdk/crypto/keys/secp256k1"
-	sdk "github.com/line/lbm-sdk/types"
-	authtypes "github.com/line/lbm-sdk/x/auth/types"
-	"github.com/line/ostracon/crypto"
+	"github.com/Finschia/finschia-sdk/crypto/keys/secp256k1"
+	sdk "github.com/Finschia/finschia-sdk/types"
+	authtypes "github.com/Finschia/finschia-sdk/x/auth/types"
+	"github.com/Finschia/ostracon/crypto"
 	"github.com/stretchr/testify/require"
 
-	"github.com/line/ibc-go/v3/testing/simapp"
+	"github.com/Finschia/ibc-go/v3/testing/simapp"
 )
 
 func TestSimGenesisAccountValidate(t *testing.T) {

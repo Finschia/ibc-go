@@ -1,13 +1,13 @@
 package types_test
 
 import (
-	"github.com/line/lbm-sdk/codec"
-	sdk "github.com/line/lbm-sdk/types"
-	banktypes "github.com/line/lbm-sdk/x/bank/types"
-	govtypes "github.com/line/lbm-sdk/x/gov/types"
+	"github.com/Finschia/finschia-sdk/codec"
+	sdk "github.com/Finschia/finschia-sdk/types"
+	banktypes "github.com/Finschia/finschia-sdk/x/bank/types"
+	govtypes "github.com/Finschia/finschia-sdk/x/gov/types"
 
-	"github.com/line/ibc-go/v3/modules/apps/27-interchain-accounts/types"
-	"github.com/line/ibc-go/v3/testing/simapp"
+	"github.com/Finschia/ibc-go/v3/modules/apps/27-interchain-accounts/types"
+	"github.com/Finschia/ibc-go/v3/testing/simapp"
 )
 
 // caseRawBytes defines a helper struct, used for testing codec operations

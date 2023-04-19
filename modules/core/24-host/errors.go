@@ -1,7 +1,7 @@
 package host
 
 import (
-	sdkerrors "github.com/line/lbm-sdk/types/errors"
+	sdkerrors "github.com/Finschia/finschia-sdk/types/errors"
 )
 
 // SubModuleName defines the ICS 24 host

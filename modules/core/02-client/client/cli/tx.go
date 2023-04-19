@@ -5,19 +5,19 @@ import (
 	"os"
 	"strconv"
 
-	"github.com/line/lbm-sdk/client"
-	"github.com/line/lbm-sdk/client/flags"
-	"github.com/line/lbm-sdk/client/tx"
-	"github.com/line/lbm-sdk/codec"
-	sdk "github.com/line/lbm-sdk/types"
-	"github.com/line/lbm-sdk/version"
-	govcli "github.com/line/lbm-sdk/x/gov/client/cli"
-	govtypes "github.com/line/lbm-sdk/x/gov/types"
-	upgradetypes "github.com/line/lbm-sdk/x/upgrade/types"
+	"github.com/Finschia/finschia-sdk/client"
+	"github.com/Finschia/finschia-sdk/client/flags"
+	"github.com/Finschia/finschia-sdk/client/tx"
+	"github.com/Finschia/finschia-sdk/codec"
+	sdk "github.com/Finschia/finschia-sdk/types"
+	"github.com/Finschia/finschia-sdk/version"
+	govcli "github.com/Finschia/finschia-sdk/x/gov/client/cli"
+	govtypes "github.com/Finschia/finschia-sdk/x/gov/types"
+	upgradetypes "github.com/Finschia/finschia-sdk/x/upgrade/types"
 	"github.com/spf13/cobra"
 
-	"github.com/line/ibc-go/v3/modules/core/02-client/types"
-	"github.com/line/ibc-go/v3/modules/core/exported"
+	"github.com/Finschia/ibc-go/v3/modules/core/02-client/types"
+	"github.com/Finschia/ibc-go/v3/modules/core/exported"
 )
 
 // NewCreateClientCmd defines the command to create a new IBC light client.

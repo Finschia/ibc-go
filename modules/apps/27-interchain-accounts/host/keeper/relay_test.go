@@ -3,19 +3,19 @@ package keeper_test
 import (
 	"time"
 
-	codectypes "github.com/line/lbm-sdk/codec/types"
-	sdk "github.com/line/lbm-sdk/types"
-	banktypes "github.com/line/lbm-sdk/x/bank/types"
-	disttypes "github.com/line/lbm-sdk/x/distribution/types"
-	govtypes "github.com/line/lbm-sdk/x/gov/types"
-	stakingtypes "github.com/line/lbm-sdk/x/staking/types"
+	codectypes "github.com/Finschia/finschia-sdk/codec/types"
+	sdk "github.com/Finschia/finschia-sdk/types"
+	banktypes "github.com/Finschia/finschia-sdk/x/bank/types"
+	disttypes "github.com/Finschia/finschia-sdk/x/distribution/types"
+	govtypes "github.com/Finschia/finschia-sdk/x/gov/types"
+	stakingtypes "github.com/Finschia/finschia-sdk/x/staking/types"
 
-	"github.com/line/ibc-go/v3/modules/apps/27-interchain-accounts/host/types"
-	icatypes "github.com/line/ibc-go/v3/modules/apps/27-interchain-accounts/types"
-	transfertypes "github.com/line/ibc-go/v3/modules/apps/transfer/types"
-	clienttypes "github.com/line/ibc-go/v3/modules/core/02-client/types"
-	channeltypes "github.com/line/ibc-go/v3/modules/core/04-channel/types"
-	ibctesting "github.com/line/ibc-go/v3/testing"
+	"github.com/Finschia/ibc-go/v3/modules/apps/27-interchain-accounts/host/types"
+	icatypes "github.com/Finschia/ibc-go/v3/modules/apps/27-interchain-accounts/types"
+	transfertypes "github.com/Finschia/ibc-go/v3/modules/apps/transfer/types"
+	clienttypes "github.com/Finschia/ibc-go/v3/modules/core/02-client/types"
+	channeltypes "github.com/Finschia/ibc-go/v3/modules/core/04-channel/types"
+	ibctesting "github.com/Finschia/ibc-go/v3/testing"
 )
 
 func (suite *KeeperTestSuite) TestOnRecvPacket() {

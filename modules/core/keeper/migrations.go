@@ -1,9 +1,9 @@
 package keeper
 
 import (
-	sdk "github.com/line/lbm-sdk/types"
+	sdk "github.com/Finschia/finschia-sdk/types"
 
-	clientkeeper "github.com/line/ibc-go/v3/modules/core/02-client/keeper"
+	clientkeeper "github.com/Finschia/ibc-go/v3/modules/core/02-client/keeper"
 )
 
 // Migrator is a struct for handling in-place store migrations.

@@ -1,9 +1,9 @@
 package keeper
 
 import (
-	sdk "github.com/line/lbm-sdk/types"
+	sdk "github.com/Finschia/finschia-sdk/types"
 
-	"github.com/line/ibc-go/v3/modules/core/03-connection/types"
+	"github.com/Finschia/ibc-go/v3/modules/core/03-connection/types"
 )
 
 // EmitConnectionOpenInitEvent emits a connection open init event

@@ -1,13 +1,13 @@
 package keeper
 
 import (
-	sdk "github.com/line/lbm-sdk/types"
-	sdkerrors "github.com/line/lbm-sdk/types/errors"
-	capabilitytypes "github.com/line/lbm-sdk/x/capability/types"
+	sdk "github.com/Finschia/finschia-sdk/types"
+	sdkerrors "github.com/Finschia/finschia-sdk/types/errors"
+	capabilitytypes "github.com/Finschia/finschia-sdk/x/capability/types"
 
-	icatypes "github.com/line/ibc-go/v3/modules/apps/27-interchain-accounts/types"
-	clienttypes "github.com/line/ibc-go/v3/modules/core/02-client/types"
-	channeltypes "github.com/line/ibc-go/v3/modules/core/04-channel/types"
+	icatypes "github.com/Finschia/ibc-go/v3/modules/apps/27-interchain-accounts/types"
+	clienttypes "github.com/Finschia/ibc-go/v3/modules/core/02-client/types"
+	channeltypes "github.com/Finschia/ibc-go/v3/modules/core/04-channel/types"
 )
 
 // SendTx takes pre-built packet data containing messages to be executed on the host chain from an authentication module and attempts to send the packet.

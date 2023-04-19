@@ -6,16 +6,16 @@ import (
 	"strings"
 	"time"
 
-	"github.com/line/lbm-sdk/client"
-	"github.com/line/lbm-sdk/client/flags"
-	"github.com/line/lbm-sdk/client/tx"
-	sdk "github.com/line/lbm-sdk/types"
-	"github.com/line/lbm-sdk/version"
+	"github.com/Finschia/finschia-sdk/client"
+	"github.com/Finschia/finschia-sdk/client/flags"
+	"github.com/Finschia/finschia-sdk/client/tx"
+	sdk "github.com/Finschia/finschia-sdk/types"
+	"github.com/Finschia/finschia-sdk/version"
 	"github.com/spf13/cobra"
 
-	"github.com/line/ibc-go/v3/modules/apps/transfer/types"
-	clienttypes "github.com/line/ibc-go/v3/modules/core/02-client/types"
-	channelutils "github.com/line/ibc-go/v3/modules/core/04-channel/client/utils"
+	"github.com/Finschia/ibc-go/v3/modules/apps/transfer/types"
+	clienttypes "github.com/Finschia/ibc-go/v3/modules/core/02-client/types"
+	channelutils "github.com/Finschia/ibc-go/v3/modules/core/04-channel/client/utils"
 )
 
 const (

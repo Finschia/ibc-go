@@ -3,11 +3,11 @@ package ibctesting_test
 import (
 	"testing"
 
-	octypes "github.com/line/ostracon/types"
+	octypes "github.com/Finschia/ostracon/types"
 	"github.com/stretchr/testify/require"
 
-	ibctesting "github.com/line/ibc-go/v3/testing"
-	"github.com/line/ibc-go/v3/testing/mock"
+	ibctesting "github.com/Finschia/ibc-go/v3/testing"
+	"github.com/Finschia/ibc-go/v3/testing/mock"
 )
 
 func TestCreateSortedSignerArray(t *testing.T) {

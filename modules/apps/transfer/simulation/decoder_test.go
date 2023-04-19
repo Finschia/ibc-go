@@ -4,12 +4,12 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/line/lbm-sdk/types/kv"
+	"github.com/Finschia/finschia-sdk/types/kv"
 	"github.com/stretchr/testify/require"
 
-	"github.com/line/ibc-go/v3/modules/apps/transfer/simulation"
-	"github.com/line/ibc-go/v3/modules/apps/transfer/types"
-	"github.com/line/ibc-go/v3/testing/simapp"
+	"github.com/Finschia/ibc-go/v3/modules/apps/transfer/simulation"
+	"github.com/Finschia/ibc-go/v3/modules/apps/transfer/types"
+	"github.com/Finschia/ibc-go/v3/testing/simapp"
 )
 
 func TestDecodeStore(t *testing.T) {

@@ -9,9 +9,9 @@ import (
 	"github.com/gogo/protobuf/proto"
 	"github.com/tendermint/tendermint/proto/tendermint/crypto"
 
-	sdkerrors "github.com/line/lbm-sdk/types/errors"
+	sdkerrors "github.com/Finschia/finschia-sdk/types/errors"
 
-	"github.com/line/ibc-go/v3/modules/core/exported"
+	"github.com/Finschia/ibc-go/v3/modules/core/exported"
 )
 
 // var representing the proofspecs for a SDK chain

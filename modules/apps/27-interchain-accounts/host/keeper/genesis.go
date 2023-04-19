@@ -3,10 +3,10 @@ package keeper
 import (
 	"fmt"
 
-	sdk "github.com/line/lbm-sdk/types"
+	sdk "github.com/Finschia/finschia-sdk/types"
 
-	icatypes "github.com/line/ibc-go/v3/modules/apps/27-interchain-accounts/types"
-	host "github.com/line/ibc-go/v3/modules/core/24-host"
+	icatypes "github.com/Finschia/ibc-go/v3/modules/apps/27-interchain-accounts/types"
+	host "github.com/Finschia/ibc-go/v3/modules/core/24-host"
 )
 
 // InitGenesis initializes the interchain accounts host application state from a provided genesis state

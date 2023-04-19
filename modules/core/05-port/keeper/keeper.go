@@ -3,13 +3,13 @@ package keeper
 import (
 	"fmt"
 
-	sdk "github.com/line/lbm-sdk/types"
-	capabilitykeeper "github.com/line/lbm-sdk/x/capability/keeper"
-	capabilitytypes "github.com/line/lbm-sdk/x/capability/types"
-	"github.com/line/ostracon/libs/log"
+	sdk "github.com/Finschia/finschia-sdk/types"
+	capabilitykeeper "github.com/Finschia/finschia-sdk/x/capability/keeper"
+	capabilitytypes "github.com/Finschia/finschia-sdk/x/capability/types"
+	"github.com/Finschia/ostracon/libs/log"
 
-	"github.com/line/ibc-go/v3/modules/core/05-port/types"
-	host "github.com/line/ibc-go/v3/modules/core/24-host"
+	"github.com/Finschia/ibc-go/v3/modules/core/05-port/types"
+	host "github.com/Finschia/ibc-go/v3/modules/core/24-host"
 )
 
 // Keeper defines the IBC connection keeper

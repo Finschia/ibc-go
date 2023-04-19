@@ -9,7 +9,7 @@ builds:
       - -tags=netgo ledger
       - -mod=readonly
     ldflags:
-      - -s -w -X github.com/line/lbm-sdk/version.Name=sim -X github.com/line/lbm-sdk/version.AppName=simd -X github.com/line/lbm-sdk/version.Version={{.Version}} -X "github.com/line/lbm-sdk/version.BuildTags=netgo,ledger" 
+      - -s -w -X github.com/Finschia/finschia-sdk/version.Name=sim -X github.com/Finschia/finschia-sdk/version.AppName=simd -X github.com/Finschia/finschia-sdk/version.Version={{.Version}} -X "github.com/Finschia/finschia-sdk/version.BuildTags=netgo,ledger" 
     env:
       - CGO_ENABLED=0
     goos:

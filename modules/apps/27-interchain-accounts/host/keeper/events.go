@@ -3,10 +3,10 @@ package keeper
 import (
 	"fmt"
 
-	sdk "github.com/line/lbm-sdk/types"
+	sdk "github.com/Finschia/finschia-sdk/types"
 
-	icatypes "github.com/line/ibc-go/v3/modules/apps/27-interchain-accounts/types"
-	"github.com/line/ibc-go/v3/modules/core/exported"
+	icatypes "github.com/Finschia/ibc-go/v3/modules/apps/27-interchain-accounts/types"
+	"github.com/Finschia/ibc-go/v3/modules/core/exported"
 )
 
 // EmitAcknowledgementEvent emits an event signalling a successful or failed acknowledgement and including the error

@@ -3,8 +3,8 @@ package cli
 import (
 	"github.com/spf13/cobra"
 
-	controllercli "github.com/line/ibc-go/v3/modules/apps/27-interchain-accounts/controller/client/cli"
-	hostcli "github.com/line/ibc-go/v3/modules/apps/27-interchain-accounts/host/client/cli"
+	controllercli "github.com/Finschia/ibc-go/v3/modules/apps/27-interchain-accounts/controller/client/cli"
+	hostcli "github.com/Finschia/ibc-go/v3/modules/apps/27-interchain-accounts/host/client/cli"
 )
 
 // GetQueryCmd returns the query commands for the interchain-accounts submodule

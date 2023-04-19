@@ -5,17 +5,17 @@ import (
 	"fmt"
 	"time"
 
-	upgradetypes "github.com/line/lbm-sdk/x/upgrade/types"
-	octypes "github.com/line/ostracon/types"
+	upgradetypes "github.com/Finschia/finschia-sdk/x/upgrade/types"
+	octypes "github.com/Finschia/ostracon/types"
 
-	"github.com/line/ibc-go/v3/modules/core/02-client/types"
-	clienttypes "github.com/line/ibc-go/v3/modules/core/02-client/types"
-	commitmenttypes "github.com/line/ibc-go/v3/modules/core/23-commitment/types"
-	"github.com/line/ibc-go/v3/modules/core/exported"
-	ibcoctypes "github.com/line/ibc-go/v3/modules/light-clients/07-tendermint/types"
-	localhosttypes "github.com/line/ibc-go/v3/modules/light-clients/09-localhost/types"
-	ibctesting "github.com/line/ibc-go/v3/testing"
-	ibctestingmock "github.com/line/ibc-go/v3/testing/mock"
+	"github.com/Finschia/ibc-go/v3/modules/core/02-client/types"
+	clienttypes "github.com/Finschia/ibc-go/v3/modules/core/02-client/types"
+	commitmenttypes "github.com/Finschia/ibc-go/v3/modules/core/23-commitment/types"
+	"github.com/Finschia/ibc-go/v3/modules/core/exported"
+	ibcoctypes "github.com/Finschia/ibc-go/v3/modules/light-clients/07-tendermint/types"
+	localhosttypes "github.com/Finschia/ibc-go/v3/modules/light-clients/09-localhost/types"
+	ibctesting "github.com/Finschia/ibc-go/v3/testing"
+	ibctestingmock "github.com/Finschia/ibc-go/v3/testing/mock"
 )
 
 func (suite *KeeperTestSuite) TestCreateClient() {

@@ -3,16 +3,16 @@ package ibctesting
 import (
 	"fmt"
 
-	sdk "github.com/line/lbm-sdk/types"
+	sdk "github.com/Finschia/finschia-sdk/types"
 	"github.com/stretchr/testify/require"
 
-	clienttypes "github.com/line/ibc-go/v3/modules/core/02-client/types"
-	connectiontypes "github.com/line/ibc-go/v3/modules/core/03-connection/types"
-	channeltypes "github.com/line/ibc-go/v3/modules/core/04-channel/types"
-	commitmenttypes "github.com/line/ibc-go/v3/modules/core/23-commitment/types"
-	host "github.com/line/ibc-go/v3/modules/core/24-host"
-	"github.com/line/ibc-go/v3/modules/core/exported"
-	ibcoctypes "github.com/line/ibc-go/v3/modules/light-clients/07-tendermint/types"
+	clienttypes "github.com/Finschia/ibc-go/v3/modules/core/02-client/types"
+	connectiontypes "github.com/Finschia/ibc-go/v3/modules/core/03-connection/types"
+	channeltypes "github.com/Finschia/ibc-go/v3/modules/core/04-channel/types"
+	commitmenttypes "github.com/Finschia/ibc-go/v3/modules/core/23-commitment/types"
+	host "github.com/Finschia/ibc-go/v3/modules/core/24-host"
+	"github.com/Finschia/ibc-go/v3/modules/core/exported"
+	ibcoctypes "github.com/Finschia/ibc-go/v3/modules/light-clients/07-tendermint/types"
 )
 
 // Endpoint is a which represents a channel endpoint and its associated

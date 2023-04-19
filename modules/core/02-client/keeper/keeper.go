@@ -5,20 +5,20 @@ import (
 	"reflect"
 	"strings"
 
-	"github.com/line/lbm-sdk/codec"
-	"github.com/line/lbm-sdk/store/prefix"
-	sdk "github.com/line/lbm-sdk/types"
-	sdkerrors "github.com/line/lbm-sdk/types/errors"
-	paramtypes "github.com/line/lbm-sdk/x/params/types"
-	upgradetypes "github.com/line/lbm-sdk/x/upgrade/types"
-	"github.com/line/ostracon/libs/log"
-	"github.com/line/ostracon/light"
+	"github.com/Finschia/finschia-sdk/codec"
+	"github.com/Finschia/finschia-sdk/store/prefix"
+	sdk "github.com/Finschia/finschia-sdk/types"
+	sdkerrors "github.com/Finschia/finschia-sdk/types/errors"
+	paramtypes "github.com/Finschia/finschia-sdk/x/params/types"
+	upgradetypes "github.com/Finschia/finschia-sdk/x/upgrade/types"
+	"github.com/Finschia/ostracon/libs/log"
+	"github.com/Finschia/ostracon/light"
 
-	"github.com/line/ibc-go/v3/modules/core/02-client/types"
-	commitmenttypes "github.com/line/ibc-go/v3/modules/core/23-commitment/types"
-	host "github.com/line/ibc-go/v3/modules/core/24-host"
-	"github.com/line/ibc-go/v3/modules/core/exported"
-	ibcoctypes "github.com/line/ibc-go/v3/modules/light-clients/07-tendermint/types"
+	"github.com/Finschia/ibc-go/v3/modules/core/02-client/types"
+	commitmenttypes "github.com/Finschia/ibc-go/v3/modules/core/23-commitment/types"
+	host "github.com/Finschia/ibc-go/v3/modules/core/24-host"
+	"github.com/Finschia/ibc-go/v3/modules/core/exported"
+	ibcoctypes "github.com/Finschia/ibc-go/v3/modules/light-clients/07-tendermint/types"
 )
 
 // Keeper represents a type that grants read and write permissions to any client

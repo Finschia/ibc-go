@@ -8,19 +8,19 @@ import (
 	"github.com/stretchr/testify/suite"
 	abcitypes "github.com/tendermint/tendermint/abci/types"
 
-	sdk "github.com/line/lbm-sdk/types"
-	banktypes "github.com/line/lbm-sdk/x/bank/types"
-	capabilitytypes "github.com/line/lbm-sdk/x/capability/types"
-	ocprotostate "github.com/line/ostracon/proto/ostracon/state"
-	ocstate "github.com/line/ostracon/state"
+	sdk "github.com/Finschia/finschia-sdk/types"
+	banktypes "github.com/Finschia/finschia-sdk/x/bank/types"
+	capabilitytypes "github.com/Finschia/finschia-sdk/x/capability/types"
+	ocprotostate "github.com/Finschia/ostracon/proto/ostracon/state"
+	ocstate "github.com/Finschia/ostracon/state"
 
-	"github.com/line/ibc-go/v3/modules/apps/27-interchain-accounts/host/types"
-	icatypes "github.com/line/ibc-go/v3/modules/apps/27-interchain-accounts/types"
-	clienttypes "github.com/line/ibc-go/v3/modules/core/02-client/types"
-	channeltypes "github.com/line/ibc-go/v3/modules/core/04-channel/types"
-	host "github.com/line/ibc-go/v3/modules/core/24-host"
-	"github.com/line/ibc-go/v3/modules/core/exported"
-	ibctesting "github.com/line/ibc-go/v3/testing"
+	"github.com/Finschia/ibc-go/v3/modules/apps/27-interchain-accounts/host/types"
+	icatypes "github.com/Finschia/ibc-go/v3/modules/apps/27-interchain-accounts/types"
+	clienttypes "github.com/Finschia/ibc-go/v3/modules/core/02-client/types"
+	channeltypes "github.com/Finschia/ibc-go/v3/modules/core/04-channel/types"
+	host "github.com/Finschia/ibc-go/v3/modules/core/24-host"
+	"github.com/Finschia/ibc-go/v3/modules/core/exported"
+	ibctesting "github.com/Finschia/ibc-go/v3/testing"
 )
 
 var (

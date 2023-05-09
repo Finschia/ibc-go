@@ -14,6 +14,7 @@
 ### Build, CI
 
 ### Document Updates
+* [\#13](https://github.com/Finschia/ibc-go/pull/13) add NOTICE file
 
 
 ## [v3.3.3](https://github.com/Finschia/ibc-go/compare/v3.3.2...v3.3.3) - 2023.04.19

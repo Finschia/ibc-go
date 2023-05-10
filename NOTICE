@@ -5,6 +5,9 @@ This product from Finschia Foundation contains the open source software detailed
 
 Please be informed that  Finschia Foundation   product may contain open source software listed in to tables below.
 
+cosmos-proto  (Apache-2.0)
+-
+
 Finschia/ibc-go  (MIT)
 Copyright (c) 2022 COSMOS
 
@@ -12,8 +15,14 @@ gogo/protobuf  (BSD-3-Clause)
 Copyright 2013, The GoGo Authors
 Copyright 2010 The Go Author
 
-keplr-wallet  (Apache-2.0)
-Copyright 2020 Chainapsis, Inc
+googleapis  (Apache-2.0)
+Copyright Google LLC
+
+ics23  (Apache-2.0)
+Copyright 2019 Confio UO
+
+tendermint  (Apache-2.0)
+Copyright 2016 All in Bits, Inc
 
 
 

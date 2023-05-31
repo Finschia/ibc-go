@@ -9,6 +9,7 @@ import (
 	clienttypes "github.com/Finschia/ibc-go/v3/modules/core/02-client/types"
 	connectiontypes "github.com/Finschia/ibc-go/v3/modules/core/03-connection/types"
 	"github.com/Finschia/ibc-go/v3/modules/core/04-channel/types"
+	ibchost "github.com/Finschia/ibc-go/v3/modules/core/24-host"
 	"github.com/Finschia/ibc-go/v3/modules/core/exported"
 	ibctesting "github.com/Finschia/ibc-go/v3/testing"
 )
@@ -1180,6 +1181,53 @@ func (suite *KeeperTestSuite) TestQueryUnreceivedPackets() {
 				req = &types.QueryUnreceivedPacketsRequest{
 					PortId:    "invalid-port-id",
 					ChannelId: "invalid-channel-id",
+				}
+			},
+			false,
+		},
+		{
+			"invalid channel ordering",
+			func() {
+				path := ibctesting.NewPath(suite.chainA, suite.chainB)
+				suite.coordinator.Setup(path)
+
+				chKeepr := suite.chainA.App.GetIBCKeeper().ChannelKeeper
+				portID := path.EndpointA.ChannelConfig.PortID
+				chID := path.EndpointA.ChannelID
+				ctx := suite.chainA.GetContext()
+
+				ch, ok := chKeepr.GetChannel(ctx, portID, chID)
+				suite.Require().True(ok)
+				ch.Ordering = types.NONE
+				chKeepr.SetChannel(ctx, portID, chID, ch)
+
+				expSeq = []uint64{1}
+				req = &types.QueryUnreceivedPacketsRequest{
+					PortId:                    path.EndpointA.ChannelConfig.PortID,
+					ChannelId:                 path.EndpointA.ChannelID,
+					PacketCommitmentSequences: []uint64{1},
+				}
+			},
+			false,
+		},
+		{
+			"sequence receive not found",
+			func() {
+				path := ibctesting.NewPath(suite.chainA, suite.chainB)
+				path.SetChannelOrdered()
+				suite.coordinator.Setup(path)
+
+				portID := path.EndpointA.ChannelConfig.PortID
+				chID := path.EndpointA.ChannelID
+				ctx := suite.chainA.GetContext()
+				storeKey := suite.chainA.GetSimApp().GetKey(ibchost.StoreKey)
+				ctx.KVStore(storeKey).Delete(ibchost.NextSequenceRecvKey(portID, chID))
+
+				expSeq = []uint64(nil)
+				req = &types.QueryUnreceivedPacketsRequest{
+					PortId:                    path.EndpointA.ChannelConfig.PortID,
+					ChannelId:                 path.EndpointA.ChannelID,
+					PacketCommitmentSequences: []uint64{},
 				}
 			},
 			false,

@@ -8,6 +8,7 @@
 ### Improvements
 
 ### Bug Fixes
+* [\#15](https://github.com/Finschia/ibc-go/pull/15) Handle ordered packets in UnreceivedPackets query.
 
 ### Breaking Changes
 

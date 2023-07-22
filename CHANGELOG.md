@@ -13,6 +13,7 @@
 ### Breaking Changes
 
 ### Build, CI
+* [\#17](https://github.com/Finschia/ibc-go/pull/17) Update golang version to 1.20
 
 ### Document Updates
 * [\#13](https://github.com/Finschia/ibc-go/pull/13) add NOTICE file
